@@ -28,8 +28,10 @@
         <!-- Header -->
 
     <header class="header-inner">
-          <div class="brand">
-              <a href="http://www.lasermtedenswimclub.co.nz" title="return to homepage"><img class="brand-image" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club"></a>
+          <div class="flex-brand wrap" >
+            <ul><li><a href="http://www.lasermtedenswimclub.co.nz" title="return to homepage">
+                <img class="flex-brand" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club"></a></li></ul>
+              
           </div>
           <div class="search-container">
              <form action="search/SiteSearch" method="get" enctype="">
@@ -69,7 +71,7 @@
       <div class="nav-handle">
           <a href="#" class="js-nav-handle icon mini">
             <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="20px" height="14px" viewBox="0 0 20 14" enable-background="new 0 0 20 14" xml:space="preserve">
             <rect fill="#404040" width="20" height="2"></rect>
             <rect y="6" fill="#404040" width="20" height="2"></rect>
@@ -96,44 +98,21 @@
 
 <!-- Slider -->  
 <figure class="item">
-    <a href="">
-    <img src="img/LaserMtEden-1.png" alt="slider1"/>
-    </a>
-    <!--Latest News -->
-    <div class="content" style="margin-top: -4.5em;">
-        <div class="">
-            <ul>
-                <li>
-                    <h2>Latest News</h2>
-                </li>
-                <li>
-                    <p>01/09/14</p>
-                </li>
-                <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem....read more.</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    </a>
-  </figure>
- <!-- Slider -->  
-<figure class="item">
-    <a href="">
-    <img src="img/LaserMtEden-2.png" style="margin-left: -5em; margin-top: -3.2em;" alt="slider2"/>
-    </a>
+    <a href="Topics/post{id}">
+    <img class="flex-container wrap" src="img/LaserMtEden-1.png" alt="slider1"/>
+    
     <!--Latest News -->
     <div class="content">
         <div>
             <ul>
                 <li>
-                    <h2>Latest News</h2>
+                    <h3 class="headline">Sydney 2014</h3>
                 </li>
                 <li>
-                    <p>01/09/14</p>
+                    <p class="date">01/09/14</p>
                 </li>
                 <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem....read more.</p>
+                    <p class="news-contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem....read more.</p>
                 </li>
             </ul>
         </div>
@@ -142,21 +121,44 @@
   </figure>
  <!-- Slider -->  
 <figure class="item">
-    <a href="">
-    <img src="img/LaserMtEden-3.png" alt="slider3"/>
-    </a>
+    <a href="Topics/post{id}">
+    <img class="flex-container wrap" src="img/LaserMtEden-2.png" alt="slider2"/>
+    
     <!--Latest News -->
     <div class="content">
-        <div class="">
+        <div>
             <ul>
                 <li>
-                    <h2>Latest News</h2>
+                    <h3 class="headline">Springs</h3>
                 </li>
                 <li>
-                    <p>01/09/14</p>
+                    <p class="date">01/10/14</p>
                 </li>
                 <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem....read more.</p>
+                    <p class="news-contents">Lorem Ipsum is simply printing and typesetting industry. Lorem....read more.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </a>
+  </figure>
+ <!-- Slider -->  
+<figure class="item">
+    <a href="Topics/post{id}">
+    <img class="flex-container wrap" src="img/LaserMtEden-3.png" alt="slider3" />
+    
+    <!--Latest News -->
+    <div class="content">
+        <div>
+            <ul>
+                <li>
+                    <h3 class="headline">Summer camp</h3>
+                </li>
+                <li>
+                    <p class="date">01/11/14</p>
+                </li>
+                <li>
+                    <p class="news-contents">It of the printing and typesetting industry.Lorem Ipsum is simply printing Lorem....read more.</p>
                 </li>
             </ul>
         </div>
@@ -175,57 +177,124 @@
 <!-- end of div background-image -->
 </div>
 </article>
+<svg id="blue-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
+ <polygon fill="#0872B8" points="10,14 0,0 20,0 "></polygon>
+</svg>   
 
 <!-- End of Sliders and Latest News -->
 
 <!-- Start of Meets and Events -->
 <article>
-<div id="meets-list">
-    <h3>meets/events</h3>
-    <ul>
-    <div class="meet" value="0">
-        <li><h3>September/October</h3></li>
-        <li>
-            <a href="">
+    <div id="meets-list">
+        <h3 class="flex-container wrap">meets/events</h3>
+        <ul>
+         <!-- Notification Meet 1 -->
+
+         <div class="meet"  value="0">
+            
+                <li><h3 class="meet-date">September/October</h3></li>
+                <li>
+                <a href=""> 
+                    <div class="date-background">
+                        <h3>30</h3>
+                        <p>09/14</p>
+                    </div>
+                    <div class="meet-descriptions">
+                        <ul>
+                            <li class="title"><h3>Title/Name of Event</h3></li>
+                            <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
+                            <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
+                            <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
+                            <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+        </div>
+        <!-- End of Notification Meet 1 -->   
+        <!-- Notification Meet 2 -->
+
+        <div class="meet"  value="1">
+           
+            <li><h3 class="meet-divider"></h3></li>
+            <li>
+            <a href=""> 
                 <div class="date-background">
-                    <h3>24</h3>
-                    <p>09/14</p>
+                    <h3>20</h3>
+                    <p>10/14</p>
                 </div>
                 <div class="meet-descriptions">
-                    <h3>Title/Name of Event</h3>
-                    <p><i class="fa fa-calendar"></i>Entries by: 20/09/14</p>
-                    <p><i class="fa fa-compass"></i>Where: Te Rapa, Hamilton</p>
-                    <p><i class="fa fa-credit-card"></i>Cost per entry: $5.00</p>
+                    <ul>
+                        <li class="title"><h3>Title/Name of Event</h3></li>
+                        <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
+                        <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
+                        <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
+                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                    </ul>
                 </div>
-                <i class="fa fa-angle-right"></i>
             </a>
         </li>
+    </div>
+    <!-- End of Notification Meet 2 -->   
+    <!-- Notification Meet 3 --> 
+    <div class="meet"  value="2" style="margin-top: -1em;">
+            <li><h3 class="meet-divider"></h3></li>
+            <li>
+            <a href="">
+                <div class="date-background">
+                    <h3>22</h3>
+                    <p>10/14</p>
+                </div>
+                <div class="meet-descriptions">
+                    <ul>
+                        <li class="title"><h3>Title/Name of Event</h3></li>
+                        <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
+                        <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
+                        <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
+                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div>
+            </li>
+        </a>
     </div>   
-    </ul>
+</ul>
+</div>
+<!-- End of Notification Meet 3 -->   
+</ul>
 </div>
 </article>
+<svg id="silver-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
+ <polygon fill="#F1F1F1" points="10,14 0,0 20,0 "></polygon>
+</svg>  
 <!-- End of Meets and Events -->
+
 <!-- Start of Gallery -->
 <article>
     <div id="gallery">
         <ul class="flex-container wrap">
             <li class="flex-item">
-            <img src="img/LaserMtEden-3.jpg" alt="LaserMtEdenSwim">
+            <img src="img/LaserMtEden-3.png" alt="LaserMtEdenSwim">
             </li>
             <li class="flex-item">
-            <img src="img/LaserMtEden-1.jpg" alt="LaserMtEdenSwim">
+            <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
             </li>
             <li class="flex-item">
-            <img src="img/LaserMtEden-2.jpg" alt="LaserMtEdenSwim">
+            <img src="img/LaserMtEden-2.png" alt="LaserMtEdenSwim">
             </li>
             <li class="flex-item">
-            <img src="img/LaserMtEden-3.jpg" alt="LaserMtEdenSwim">
+            <img src="img/LaserMtEden-3.png" alt="LaserMtEdenSwim">
             </li>
             <li class="flex-item">
-            <img src="img/LaserMtEden-4.jpg" alt="LaserMtEdenSwim">
+            <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
             </li>
             <li class="flex-item">
-            <img src="img/LaserMtEden-5.jpg" alt="LaserMtEdenSwim">
+            <img src="img/LaserMtEden-2.png" alt="LaserMtEdenSwim">
+            </li>
+            <li class="flex-item">
+            <img src="img/LaserMtEden-4.png" alt="LaserMtEdenSwim">
+            </li>
+            <li class="flex-item">
+            <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
             </li>
         </ul>
     </div>
