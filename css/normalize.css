@@ -78,7 +78,7 @@ html {
 
 html,
 button,
-input,
+
 select,
 textarea {
     font-family: sans-serif;
@@ -481,6 +481,7 @@ input[type="search"] {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box; /* 2 */
     box-sizing: content-box;
+     font-family: sans-serif;
 }
 
 /**

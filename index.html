@@ -27,42 +27,44 @@
 
         <!-- Header -->
 
-        <header class="header-inner">
-          <h1 class="brand">
-              <a href="http://www.lasermtedenswimclub.co.nz" title="return to homepage"><img src="img/Laser-Mt-Eden-Swim-logo.jpg" alt="Laser Mt Eden Swim club"></a>
-          </h1>
+    <header class="header-inner">
+          <div class="brand">
+              <a href="http://www.lasermtedenswimclub.co.nz" title="return to homepage"><img class="brand-image" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club"></a>
+          </div>
           <div class="search-container">
              <form action="search/SiteSearch" method="get" enctype="">
                  <i class="fa fa-search"></i><input type="search" class="search-bar" placeholder="search">
              </form> 
          </div>
-     </header>  
-
+    </header>  
+<!-- Drop down menu header -->
      <header>      
       <div id="main-header">
         <ul id="main-nav">
-          <li><a href="/news">latest News</a></li>
-          <li><a href="/meets">upcoming meets</a></li>
-          <li><a href="/gallery">gallery</a></li>
-          <li>
-          <p>locate a squad</p>
-          <select type="text" name="" id="">
+          <li><a href="/news"><span>latest News</span><i class="fa fa-newspaper-o"></i></a></li>
+          <li><a href="/meets"><span>upcoming meets</span></a></li>
+          <li><a href="/gallery"><span>gallery</span></a></li>
+          <li> 
+          <span class="locate-squad-touch">locate a squad</span> 
+          <div id="select">
+          <select type="text" id="select-squad">
               <option value="0">choose a location</option>
-              <option value="1">Mt Eden</option>
-              <option value="2">New Windsor</option>
-              <option value="3">Kelston</option>
-              <option value="4">Glen Eden</option>
-              <option value="5">Massey</option>
+              <option value="1"><a href="">Mt Eden</a></option>
+              <option value="2"><a href="">New Windsor</a></option>
+              <option value="3"><a href="">Kelston</a></option>
+              <option value="4"><a href="">Glen Eden</a></option>
+              <option value="5"><a href="">Massey</a></option>
           </select>
           <p>or</p>
-          <form action="search/SiteSearch" method="get" enctype="">
-                 <i class="fa fa-search"></i></i><input type="search" class="search-bar" placeholder="search"autocomplete="off">
+          <form action="search/SiteSearch" method="get" enctype="" id="select-squad">
+                 <i class="fa fa-search"></i><input type="search" placeholder="search"autocomplete="off">
              </form>
+         </div>
           </li>
-          <li><a href="/contact">contact</a></li>
-          <li><a href="/gallery">useful links</a></li>
-          <li><a href="/gallery">records</a></li>
-          <li><a href="/gallery">admin login</a></li>
+          <li><a href="/contact"><span>contact</span></a></li>
+          <li><a href="/links"><span>useful links</span></a></li>
+          <li><a href="/records"><span>records</span></a></li>
+          <li><a href="/login"><span>admin login</span></a></li>
       </ul>
       <div class="nav-handle">
           <a href="#" class="js-nav-handle icon mini">
@@ -72,13 +74,16 @@
             <rect fill="#404040" width="20" height="2"></rect>
             <rect y="6" fill="#404040" width="20" height="2"></rect>
             <rect y="12" fill="#404040" width="20" height="2"></rect>
+            <p class="menu-text">Menu</p>
         </svg>
     </a>
 </div>
 </div>
 </header> 
-<!-- End of Header -->
+<!-- End of Headers -->
 
+
+<article>
 <!-- Background control -->
 <div id="background-image" class="homepage-banner">
 <!-- Controls -->
@@ -87,12 +92,15 @@
   <div id="item-2" class="control-operator"></div>
   <div id="item-3" class="control-operator"></div>
   <div class="gallery autoplay items-3">
+
+
 <!-- Slider -->  
 <figure class="item">
-    <img src="img/LaserMtEden-1.jpg" alt="slider1" id="clothing-rack1"/>
+    <a href="">
+    <img src="img/LaserMtEden-1.png" alt="slider1"/>
     </a>
     <!--Latest News -->
-    <div class="content">
+    <div class="content" style="margin-top: -4.5em;">
         <div class="">
             <ul>
                 <li>
@@ -107,14 +115,16 @@
             </ul>
         </div>
     </div>
+    </a>
   </figure>
  <!-- Slider -->  
 <figure class="item">
-    <img src="img/LaserMtEden-12.jpg" alt="slider1" id="clothing-rack1"/>
+    <a href="">
+    <img src="img/LaserMtEden-2.png" style="margin-left: -5em; margin-top: -3.2em;" alt="slider1"/>
     </a>
     <!--Latest News -->
     <div class="content">
-        <div class="">
+        <div>
             <ul>
                 <li>
                     <h2>Latest News</h2>
@@ -128,10 +138,12 @@
             </ul>
         </div>
     </div>
+    </a>
   </figure>
  <!-- Slider -->  
 <figure class="item">
-    <img src="img/LaserMtEden-3.jpg" alt="slider1" id="clothing-rack1"/>
+    <a href="">
+    <img src="img/LaserMtEden-3.png" alt="slider1"/>
     </a>
     <!--Latest News -->
     <div class="content">
@@ -149,6 +161,7 @@
             </ul>
         </div>
     </div>
+    </a>
   </figure>
  
   
@@ -161,12 +174,14 @@
 </div>
 <!-- end of div background-image -->
 </div>
+</article>
 
 <!-- End of Sliders and Latest News -->
 
 <!-- Start of Meets and Events -->
+<article>
 <div id="meets-list">
-    <h1>meets/events</h1>
+    <h3>meets/events</h3>
     <ul>
     <div class="meet" value="0">
         <li><h3>September/October</h3></li>
@@ -188,9 +203,10 @@
     </div>   
     </ul>
 </div>
+</article>
 <!-- End of Meets and Events -->
 <!-- Start of Gallery -->
-
+<article>
     <div id="gallery">
         <ul class="flex-container wrap">
             <li class="flex-item">
@@ -203,7 +219,7 @@
             <img src="img/LaserMtEden-2.jpg" alt="LaserMtEdenSwim">
             </li>
             <li class="flex-item">
-            <img src="img/LaserMtEden-7.jpg" alt="LaserMtEdenSwim">
+            <img src="img/LaserMtEden-3.jpg" alt="LaserMtEdenSwim">
             </li>
             <li class="flex-item">
             <img src="img/LaserMtEden-4.jpg" alt="LaserMtEdenSwim">
@@ -213,10 +229,11 @@
             </li>
         </ul>
     </div>
-
+</article>
 <!-- End of Gallery -->
 
 <!-- Start of Squads -->
+<article>
 <div class="squads">
         <div class="senior-squad">
             <img src="img/Mobile_r2_c2.png" alt="senior-squad-icon">
@@ -234,9 +251,11 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...<a href="">Read more.</a></p>
         </div>
 </div>
+</article>
 <!-- End of Squads -->
 
 <!-- Start of Club Information -->
+<article>
 <div class="club-info">
     <ul>
         <li><h3>club information</h3></li>
@@ -247,12 +266,56 @@
         <li><a href=""><img src="img/SwimmingNZ.png" alt="Swimming NZ"></a></li>
         <li><a href=""><img src="img/link.png" alt="Swimming NZ"><p>Fina points Calculator</p></a></li>
     </ul>
-
-
 </div>
-
+</article>
 <!-- End of Club information -->
-
+<!-- Enquiry Form -->
+<article>
+<div class="form">
+    <h3>send an enquiry online</h3>
+    <form class="enquiry-form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="mobile">Mobile</label>
+        <input type="text" name="mobile" id="mobile">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="comment"></label>
+        <textarea></textarea>
+        <input type="submit" value="send" class="button">
+    </form>
+</div>
+</article>
+<!-- End of Enquiry Form -->
+<!-- Start Records -->
+<article>
+<div id="records-list">
+    <h3>records</h3>
+    <ul>
+    <div class="meet" value="0">
+        <li>
+            <a href="">
+                <div class="date-background">
+                    <h3>2012</h3>
+                </div>
+                <div class="meet-descriptions">
+                  <ul>
+                    <li><h3>Swimmer's Name</h3></li>
+                    <li><p>Event: 100IM</p></li>
+                    <li><p>Time: 1.00.00</p></li>
+                    <li><p>Date: 01/11/11</p></li>
+                    <li><p>Where: Wellington</p></li>
+                  </ul>
+                  <p class="right-arrow"><i class="fa fa-angle-right"></i></p>
+                </div>
+            </a>
+        </li>
+    </div>   
+    </ul>
+</div>
+</article>
+<!-- End of Meets and Events -->
+<footer><p><i class="fa fa-copyright"></i></p><p>2014 Laser Mt Eden Swimming Club</p></footer>
 
 
 
