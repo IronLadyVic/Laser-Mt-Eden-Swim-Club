@@ -214,7 +214,7 @@
         <!-- End of Notification Meet 1 -->   
         <!-- Notification Meet 2 -->
 
-        <div class="meet"  value="1">
+        <div class="meet"  value="1" style="margin-top: 1.2em;">
            
             <li><h3 class="meet-divider"></h3></li>
             <li>
@@ -237,7 +237,7 @@
     </div>
     <!-- End of Notification Meet 2 -->   
     <!-- Notification Meet 3 --> 
-    <div class="meet"  value="2" style="margin-top: -1em;">
+    <div class="meet"  value="2" style="margin-top: -1.2em;">
             <li><h3 class="meet-divider"></h3></li>
             <li>
             <a href="">
@@ -289,16 +289,13 @@
             </li>
             <li class="flex-item">
             <img src="img/LaserMtEden-2.png" alt="LaserMtEdenSwim">
-            </li>
-            <li class="flex-item">
-            <img src="img/LaserMtEden-4.png" alt="LaserMtEdenSwim">
-            </li>
-            <li class="flex-item">
-            <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
-            </li>
+            
         </ul>
     </div>
 </article>
+<svg id="silver-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
+ <polygon fill="#F1F1F1" points="10,14 0,0 20,0 "></polygon>
+</svg>
 <!-- End of Gallery -->
 
 <!-- Start of Squads -->
@@ -307,20 +304,23 @@
         <div class="senior-squad">
             <img src="img/Mobile_r2_c2.png" alt="senior-squad-icon">
             <h3>Senior/Competition Squad</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...<a href="">Read more.</a></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum<a href="">...Read more.</a></p>
         </div>
         <div class="junior-squad">
             <img src="img/Mobile_r3_c3.png" alt="junior-squad-icon">
             <h3>Junior/Competition Squad</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...<a href="">Read more.</a></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum<a href="">...Read more.</a></p>
         </div>
         <div class="mini-squad">
             <img src="img/Mobile_r4_c4.png" alt="mini-squad-icon">
             <h3>Mini Squad</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...<a href="">Read more.</a></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum<a href="">...Read more.</a></p>
         </div>
 </div>
 </article>
+<svg id="grey-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
+ <polygon fill="#F1F1F1" points="10,14 0,0 20,0 "></polygon>
+</svg>
 <!-- End of Squads -->
 
 <!-- Start of Club Information -->
@@ -328,12 +328,12 @@
 <div class="club-info">
     <ul>
         <li><h3>club information</h3></li>
-        <li><a href=""><img src="img/phone.png" alt="phone"><p>Give us a call 09-355-2367</p></a></li>
-        <li><a href=""><img src="img/email.png" alt="email"><p>Send us an email</p></a></li>
+        <li class=""><a href=""><img src="img/phone.png" alt="phone" class="phone-image"><p class="phone">Give us a call</br>09-355-2367</p></a></li>
+        <li class=""><a href=""><img class="email-image" src="img/email.png" alt="email"><p class="email">Send us</br>an email</p></a></li>
         <li><h3>usefull links</h3></li>
-        <li><a href=""><img src="img/DeanGreenWoodSwimSchool.png" alt="Dean Greenwood Swim School"></a></li>
-        <li><a href=""><img src="img/SwimmingNZ.png" alt="Swimming NZ"></a></li>
-        <li><a href=""><img src="img/link.png" alt="Swimming NZ"><p>Fina points Calculator</p></a></li>
+        <li class="dgss"><a href=""><img src="img/DeanGreenWoodSwimSchool_small.png" alt="Dean Greenwood Swim School"></a></li>
+        <li class="swimnz"><a href=""><img src="img/SwimmingNZ.png" alt="Swimming NZ"></a></li>
+        <li class="link"><a href=""><img src="img/link.png" alt="Swimming NZ"><p class="fina">Fina points Calculator</p></a></li>
     </ul>
 </div>
 </article>
@@ -343,14 +343,14 @@
 <div class="form">
     <h3>send an enquiry online</h3>
     <form class="enquiry-form">
-        <label for="name">Name</label>
+        <label for="name"><p>Name</p></label>
         <input type="text" name="name" id="name">
-        <label for="mobile">Mobile</label>
+        <label for="mobile"><p>Mobile</p></label>
         <input type="text" name="mobile" id="mobile">
-        <label for="email">Email</label>
+        <label for="email"><p>Email</p></label>
         <input type="email" name="email" id="email">
-        <label for="comment"></label>
-        <textarea></textarea>
+        <label for="comment"><p>Comment</p></label>
+        <textarea id="textarea"></textarea>
         <input type="submit" value="send" class="button">
     </form>
 </div>
@@ -358,33 +358,134 @@
 <!-- End of Enquiry Form -->
 <!-- Start Records -->
 <article>
-<div id="records-list">
-    <h3>records</h3>
-    <ul>
-    <div class="meet" value="0">
-        <li>
-            <a href="">
-                <div class="date-background">
-                    <h3>2012</h3>
-                </div>
-                <div class="meet-descriptions">
-                  <ul>
-                    <li><h3>Swimmer's Name</h3></li>
-                    <li><p>Event: 100IM</p></li>
-                    <li><p>Time: 1.00.00</p></li>
-                    <li><p>Date: 01/11/11</p></li>
-                    <li><p>Where: Wellington</p></li>
-                  </ul>
-                  <p class="right-arrow"><i class="fa fa-angle-right"></i></p>
-                </div>
+    <div id="records-list">
+        <h3 class="flex-container wrap" id="records">records</h3>
+        <ul>
+           <!-- Record/year -->
+
+           <div class="meet"  value="0">
+
+           
+            <li>
+                <a href=""> 
+                    <div class="record-background">
+                        <h3>2011</h3>               
+                    </div>
+                    <div class="meet-descriptions">
+                        <ul>
+                            <li class="title"><h3>Swimmer/Name</h3></li>
+                            <li class="entry"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
+                            <li class="entry"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
+                            <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                            <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
+                            <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+                </li>
             </a>
-        </li>
-    </div>   
+        </div>
+        <!-- End of Record/year -->   
+        <!-- Record/year -->
+
+        <div class="meet"  value="1" style="margin-top: -2.5em;">
+
+            <li><h3 class="meet-divider"></h3></li>
+            <li>
+                <a href=""> 
+                    <div class="record-background">
+                        <h3>2010</h3>               
+                    </div>
+                    <div class="meet-descriptions">
+                        <ul>
+                            <li class="title"><h3>Swimmer/Name</h3></li>
+                            <li class="entry"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
+                            <li class="entry"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
+                            <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                            <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
+                            <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+        </div>
+        <!-- End of Record/year -->   
+        <!-- Record/year -->
+
+        <div class="meet"  value="2" style="margin-top: -1.5em;">
+
+            <li><h3 class="meet-divider"></h3></li>
+            <li>
+                <a href=""> 
+                    <div class="record-background">
+                        <h3>2009</h3>               
+                    </div>
+                    <div class="meet-descriptions">
+                        <ul>
+                            <li class="title"><h3>Swimmer/Name</h3></li>
+                            <li class="entry"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
+                            <li class="entry"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
+                            <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                            <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
+                            <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+        </div>
+        <!-- End of Record/year -->   
+                <!-- Record/year -->
+
+        <div class="meet"  value="2" style="margin-top: -1.5em;">
+
+            <li><h3 class="meet-divider"></h3></li>
+            <li>
+                <a href=""> 
+                    <div class="record-background">
+                        <h3>2009</h3>               
+                    </div>
+                    <div class="meet-descriptions">
+                        <ul>
+                            <li class="title"><h3>Swimmer/Name</h3></li>
+                            <li class="entry"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
+                            <li class="entry"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
+                            <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                            <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
+                            <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+        </div>
+        <!-- End of Record/year -->  
+                <!-- Record/year -->
+
+        <div class="meet"  value="2" style="margin-top: -1.5em;">
+
+            <li><h3 class="meet-divider"></h3></li>
+            <li>
+                <a href=""> 
+                    <div class="record-background">
+                        <h3>2009</h3>               
+                    </div>
+                    <div class="meet-descriptions">
+                        <ul>
+                            <li class="title"><h3>Swimmer/Name</h3></li>
+                            <li class="entry"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
+                            <li class="entry"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
+                            <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                            <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
+                            <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+        </div>
+        <!-- End of Record/year -->  
     </ul>
 </div>
 </article>
 <!-- End of Meets and Events -->
-<footer><p><i class="fa fa-copyright"></i></p><p>2014 Laser Mt Eden Swimming Club</p></footer>
+<footer><p><i class="fa fa-copyright"></i>2014 Laser Mt Eden Swimming Club</p></footer>
 
 
 

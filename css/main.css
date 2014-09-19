@@ -21,7 +21,7 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
-    font-family: "proxima-nova", sans-serif;
+    font-family: sans-serif;
 }
 
 body{
@@ -39,7 +39,6 @@ li{
 h3{
   font-weight: 200;
 font-size: 1em;
-
 }
 
 /*
@@ -297,7 +296,7 @@ max-height: 100%;
   font-weight: 100;
   margin-left: -1.8em;
   font-size: 0.8em;
-  margin-top: -0.2em;
+  margin-top: -0.8em;
 }
 /* ==========================================================================
    svg polygons
@@ -306,7 +305,7 @@ max-height: 100%;
   position: absolute;
   z-index: 1000;
   margin-top: 24.2em;
-  margin-left: 12.5em;
+  margin-left: 9.8em;
   /*margin-left: 9.5em;*/
   color: #0872B8;
 
@@ -316,7 +315,14 @@ max-height: 100%;
   position: absolute;
   z-index: 1000;
   margin-top: -0.96em;
-  margin-left: 12.5em;
+  margin-left: 10.5em;
+}
+#grey-polygon{
+    color: #F1F1F1;
+  position: absolute;
+  z-index: 1000;
+  margin-top: -0.5em;
+  margin-left: 10em;
 }
 /* ==========================================================================
    Meets
@@ -356,6 +362,7 @@ max-height: 100%;
   position: relative;
   margin-left: -1.5em;
   height: 4.2em;
+
   
 }
 
@@ -393,6 +400,7 @@ max-height: 100%;
   z-index: 305;
 }
 
+
 /*-----------------------Meet/Events Decriptions-----------------*/
 .meet-descriptions{
   width: 97%;
@@ -427,7 +435,7 @@ max-height: 100%;
   float: left;
 }*/
 .cost{
-  margin-top: -2em;
+  margin-top: -3.5em;
   float: left;
 }
 
@@ -452,6 +460,7 @@ max-height: 100%;
  
 }
 
+
 /*-----------------------Gallery-----------------*/
 
 #gallery{
@@ -465,7 +474,7 @@ max-height: 100%;
 /*-----------------------Squads------------------------*/
 .squads{
   background-color: #F1F1F1;
-  margin-top: -1em;
+  margin-top: -0.5em;
   display: -webkit-flex;
    display: flex;
    -webkit-align-items: center;
@@ -494,21 +503,24 @@ max-height: 100%;
 
 .senior-squad{
   background-color: #FFFFFF;
-  width: 22em;
+  width: 23em;
   height: 12.5em;
   margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
 }
 .junior-squad{
   background-color: #FFFFFF;
-  width: 22em;
+  width: 23em;
   height: 12em;
   margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
 }
 .mini-squad{
   background-color: #FFFFFF;
-  width: 22em;
+  width: 23em;
   height: 12em;
   margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
 }
 .senior-squad img{
   margin-left: 35%;
@@ -523,7 +535,164 @@ max-height: 100%;
   margin-top: 0.5em;
 }
 
+/*-----------------------Information and links-----------------*/
 
+article .club-info{
+  background-color: #006BB6;
+  height: 18em;
+
+}
+.club-info{
+    margin-top: -1.5em;
+}
+
+.club-info h3{
+  color: #99FFFF;
+  margin-left: 28%;
+  padding-top: 1em;
+
+}
+.club-info p{
+  color: white;
+  width: 8em;
+  font-size: 0.9em;
+  font-weight: 100;
+  text-align: center;
+}
+.phone{
+  margin-left: 2em;
+  margin-top: -2.5em;
+}
+.phone-image{
+    margin-left: -1em;
+  
+}
+
+.email{
+    margin-left: 12em;
+  margin-top: -5.2em;
+}
+.email-image{
+      margin-left: 9em;
+  margin-top: -6.3em;
+}
+.dgss{
+  margin-left: -2.5em;
+  margin-top: -0.5em;
+}
+.swimnz{
+  margin-left: 7em;
+  margin-top: -3em;
+}
+.link{
+    margin-left: 14.5em;
+  margin-top: -3.5em;
+}
+.fina{
+  margin-left: -4em;
+  margin-top: -0.2em;
+}
+/*-----------------------enquiry form-----------------*/
+.form h3{
+  margin-top: 1em;
+  margin-left: 25%;
+}
+.form{
+  background-color: #FFFFFF;
+  height: 20em;
+
+ 
+}
+.enquiry-form p{
+  background-color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.1em;
+  margin-left: 2em;
+  margin-top: -0.5em;
+  position: absolute;
+  }
+
+#name, #mobile, #email{
+  height: 2em;
+  width: 18.5em;
+  margin-bottom: 1em;
+  margin-left: 0.6em;
+  text-indent: 0.5em;
+  padding-top: 0.5em;
+}
+#textarea{
+  height: 3em;
+  width: 18.5em;
+  margin-bottom: 1em;
+  margin-left: 0.6em;
+  text-indent: 0.5em;
+  padding-top: 0.9em;
+}
+.button{
+  background-color: #006BB6;
+  border: none;
+  color: white;
+  height: 3em;
+  width: 18.8em;
+  margin-left: 0.6em;
+}
+
+
+
+/*-----------------------records-----------------*/
+article #records-list{
+  margin-top: 3em;
+  background-color:#F1F1F1;
+}
+
+.record-background{
+  width: 3.4em;
+  height: 3.4em;
+  position: absolute;
+  background-color: #333333;
+  color: white;
+  margin-top: -0.8em;
+  z-index: 300;
+  margin-left: -0.1em;
+}
+
+.record-background h3{
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-top: 0.3em;
+  margin-left: 0em;
+  z-index: 305;
+}
+.record-where{
+  float: left;
+  font-size: 0.7em;
+  margin-top: -4.5em;
+  margin-left: 11em;
+}
+.record-date{
+ margin-top: -3.3em;
+ margin-left: 11em;
+  float: left;
+font-size: 0.7em;
+}
+#records{
+  padding-top: 1em;
+  margin-bottom: 2em;
+}
+/*-----------------------footer-----------------*/
+footer{
+  background-color: #333333;
+  color:#99FFFF;
+  font-size: 0.8em;
+  font-weight: 100;
+}
+footer p{
+  margin-left: 0.8em;
+font-family: sans-serif;
+font-weight: 100;
+}
 
 /*-----------------------show dropdown list-----------------*/
 
@@ -581,6 +750,9 @@ margin-bottom: 0.5em;
 .flex-container {
    display: -webkit-flex;
    display: flex;
+   display: -ms -webkit-flex;
+   display: -ms flex;
+  display: -ms-flexbox;
    -ms-flex-wrap: wrap;
    -webkit-align-items: center;
    align-items: center;
@@ -598,6 +770,7 @@ margin-bottom: 0.5em;
    /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
    -webkit-align-content: flex-end;
    align-content: flex-end;
+
   
 }
 /*.flex-container figure img{
@@ -669,7 +842,12 @@ li.flex-item{
 
 .flex-brand{
   height: 30%;
+  margin-left: -0.5em;
   margin-top: 3em;
+  display: -webkit-flex;
+   display: flex;
+   display: -ms -webkit-flex;
+   display: -ms flex;
    display: -webkit-flex;
    display: flex;
    -webkit-align-items: center;
@@ -680,6 +858,7 @@ li.flex-item{
    flex-flow: row wrap;
    -webkit-align-content: flex-end;
    align-content: flex-end;
+   display: -ms-flexbox;  
 
 }
 /* ==========================================================================
