@@ -34,7 +34,7 @@
               
           </div>
           <div class="search-container">
-             <form id="searchForm" action="search/SiteSearch" method="get" enctype="">
+             <form id="searchForm" action="search/SiteSearch" method="get">
                  <i class="fa fa-search"></i>
                  <input type="search" id="txtsearch" class="search-bar" placeholder="search" size="50" maxlength="255" value="">
              </form> 
@@ -44,23 +44,23 @@
      <header>      
       <div id="main-header">
         <ul id="main-nav">
-          <li><a href="/news"><span>latest News</span><i class="fa fa-newspaper-o"></i></a></li>
+          <li><i class="fa fa-newspaper-o"></i><a href="/news"><span>latest News</span></a></li>
           <li><a href="/meets"><span>upcoming meets</span></a></li>
           <li><a href="/gallery"><span>gallery</span></a></li>
           <li> 
           <span class="locate-squad-touch">locate a squad</span> 
           <div id="select">
-          <select type="text" id="select-squad">
+          <select id="select-squad">
               <option value="0">choose a location</option>
-              <option value="1"><a href="">Mt Eden</a></option>
-              <option value="2"><a href="">New Windsor</a></option>
-              <option value="3"><a href="">Kelston</a></option>
-              <option value="4"><a href="">Glen Eden</a></option>
-              <option value="5"><a href="">Massey</a></option>
+              <option value="1"><a data-url href="#">Mt Eden</a></option>
+              <option value="2"><a data-url href="#">New Windsor</a></option>
+              <option value="3"><a data-url href="#">Kelston</a></option>
+              <option value="4"><a data-url href="#">Glen Eden</a></option>
+              <option value="5"><a data-url href="#">Massey</a></option>
           </select>
           <p>or</p>
-          <form action="search/SiteSearch" method="get" enctype="" id="select-squad">
-                 <i class="fa fa-search"></i><input type="search" placeholder="search"autocomplete="off">
+          <form action="search/SiteSearch" method="get" id="search-squad">
+                 <i class="fa fa-search"></i><input type="search" placeholder="search" autocomplete="off">
              </form>
          </div>
           </li>
@@ -77,8 +77,8 @@
             <rect fill="#404040" width="20" height="2"></rect>
             <rect y="6" fill="#404040" width="20" height="2"></rect>
             <rect y="12" fill="#404040" width="20" height="2"></rect>
-            <p class="menu-text">Menu</p>
-        </svg>
+            </svg>
+        <p class="menu-text">Menu</p>
     </a>
 </div>
 </div>
@@ -99,7 +99,7 @@
 
 <!-- Slider -->  
 <figure class="item">
-    <a href="Topics/post{id}">
+    <a href="#">
     <img class="flex-container wrap" src="img/LaserMtEden-1.png" alt="slider1"/>
     
     <!--Latest News -->
@@ -113,7 +113,8 @@
                     <p class="date">01/09/14</p>
                 </li>
                 <li>
-                    <p class="news-contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem....read more.</p>
+                    <p id="news-contents" maxlength="120" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
+                    <p class="read-more">....read more.</p>
                 </li>
             </ul>
         </div>
@@ -136,7 +137,8 @@
                     <p class="date">01/10/14</p>
                 </li>
                 <li>
-                    <p class="news-contents">Lorem Ipsum is simply printing and typesetting industry. Lorem....read more.</p>
+                    <p id="news-contents" maxlength="120" >It of the printing and typesetting industry.Lorem Ipsum is simply printing Loremiadshglhsdalghklasdghlkhsdg</p>
+                    <p class="read-more">....read more.</p>
                 </li>
             </ul>
         </div>
@@ -159,7 +161,8 @@
                     <p class="date">01/11/14</p>
                 </li>
                 <li>
-                    <p class="news-contents">It of the printing and typesetting industry.Lorem Ipsum is simply printing Lorem....read more.</p>
+                    <p id="news-contents" maxlength="120" >It of the printing and typesetting industry.Lorem Ipsum is simply printing Lorem</p>
+                    <p class="read-more">....read more.</p>
                 </li>
             </ul>
         </div>
@@ -187,14 +190,11 @@
 <!-- Start of Meets and Events -->
 <article>
     <div id="meets-list">
-        <h3 class="flex-container wrap">meets/events</h3>
-        <ul>
+        <h3 class="flex-container wrap">meets/events</h3>   
          <!-- Notification Meet 1 -->
 
-         <div class="meet"  value="0">
-            
-                <li><h3 class="meet-date">September/October</h3></li>
-                <li>
+         <div class="meet">           
+                <h3 class="meet-date">September/October</h3>              
                 <a href=""> 
                     <div class="date-background">
                         <h3>30</h3>
@@ -208,17 +208,16 @@
                             <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
                             <li class="arrow"><i class="fa fa-angle-right"></i></li>
                         </ul>
-                    </div>
-                </li>
+                    </div>               
             </a>
         </div>
         <!-- End of Notification Meet 1 -->   
         <!-- Notification Meet 2 -->
 
-        <div class="meet"  value="1" style="margin-top: 1.2em;">
+        <div class="meet" style="margin-top: 1.2em;">
            
-            <li><h3 class="meet-divider"></h3></li>
-            <li>
+            <div class="meet-divider"></div>
+            
             <a href=""> 
                 <div class="date-background">
                     <h3>20</h3>
@@ -233,14 +232,13 @@
                         <li class="arrow"><i class="fa fa-angle-right"></i></li>
                     </ul>
                 </div>
-            </a>
-        </li>
+            </a>       
     </div>
     <!-- End of Notification Meet 2 -->   
     <!-- Notification Meet 3 --> 
-    <div class="meet"  value="2" style="margin-top: -1.2em;">
-            <li><h3 class="meet-divider"></h3></li>
-            <li>
+    <div class="meet" style="margin-top: -1.2em;">
+            <div class="meet-divider"></div>
+            
             <a href="">
                 <div class="date-background">
                     <h3>22</h3>
@@ -254,14 +252,12 @@
                         <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
                         <li class="arrow"><i class="fa fa-angle-right"></i></li>
                     </ul>
-                </div>
-            </li>
+                </div>      
         </a>
     </div>   
-</ul>
 </div>
 <!-- End of Notification Meet 3 -->   
-</ul>
+
 </div>
 </article>
 <svg id="silver-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
@@ -495,6 +491,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/latest-news-textlimit.js"></script>
         <script src="js/search.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
