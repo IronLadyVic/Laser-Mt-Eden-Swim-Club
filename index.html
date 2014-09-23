@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Laser Mt Eden Swim Club</title>
@@ -11,12 +12,12 @@
         <meta name="keywords" content="Laser Mt Eden Swim Club, Latest News, meets, events, gallery, Senior Squad, Junior Squad, Mini Squad, Club information, Dean Greenwood Swim School, Swimming New Zealand, Send an Enquiry, Laser Swim Records">
         <meta name="author" content="Laser Mt Eden Swim Club">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/main-form.css">
+        <link rel="stylesheet" href="css/form-normalize.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -44,7 +45,7 @@
      <header>      
       <div id="main-header">
         <ul id="main-nav">
-          <li><i class="fa fa-newspaper-o"></i><a href="/news"><span>latest News</span></a></li>
+          <li><a href="/news"><span>latest News</span><span class="font-awesome"><i class="fa fa-newspaper-o"></i></span></a></li>
           <li><a href="/meets"><span>upcoming meets</span></a></li>
           <li><a href="/gallery"><span>gallery</span></a></li>
           <li> 
@@ -123,7 +124,7 @@
   </figure>
  <!-- Slider -->  
 <figure class="item">
-    <a href="Topics/post{id}">
+    <a href="#">
     <img class="flex-container wrap" src="img/LaserMtEden-2.png" alt="slider2"/>
     
     <!--Latest News -->
@@ -147,7 +148,7 @@
   </figure>
  <!-- Slider -->  
 <figure class="item">
-    <a href="Topics/post{id}">
+    <a href="#">
     <img class="flex-container wrap" src="img/LaserMtEden-3.png" alt="slider3" />
     
     <!--Latest News -->
@@ -214,7 +215,7 @@
         <!-- End of Notification Meet 1 -->   
         <!-- Notification Meet 2 -->
 
-        <div class="meet" style="margin-top: 1.2em;">
+        <div class="meet" style="margin-top: 1.2em; padding-top: 0.3em;">
            
             <div class="meet-divider"></div>
             
@@ -286,11 +287,15 @@
             </li>
             <li class="flex-item">
             <img src="img/LaserMtEden-2.png" alt="LaserMtEdenSwim">
-            
+            <li class="flex-item">
+            <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
+            </li>
+            <li class="flex-item">
+            <img src="img/LaserMtEden-2.png" alt="LaserMtEdenSwim">
         </ul>
     </div>
 </article>
-<svg id="silver-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
+<svg id="gallery-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
  <polygon fill="#F1F1F1" points="10,14 0,0 20,0 "></polygon>
 </svg>
 <!-- End of Gallery -->
@@ -301,17 +306,17 @@
         <div class="senior-squad">
             <img src="img/Mobile_r2_c2.png" alt="senior-squad-icon">
             <h3>Senior/Competition Squad</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum<a href="">...Read more.</a></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">...Read more.</a></p>
         </div>
         <div class="junior-squad">
             <img src="img/Mobile_r3_c3.png" alt="junior-squad-icon">
             <h3>Junior/Competition Squad</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum<a href="">...Read more.</a></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">...Read more.</a></p>
         </div>
         <div class="mini-squad">
             <img src="img/Mobile_r4_c4.png" alt="mini-squad-icon">
             <h3>Mini Squad</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum<a href="">...Read more.</a></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">...Read more.</a></p>
         </div>
 </div>
 </article>
@@ -323,35 +328,64 @@
 <!-- Start of Club Information -->
 <article>
 <div class="club-info">
-    <ul>
-        <li><h3>club information</h3></li>
-        <li class=""><a href=""><img src="img/phone.png" alt="phone" class="phone-image"><p class="phone">Give us a call</br>09-355-2367</p></a></li>
-        <li class=""><a href=""><img class="email-image" src="img/email.png" alt="email"><p class="email">Send us</br>an email</p></a></li>
-        <li><h3>usefull links</h3></li>
-        <li class="dgss"><a href=""><img src="img/DeanGreenWoodSwimSchool_small.png" alt="Dean Greenwood Swim School"></a></li>
-        <li class="swimnz"><a href=""><img src="img/SwimmingNZ.png" alt="Swimming NZ"></a></li>
-        <li class="link"><a href=""><img src="img/link.png" alt="Swimming NZ"><p class="fina">Fina points Calculator</p></a></li>
-    </ul>
+<div id="background-image" class="homepage-banner">
+<!-- Controls -->
+<div class="gallery items-3">
+  <div id="item-1" class="control-operator"></div>
+  <div id="item-2" class="control-operator"></div>
+  <div id="item-3" class="control-operator"></div>
+  <div class="gallery autoplay items-3">
+
+<figure class="item">
+    <a href="#">
+    
+    </a>
+  </figure>
+ 
+  
+  <div class="controls">
+    <a href="" class="control-button">•</a>
+    <a href="" class="control-button">•</a>
+    <a href="" class="control-button">•</a>
+   </div> 
+  </div>
+</div>
 </div>
 </article>
 <!-- End of Club information -->
 <!-- Enquiry Form -->
 <article>
-<div class="form">
-    <h3>send an enquiry online</h3>
-    <form class="enquiry-form">
-        <label for="name"><p>Name</p></label>
-        <input type="text" name="name" id="name">
-        <label for="mobile"><p>Mobile</p></label>
-        <input type="text" name="mobile" id="mobile">
-        <label for="email"><p>Email</p></label>
-        <input type="email" name="email" id="email">
-        <label for="comment"><p>Comment</p></label>
-        <textarea id="textarea"></textarea>
-        <input type="submit" value="send" class="button">
-    </form>
-</div>
+    <div class="form">
+        <form class="cmxform"  id="enquiry-form" method="get" action="">
+  <fieldset style="border: none;">
+            <h3>send us an enquiry</h3>
+            <label for="name">Name</label>
+             <p><span><i class="fa fa-user"></i></span>
+                <label for="name"></label>
+                <input type="text" name="name" minlength="2" required>
+                </p>
+            <label for="phone">Phone Number</label>
+             <p><span><i class="fa fa-phone"></i></i></span>
+                <label for="phone"></label>
+                <input type="text" name="phone" minlength="2" required>
+            </p>
+            <label for="email">Email Address</label>
+            <p>
+            <span><i class="fa fa-lock"></i></span>
+            <label for="email"></label>
+            <input type="email" name="email" minlength="2" required>
+            </p>
+            <p>
+            <label for="ccomment">Your comment (required)</label>
+             <textarea id="comment" name="comment" required></textarea>
+             </p>
+             <p>
+            <input class="submit" type="submit" value="send"/>
+            </p>
+  </fieldset>
+</form></div>
 </article>
+
 <!-- End of Enquiry Form -->
 <!-- Start Records -->
 <article>
@@ -489,10 +523,13 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/search.js"></script>
+        <script src="js/form-main.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/latest-news-textlimit.js"></script>
-        <script src="js/search.js"></script>
+        
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
