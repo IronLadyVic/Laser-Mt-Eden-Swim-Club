@@ -224,7 +224,7 @@ box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
 
 }*/
 
-.font-awesome {
+/*span .font-awesome {
     background-color: #363b41;
     border-radius: 3px 0px 0px 3px;
     color: white;
@@ -237,6 +237,15 @@ box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
     
 }
 
+
+*/
+
+span #i{
+  outline: 1px red solid;
+  width: 5em;
+  height: 5em;
+  background-color: grey;
+}
 
 /*-----------------------show dropdown list with search location and search bar-----------------*/
 
@@ -1167,8 +1176,46 @@ font-weight: 100;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 60em) {
+    
+
+.nav-handle{
+  display: none;
+
+}
+
+#main-nav{
+  width: 40em;
+
+}
+#main-nav li{
+  height: 3em;
+  width: 10em;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media print,
