@@ -398,7 +398,7 @@ span #i{
   margin-left: 12em;
 }
 #grey-polygon{
-    color: #F1F1F1;
+    color: white;
   position: absolute;
   z-index: 1000;
   margin-top: -0.6em;
@@ -627,7 +627,7 @@ span #i{
 
 article .club-info{
   background-color: #F1F1F1;
-  height: 18em;
+  height: 12em;
   font-family: sans-serif;
   font-weight: 100;
 
@@ -637,8 +637,8 @@ article .club-info{
 }
 
 .club-info h3{
-  color: #99FFFF;
-  margin-left: 28%;
+  color: #222;
+  text-align: center;
   padding-top: 1em;
 
 
@@ -743,7 +743,8 @@ input[type="submit"] {
     border-radius: 0.1em;
     -moz-border-radius: 0.1em;
     -webkit-border-radius: 0.1em;
-    background-color: rgba(0,107,182,0.75);
+    /*background-color: rgba(0,107,182,0.75);*/
+    background-color: #7EB847;
     color: #eee;
     font-weight: lighter;
    

@@ -1,0 +1,29 @@
+.banner { 
+	position: relative; 
+	overflow: auto; 
+}
+    .banner li { 
+    	list-style: none; 
+    }
+        .banner ul li:nth-child(1) { 
+        	display: block;
+        	float: left; 
+        	font-family: sans-serif;
+        	margin-top: -0.5em;
+        	margin-left: 1.5em;
+        	z-index: 1000;
+        	height: 6em;
+        	font-size: 1.2em;
+        	text-align: center;
+        }
+        .banner ul li:nth-child(2) { 
+        	display: block;
+        	float: right; 
+        	font-family: sans-serif;
+        	margin-top: -6em;
+        	
+        	z-index: 1000;
+        	height: 12em;
+        	font-size: 1.2em;
+        	text-align: center;
+        }

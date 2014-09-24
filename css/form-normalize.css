@@ -404,6 +404,9 @@ textarea {
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */
 }
+textarea{
+    margin-top: 1em;
+}
 
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in

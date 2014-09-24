@@ -30,3 +30,8 @@ $(function(){
 
 });
 
+//Club information banner/unslider
+
+$(function() {
+    $('.banner').unslider();
+});
