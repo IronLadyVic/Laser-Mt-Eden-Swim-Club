@@ -378,7 +378,7 @@ span #i{
   position: absolute;
   z-index: 1000;
   margin-top: 24.2em;
-  margin-left: 12em;
+  margin-left: 9em;
   /*margin-left: 9.5em;*/
   color: #0872B8;
 
@@ -388,21 +388,21 @@ span #i{
   position: absolute;
   z-index: 1000;
   margin-top: -1.7em;
-  margin-left: 12em;
+  margin-left: 9em;
 }
 #gallery-polygon{
   color: #F1F1F1;
   position: absolute;
   z-index: 1000;
   margin-top: -1em;
-  margin-left: 12em;
+  margin-left: 9em;
 }
 #grey-polygon{
     color: white;
   position: absolute;
   z-index: 1000;
   margin-top: -0.6em;
-  margin-left: 11.5em;
+  margin-left: 9em;
 }
 /* ==========================================================================
    Meets
@@ -508,17 +508,17 @@ span #i{
   margin-left: 1.8em;
 
 }
-
-/*use this for mobile!!!!!!!
+/*
+use this for mobile!!!!!!!*/
 .cost{
   margin-top: -3.3em;
   float: left;
-}*/
-.cost{
+}
+/*.cost{
   margin-top: -1.8em;
   float: left;
 }
-
+*/
 
 
 .where{
@@ -545,11 +545,11 @@ span #i{
 
 #gallery{
   position: relative;
-  margin-top: -2em;
+
 }
 #gallery img{
-  width: 107px;
-  height: 103px;
+  width: 100%;
+  height: 100%;
 }
 /*-----------------------Squads------------------------*/
 .squads{
