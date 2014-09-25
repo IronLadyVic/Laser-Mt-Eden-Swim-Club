@@ -14,11 +14,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/gallery.css">
         <link rel="stylesheet" href="css/main-form.css">
         <link rel="stylesheet" href="css/form-normalize.css">
         <link rel="stylesheet" href="css/club-info-banner.css">
+        <link rel="stylesheet" href="css/nav-drop-down.css">
+        <link rel="stylesheet" href="css/main.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -30,7 +31,7 @@
         <!-- Header -->
 
     <header class="header-inner">
-          <div class="flex-brand wrap" >
+          <div class="flex-brand wrap">
             <ul><li><a href="http://www.lasermtedenswimclub.co.nz" title="return to homepage">
                 <img class="flex-brand" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club"></a></li></ul>
               
@@ -44,11 +45,13 @@
     </header>  
 <!-- Drop down menu header -->
      <header>      
-      <div id="main-header">
+      <div id="main-header" class="widgets-colomn">
         <ul id="main-nav">
-          <li><a href="/news">
-          <span>latest News</span>
-          <span id="i"><i class="fa fa-newspaper-o"></i></span></a>
+          <li><div><a class="latest-news" data-url href="/news">
+          <span>latest news</span>
+          <i class="fa fa-newspaper-o"></i>
+          </a>
+          </div>
           </li>
           <li><a href="/meets"><span>upcoming meets</span></a></li>
           <li><a href="/gallery"><span>gallery</span></a></li>
@@ -501,10 +504,9 @@
         <script src="js/search.js"></script>
         <script src="js/form-main.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
         <script src="js/latest-news-textlimit.js"></script>
         <script src="js/unslider.js"></script>
-        
+        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
