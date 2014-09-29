@@ -668,8 +668,8 @@
   position: absolute;
   z-index: 10;
   bottom: 0;
-  width: 100%;
-
+  /*width: 100%;*/
+  
   text-align: center;
 }
 
@@ -684,4 +684,3 @@
   -o-transition: color .1s;
   transition: color .1s;
 }
-
