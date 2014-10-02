@@ -663,9 +663,11 @@
 .gallery .item {
   height: 100%;
   overflow: hidden;
-  height: 32em;
-
+/*  height: 32em;*/
+  /*padding-bottom: 10em;*/
 }
+
+
 
 .gallery .controls {
   position: absolute;
@@ -680,6 +682,7 @@
   display: inline-block;
   margin: 0 .02em;
   font-size: 3em;
+  font-weight: 100;
   text-align: center;
   text-decoration: none;
   display: none;

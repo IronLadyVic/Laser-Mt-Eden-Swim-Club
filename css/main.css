@@ -286,6 +286,9 @@ font-size: 0px;
     width: 100%;
     height: auto;
 }
+.item img:nth-child(2){
+    display: none;    
+}
 .item a p{
   color: white;
   font-size: 0.8em;
@@ -299,11 +302,13 @@ font-size: 0px;
   z-index: 1000;
   margin-top: -5.9em;
 
+
 }
 
 .content ul li{
   list-style-type: none;
   text-decoration: none;
+
 
 }
 .content h3{
@@ -523,11 +528,21 @@ use this for mobile!!!!!!!*/
   position: relative;
 
 }
-#gallery img{
-  width: 100%;
-  height: 100%;
-}
 
+#gallery .flex-item img{
+  width: 8.5em;
+  height: 8.5em;
+}
+#gallery li:nth-child(7){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+#gallery li:nth-child(8){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
 /*-----------------------Squads------------------------*/
 .squads{
   background-color: #F1F1F1;
@@ -1169,7 +1184,7 @@ h3{
 }
 header #main-header{
   width: 100%;
-  /*position: fixed;*/
+  position: fixed;
   top: auto;
   background-color: rgba(255, 255, 255, 0.8); 
   border: none;
@@ -1310,14 +1325,9 @@ font-size: 1.5em;
 
 }
 
-/*/---------------------------------------------------------------------/*/
 /* ==========================================================================
    Meets
    ========================================================================== */
-.flex-container li{
-  background-color: none;
-}
-
 
 
 #meets-list{
@@ -1329,16 +1339,7 @@ font-size: 1.5em;
 
 }
 
-#meets-list li{
-  width: 25em;
-  height: 5em;
-  margin: 0.2em;
-  
-}
-/*#meets-list h3:nth-child(1){
-  margin-top: -0.5em;
-  
-}*/
+
 #meets{
   font-size: 1.5em;
   margin-top: -0.5em;
@@ -1365,12 +1366,10 @@ font-size: 1.5em;
 
 .meet{
   position: relative;
-  margin-left: 1em;
-  /*outline: 1px red solid;*/
-  margin-left: 0em;
-  margin-top: 0em;
-  height: 6em;
-  padding: 0.2em;
+  height: 4em;
+  margin: 1em;
+  width: 25em;
+
 }
 
 .meet-descriptionst ul li{
@@ -1392,66 +1391,68 @@ font-size: 1.5em;
 .date-background h3 {
 position: relative;
 font-size: 3.5em;
-font-weight: 200;
 margin-top: 0.3em;
-margin-left: 0.15em;
+margin-left: 0.18em;
 z-index: 305;
 }
+
 .date-background p {
 position: relative;
-font-size: 1.2em;
+font-size: 1.3em;
 font-weight: 200;
-margin-left: 0.5em;
-padding-top: 1em;
+margin-left: 0.4em;
+padding-top: 1.2em;
 z-index: 305;
 }
 
 /*-----------------------Meet/Events Decriptions-----------------*/
 .title h3{
-  margin-left: 2em!important;
-  margin-top: 0em!important;
+/*  margin-left: 2.4em!important;
+  margin-top: 1em!important;
   font-size: 1.1em!important;
   font-weight: 100;
-  color: #0872B8;
-  padding: none!important;
-
-
+  color: #0872B8;*/
 }
 .meet-descriptions{
-  width: 100%;
+  width: 98%;
 height: 5em;
-margin-top: -0.5em;
+margin-top: -2em;
 position: absolute;
 background-color: #FFFFFF;
-margin-left: -0.2em;
+margin-left: 1em;
 color: #333333;
 }
 
 .meet-descriptions span{
   color:#0872B8; 
 }
-#meets-list li.entry {
-  margin-top: -2em;
 
+li.title h3{
+  margin-top: 1em;
+}
+li.entry {
+/*  margin-top: -2em;*/
+  font-size: 0.9em;
+/*  margin-left: 3em;*/
 }
 
-.cost{
-
+li .cost{
+/*  margin-left: 1em;*/
+  font-size: 0.9em;
 }
 
-.where{
+li .where{
 
+  font-size: 0.9em;
 }
 
 
 .arrow{
-  float: right;
-  font-size: 2em;
-  margin-left: 6.5em;
-  margin-top: -1.9em;
+  margin-left: 1em;
+
 }
 
-/*/---------------------------------------------------------------------/*/
+/*/---------------------------------squads------------------------------------/*/
 .squads{
   margin-top: -1em;
   padding-top: 0.5em;
@@ -1482,17 +1483,28 @@ color: #333333;
 .mini-squad p{
   margin-top: -1em;
 }
-/*/---------------------------------------------------------------------/*/
+/*/----------------------------------squads-----------------------------------/*/
 
 #gallery{
   margin-top: -1em;
 }
-#gallery .flex-item{
-  width: 12.6em;
-  height: 12.6em;
+
+#gallery .flex-item img{
+  width: 13.5em;
+  height: 13.5em;
+}
+#gallery li:nth-child(7){
+  width: 13.5em;
+  height: 13.5em;
+  display: block;
+}
+#gallery li:nth-child(8){
+width: 13.5em;
+  height: 13.5em;
+  display: block;
 }
 
-/*/---------------------------------------------------------------------/*/
+/*/--------------------------------------search container-------------------------------/*/
 .search-container {
 float: right;
 margin-right: 10em;
@@ -1519,12 +1531,27 @@ color: #0672B8;
   padding: 0;
   list-style-type: none;
 }
+/*/------------------------------------sliders---------------------------------/*/
 
-.item img{
-    display: block;
-    width: auto;
-    height: auto;
+.item img:nth-child(1){
+    display: none;
+    width: 0;
+    height: 0; 
 }
+.item img:nth-child(2){
+    display: block;
+    width: 100%;
+    height: auto; 
+}
+.item.content:nth-child(1){
+  margin-top: 5em;
+}
+
+
+
+/*/--------------------------------------end of sliders-------------------------------/*/
+
+/*/--------------------------------------news content-------------------------------/*/
 .item a p{
   color: white;
   font-size: 0.9em;
@@ -1538,7 +1565,7 @@ color: #0672B8;
   background-color: rgba(0,107,182,0.75);
   position: absolute;
   z-index: 1000;
-  margin-top: -6.4em;
+  margin-top: -9em;
 
 
 }
@@ -1587,7 +1614,7 @@ svg #blue-polygon{
   color: #0872B8;
  /* margin-top: 10em;*/
 }
-
+/*/--------------------------------------news content-------------------------------/*/
 form ul{
   width: 50em;
 }
@@ -1605,7 +1632,15 @@ form .flex-item{
 
 }
 
+@media only screen and (min-width: 80em) {
 
+  #gallery li:nth-child(9){
+width:0;
+  height: 0;
+  display: none;
+}
+
+}
 
 
 
