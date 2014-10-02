@@ -30,28 +30,30 @@ $(function(){
 
 });
 
-//Club information banner/unslider
+//Drop down menu - for "more" @media only screen and (min-width: 60em)
+$(function(){
 
-$(function() {
-    $('.banner').unslider();
+	$("#more").on("click",function(){
+
+		$("#dropdown").toggleClass("open");
+		$(".athletes-content").toggleClass("show");
+
+	});
+
+
 });
 
-$(document).ready(function() {
- 
-  $("#owl-demo").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
-  });
- 
-});
+
+
+
+// $(function(){
+
+// 	$("#more").on("click",function(){
+
+// 		$("#athletes-content").toggleClass("show");
+
+// 	});
+
+
+// });
+

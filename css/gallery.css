@@ -1,6 +1,7 @@
 .gallery .control-operator:target ~ .controls .control-button {
 /*  color: #ccc;
   color: rgba(255, 255, 255, 0.4);*/
+  
 }
 
 .gallery .control-button:first-of-type,
@@ -30,6 +31,8 @@
   -webkit-transition: opacity .5s;
   -o-transition: opacity .5s;
   transition: opacity .5s;
+  font-family: sans-serif;
+  font-weight: 100;
 }
 
 
@@ -658,10 +661,10 @@
 }
 
 .gallery .item {
-  height: 420px;
+  height: 100%;
   overflow: hidden;
-  
-  /*background: ;*/
+  height: 32em;
+
 }
 
 .gallery .controls {

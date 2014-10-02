@@ -17,7 +17,7 @@
         <!-- latest news slider -->
         <link rel="stylesheet" href="css/gallery.css">
         <!-- Form CSS -->
-        <link rel="stylesheet" href="css/main-form.css">
+        <link rel="stylesheet" href="css/form-main.css">
         <link rel="stylesheet" href="css/form-normalize.css">
         <!-- Club information banner -->
         <link rel="stylesheet" href="css/club-info-banner.css">
@@ -54,7 +54,6 @@
         <ul id="main-nav">
           <li><div><a class="latest-news" data-url href="/news">
           <span>latest news</span>
-          <i class="fa fa-newspaper-o"></i>
           </a>
           </div>
           </li>
@@ -80,7 +79,26 @@
           <li><a href="/contact"><span>contact</span></a></li>
           <li><a href="/links"><span>useful links</span></a></li>
           <li><a href="/records"><span>records</span></a></li>
-          <li><a href="/login"><span>admin login</span></a></li>
+          <li id="more"><a href="#"><span>more</span></a><span class="down-arrow"><i class="fa fa-sort-desc"></i></span>
+          <div id="dropdown">
+            <div class="athletes-content">
+              <div class="colomn">
+                <h3>athletes</h3>
+                <ul class="athletes-info">
+                  <li><a href="">training</a></li>
+                  <li><a href="">registration/fees</a></li>
+                  <li><a href="">uniforms</a></li>
+                  <li><a href="">meet entry process</a></li>
+                  <li><a href="">results</a></li>
+                </ul>
+              </div>
+
+            
+
+            </div>
+          </div>
+          </li>
+          <li><a href="/login"><span>sign in</span></a></li>
       </ul>
       <div class="nav-handle">
           <a href="#" class="js-nav-handle icon mini">
@@ -114,7 +132,8 @@
 <figure class="item">
     <div id="slider">
         <a href="#">
-        <img src="img/LaserMtEden-1.png" alt="latest news">
+        <!-- <div id="slider-image1"></div> -->
+        <img src="img/LaserMtEden-1.png" alt="latest news" class="slider-image1">
         <!--Latest News -->
         <div class="content">
           <div class="flex-content wrap">
@@ -139,6 +158,7 @@
 <figure class="item">
 <!--     <div id="slider"> -->
         <a href="#">
+        <!-- <div id="slider-image2"></div> -->
         <img src="img/LaserMtEden-2.png" alt="latest news">
 
         <!--Latest News -->
@@ -164,6 +184,7 @@
 <figure class="item">
 <!--     <div id="slider"> -->
         <a href="#">
+        <!-- <div id="slider-image3"></div> -->
         <img src="img/LaserMtEden-3.png" alt="latest news">
         <!--Latest News -->
         <div class="content">
@@ -196,27 +217,30 @@
   </div>
 
 </section>
-<div class="flex-content wrap">
-<svg id="blue-polygon" style="margin-top: -12.8em;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
+<!-- <div class="flex-content wrap">
+<svg id="blue-polygon"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
  <polygon fill="#0872B8" points="10,14 0,0 20,0 "></polygon>
 </svg> 
-</div>  
+</div>  --> 
 
 <!-- End of Sliders and Latest News -->
 
 <!-- Start of Meets and Events -->
 <section>
     <div id="meets-list">
-        <h3 class="flex-content wrap">meets/events</h3>   
-         <!-- Notification Meet 1 -->
+        <h3 class="flex-content wrap" id="meets">meets/events</h3>   
+        <h3 class="flex-content wrap" id="month">September/October</h3>
+      
         <ul class="flex-container wrap">
+          <!-- Notification Meet 1 -->
+        
+
          <li class="flex-item">
-         <div class="meet">           
-                <h3 class="meet-date">September/October</h3>              
+         <div class="meet">                         
                 <a href=""> 
                     <div class="date-background">
-                        <h3>30</h3>
-                        <p>09/14</p>
+                        <h3 id="date">30</h3>
+                        <p id="day">09/14</p>
                     </div>
                     <div class="meet-descriptions">
                         <ul>
@@ -233,10 +257,7 @@
         <!-- End of Notification Meet 1 -->   
         <!-- Notification Meet 2 -->
         <li class="flex-item">
-<!--         <div class="meet" style="margin-top: 1.6em; padding-top: 0.3em;">
-           
-            <div class="meet-divider"></div>
-            
+        <div class="meet">
             <a href=""> 
                 <div class="date-background">
                     <h3>20</h3>
@@ -252,24 +273,103 @@
                     </ul>
                 </div>
             </a>       
-    </div> -->
+    </div>
     </li>
     <!-- End of Notification Meet 2 -->   
     <!-- Notification Meet 3 --> 
     <li class="flex-item">
-     
+             <div class="meet">
+            <a href=""> 
+                <div class="date-background">
+                    <h3>20</h3>
+                    <p>10/14</p>
+                </div>
+                <div class="meet-descriptions">
+                    <ul>
+                        <li class="title"><h3>Title/Name of Event</h3></li>
+                        <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
+                        <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
+                        <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
+                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div>
+            </a>       
+    </div>
   </li>
+  <!-- Notification Meet 4 --> 
+      <li class="flex-item">
+             <div class="meet">
+            <a href=""> 
+                <div class="date-background">
+                    <h3>20</h3>
+                    <p>10/14</p>
+                </div>
+                <div class="meet-descriptions">
+                    <ul>
+                        <li class="title"><h3>Title/Name of Event</h3></li>
+                        <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
+                        <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
+                        <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
+                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div>
+            </a>       
+    </div>
+  </li>
+<!-- End of Notification Meet 5 --> 
+  <!-- Notification Meet 4 --> 
+      <li class="flex-item">
+             <div class="meet">
+            <a href=""> 
+                <div class="date-background">
+                    <h3>20</h3>
+                    <p>10/14</p>
+                </div>
+                <div class="meet-descriptions">
+                    <ul>
+                        <li class="title"><h3>Title/Name of Event</h3></li>
+                        <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
+                        <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
+                        <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
+                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div>
+            </a>       
+    </div>
+  </li>
+<!-- End of Notification Meet 5 --> 
+  <!-- Notification Meet 6 --> 
+      <li class="flex-item">
+             <div class="meet">
+            <a href=""> 
+                <div class="date-background">
+                    <h3>20</h3>
+                    <p>10/14</p>
+                </div>
+                <div class="meet-descriptions">
+                    <ul>
+                        <li class="title"><h3>Title/Name of Event</h3></li>
+                        <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
+                        <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
+                        <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
+                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div>
+            </a>       
+    </div>
+  </li>
+<!-- End of Notification Meet 6 --> 
 </ul>  
 </div>
-<!-- End of Notification Meet 3 -->   
+
 
 </div>
 </section>
-<div class="flex-content wrap">
+<!-- <div class="flex-content wrap">
 <svg id="silver-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
  <polygon fill="#F1F1F1" points="10,14 0,0 20,0 "></polygon>
 </svg>  
-</div> 
+</div>  -->
 <!-- End of Meets and Events -->
 
 <!-- Start of Gallery -->
@@ -292,15 +392,30 @@
             <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
             </li>
             <li class="flex-item">
-            <img src="img/LaserMtEden-2.png" alt="LaserMtEdenSwim">  
+            <img src="img/LaserMtEden-2.png" alt="LaserMtEdenSwim">
+            </li> 
+            </li>
+            <!-- <li class="flex-item">
+            <img src="img/LaserMtEden-3.png" alt="LaserMtEdenSwim">
+            </li>  --> 
+            
+            <!-- <li class="flex-item">
+            <img src="img/LaserMtEden-4.png" alt="LaserMtEdenSwim">
+            </li> 
+            <li class="flex-item">
+            <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
+            </li> 
+            <li class="flex-item">
+            <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
+            </li>  -->
         </ul>
     </div>
 </section>
-<div class="flex-content wrap">
+<!-- <div class="flex-content wrap">
 <svg id="gallery-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
  <polygon fill="#F1F1F1" points="10,14 0,0 20,0 "></polygon>
 </svg>
-</div> 
+</div>  -->
 <!-- End of Gallery -->
 
 <!-- Start of Squads -->
@@ -345,36 +460,39 @@
 </section>
 <!-- End of Club information -->
 <!-- Enquiry Form -->
-<section>
-    <div class="form">
-        <form class="cmxform"  id="enquiry-form" method="get" action="">
-  <fieldset style="border: none;">
-            <h3>send us an enquiry</h3>
-            <label for="name">Name</label>
-             <p><span><i class="fa fa-user"></i></span>
-                <label for="name"></label>
-                <input type="text" name="name" minlength="2" required>
-                </p>
-            <label for="phone">Phone Number</label>
-             <p><span><i class="fa fa-phone"></i></i></span>
-                <label for="phone"></label>
-                <input type="text" name="phone" minlength="2" required>
-            </p>
-            <label for="email">Email Address</label>
-            <p>
+<section class="flex-container wrap">
+  <div class="form">
+    <form class="cmxform"  id="enquiry-form" method="get" action="">
+      <fieldset style="border: none;">
+        <ul>
+          <li class="flex-item"><h3>send us an enquiry</h3></li>
+          <label for="name">Name</label>
+          <li class="flex-item">
+          <span><i class="fa fa-user"></i></span>
+            <input type="text" name="name" minlength="2" required>
+          </li>
+          <label for="phone">Phone Number</label>
+          <li class="flex-item"><span><i class="fa fa-phone"></i></i></span>
+            <label for="phone"></label>
+            <input type="text" name="phone" minlength="2" required>
+          </li>
+          <label for="email">Email Address</label>
+          <li class="flex-item">
             <span><i class="fa fa-lock"></i></span>
             <label for="email"></label>
             <input type="email" name="email" minlength="2" required>
-            </p>
-            <p>
+          </li>
+          <li class="flex-item">
             <label for="ccomment">Your comment (required)</label>
-             <textarea id="comment" name="comment" required></textarea>
-             </p>
-             <p>
+            <textarea id="comment" name="comment" required></textarea>
+          </li>
+          <li class="flex-item">
             <input class="submit" type="submit" value="send"/>
-            </p>
-  </fieldset>
-</form></div>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </div>
 </section>
 
 <!-- End of Enquiry Form -->
@@ -515,13 +633,11 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="//code.jquery.com/jquery-latest.min.js"></script>
-        <script src="//unslider.com/unslider.min.js"></script>
         <script src="js/search.js"></script>
         <script src="js/form-main.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/latest-news-textlimit.js"></script>
         <script src="js/unslider.js"></script>
-        <script src="js/owl.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -90,6 +90,8 @@ textarea {
 
 body {
     margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
 /* ==========================================================================
@@ -136,6 +138,7 @@ h2 {
 h3 {
     font-size: 1.17em;
     margin: 1em 0;
+
 }
 
 h4 {
@@ -152,6 +155,7 @@ h6 {
     font-size: 0.67em;
     margin: 2.33em 0;
 }
+
 
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
@@ -318,6 +322,8 @@ nav ol {
     list-style: none;
     list-style-image: none;
 }
+
+
 
 /* ==========================================================================
    Embedded content
