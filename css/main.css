@@ -692,6 +692,7 @@ legend{
 }
 
 input {
+    box-sizing: border-box;
     border: none;
     font-size: 14px;
     line-height: 1.5em;
@@ -723,13 +724,15 @@ input {
     color: white;
     margin-bottom: 1em;
     padding: 0 16px;
-    width: 16em;
+    width: 100%;
     height: 3.2em;
+    box-sizing: border-box;
 }
 textarea{
   border-radius: 3px 3px 3px 3px;
-    width: 18.8em;
+    width: 100%;
     height: 5em;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
@@ -741,8 +744,9 @@ input[type="submit"] {
     color: #eee;
     font-weight: lighter;
     text-transform: uppercase;
-    width: 21.2em;
-    height: 3em;
+    width: 100%;
+    height: 5em;
+     box-sizing: border-box;
 }
 
 #enquiry form input[type="submit"]:hover {
@@ -1406,13 +1410,7 @@ z-index: 305;
 }
 
 /*-----------------------Meet/Events Decriptions-----------------*/
-.title h3{
-/*  margin-left: 2.4em!important;
-  margin-top: 1em!important;
-  font-size: 1.1em!important;
-  font-weight: 100;
-  color: #0872B8;*/
-}
+
 .meet-descriptions{
   width: 98%;
 height: 5em;
@@ -1619,16 +1617,22 @@ form ul{
   width: 50em;
 }
 form .flex-item{
-  width: 23.5em;
+
   height: 5em;
+  width: 100%;
+box-sizing: border-box;
 }
 
 .flex-item textarea{
   float: left;
-    width: 20.8em;
+   width: 100%;
+  box-sizing: border-box;
   height: 10em;
 }
 
+.flex-item input .submit{
+  height: 5em;
+}
 
 }
 
