@@ -35,82 +35,86 @@
 
         <!-- Header -->
 
-    <header class="header-inner">
+        <header class="header-inner">
           <div class="flex-content wrap">
-            <ul><li><a href="http://www.lasermtedenswimclub.co.nz" title="return to homepage">
-                <img class="flex-brand" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club"></a></li></ul>   
+            <ul>
+              <li>
+                <a href="http://www.lasermtedenswimclub.co.nz" title="return to homepage">
+                  <img class="flex-brand" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club">
+                </a>
+              </li>
+            </ul>   
           </div>
           <div id="show-number"><p>0800 SWIMNOW  | 0800 794 6669</p></div>
           <div class="search-container">
-             <form id="searchForm" action="search/SiteSearch" method="get">
-                 <i class="fa fa-search"></i>
-                 <input type="search" id="txtsearch" class="search-bar" placeholder="search" size="50" maxlength="255" value="">
-             </form> 
+           <form id="searchForm" action="search/SiteSearch" method="get">
+             <i class="fa fa-search"></i>
+             <input type="search" id="txtsearch" class="search-bar" placeholder="search" size="50" maxlength="255" value="">
+           </form> 
          </div>
-    </header>  
+       </header>  
 <!-- Drop down menu header -->
-     <header>      
-      <div id="main-header" class="widgets-colomn">
-        <ul id="main-nav">
-          <li><div><a class="latest-news" data-url href="/news">
-          <span>latest news</span>
-          </a>
-          </div>
-          </li>
-          <li><a href="/meets"><span>upcoming meets</span></a></li>
-          <li><a href="/gallery"><span>gallery</span></a></li>
-          <li> 
-          <span class="locate-squad-touch">locate a squad</span> 
-          <div id="select">
-          <select id="select-squad">
-              <option value="0">choose a location</option>
-              <option value="1"><a href="#">Mt Eden</a></option>
-              <option value="2"><a href="#">New Windsor</a></option>
-              <option value="3"><a href="#">Kelston</a></option>
-              <option value="4"><a href="#">Glen Eden</a></option>
-              <option value="5"><a href="#">Massey</a></option>
-          </select>
-          <p>or</p>
-          <form action="search/SiteSearch" method="get" id="search-squad">
-                 <i class="fa fa-search"></i><input type="search" placeholder="search" autocomplete="off">
-             </form>
-         </div>
-          </li>
-          <li><a href="/contact"><span>contact</span></a></li>
-          <li><a href="/links"><span>useful links</span></a></li>
-          <li><a href="/records"><span>records</span></a></li>
-          <li id="more"><a href="#"><span>more</span></a><span class="down-arrow"><i class="fa fa-sort-desc"></i></span>
-          <div id="dropdown">
-            <div class="athletes-content">
-              <div class="colomn">
-                <h3>athletes</h3>
-                <ul class="athletes-info">
-                  <li><a href="">training</a></li>
-                  <li><a href="">registration/fees</a></li>
-                  <li><a href="">uniforms</a></li>
-                  <li><a href="">meet entry process</a></li>
-                  <li><a href="">results</a></li>
-                </ul>
-              </div>
-
-            
-
-            </div>
-          </div>
-          </li>
-          <li><a href="/login"><span>sign in</span></a></li>
-      </ul>
-      <div class="nav-handle">
-          <a href="#" class="js-nav-handle icon mini">
-            <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="20px" height="14px" viewBox="0 0 20 14" enable-background="new 0 0 20 14" xml:space="preserve">
-            <rect fill="#404040" width="20" height="2"></rect>
-            <rect y="6" fill="#404040" width="20" height="2"></rect>
-            <rect y="12" fill="#404040" width="20" height="2"></rect>
-            </svg>
-        <p class="menu-text">Menu</p>
-    </a>
+<header>      
+  <div id="main-header" class="widgets-colomn">
+    <ul id="main-nav">
+      <li><div><a class="latest-news" data-url href="/news">
+        <span>latest news</span>
+      </a>
+    </div>
+  </li>
+  <li><a href="/meets"><span>upcoming meets</span></a></li>
+  <li><a href="/gallery"><span>gallery</span></a></li>
+  <li> 
+    <span class="locate-squad-touch">locate a squad</span> 
+    <div id="select">
+      <select id="select-squad">
+        <option value="0">choose a location</option>
+        <option value="1"><a href="#">Mt Eden</a></option>
+        <option value="2"><a href="#">New Windsor</a></option>
+        <option value="3"><a href="#">Kelston</a></option>
+        <option value="4"><a href="#">Glen Eden</a></option>
+        <option value="5"><a href="#">Massey</a></option>
+      </select>
+      <p>or</p>
+      <form action="search/SiteSearch" method="get" id="search-squad">
+       <i class="fa fa-search"></i><input type="search" placeholder="search" autocomplete="off">
+     </form>
+   </div>
+ </li>
+ <li><a href="/contact"><span>contact</span></a></li>
+ <li><a href="/links"><span>useful links</span></a></li>
+ <li><a href="/records"><span>records</span></a></li>
+ <li id="more"><a href="#"><span>more</span></a><span class="down-arrow"><i class="fa fa-sort-desc"></i></span>
+  <div class="flex-content wrap">
+    <div id="dropdown">
+      <div id="athletes-content">
+        <div class="colomn">
+          <h3>athletes</h3>
+          <ul class="athletes-info">
+            <li><a href="">training</a></li>
+            <li><a href="">registration/fees</a></li>
+            <li><a href="">uniforms</a></li>
+            <li><a href="">meet entry process</a></li>
+            <li><a href="">results</a></li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+  </div>
+</li>
+<li><a href="/login"><span>sign in</span></a></li>
+</ul>
+<div class="nav-handle">
+  <a href="#" class="js-nav-handle icon mini">
+    <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="20px" height="14px" viewBox="0 0 20 14" enable-background="new 0 0 20 14" xml:space="preserve">
+    <rect fill="#404040" width="20" height="2"></rect>
+    <rect y="6" fill="#404040" width="20" height="2"></rect>
+    <rect y="12" fill="#404040" width="20" height="2"></rect>
+  </svg>
+  <p class="menu-text">Menu</p>
+</a>
 </div>
 </div>
 </header> 
@@ -136,7 +140,7 @@
         <img src="img/LaserMtEden-1.png" alt="latest news" class="slider-image1">
         <img src="img/large-sliders/slider1.png" alt="latest news" class="slider-image1">
         <!--Latest News -->
-        <div class="content">
+        <div class="content" id="content-one">
           <div class="flex-content wrap">
             <ul>
               <li>
@@ -146,8 +150,7 @@
                 <p class="date">01/09/14</p>
               </li>
               <li>
-                <p id="news-contents" maxlength="75" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p class="read-more">....read more.</p>
+                <p id="news-contents" maxlength="120" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
               </li>
             </ul>
           </div>
@@ -173,8 +176,7 @@
                 <p class="date">01/10/14</p>
               </li>
               <li>
-                <p id="news-contents" maxlength="75" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p class="read-more">....read more.</p>
+                <p id="news-contents" maxlength="120" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
               </li>
             </ul>
           </div>
@@ -199,8 +201,7 @@
                 <p class="date">01/10/14</p>
               </li>
               <li>
-                <p id="news-contents" maxlength="75" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p class="read-more">....read more.</p>
+                <p id="news-contents" maxlength="120" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
               </li>
             </ul>
           </div>
@@ -250,7 +251,7 @@
                             <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
                             <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
                             <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
-                            <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                            <!-- <li class="arrow"><i class="fa fa-angle-right"></i></li> -->
                         </ul>
                     </div>               
             </a>
@@ -271,7 +272,7 @@
                         <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
                         <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
                         <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
-                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                       <!--  <li class="arrow"><i class="fa fa-angle-right"></i></li> -->
                     </ul>
                 </div>
             </a>       
@@ -292,7 +293,7 @@
                         <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
                         <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
                         <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
-                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                        <!-- <li class="arrow"><i class="fa fa-angle-right"></i></li> -->
                     </ul>
                 </div>
             </a>       
@@ -312,7 +313,7 @@
                         <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
                         <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
                         <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
-                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                       <!--  <li class="arrow"><i class="fa fa-angle-right"></i></li> -->
                     </ul>
                 </div>
             </a>       
@@ -333,7 +334,7 @@
                         <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
                         <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
                         <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
-                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                        <!-- <li class="arrow"><i class="fa fa-angle-right"></i></li> -->
                     </ul>
                 </div>
             </a>       
@@ -354,7 +355,7 @@
                         <li class="entry"><p><i class="fa fa-calendar"></i>Entries by: <span>20/09/14</span></p></li>
                         <li class="where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa, Hamilton</span></p></li>
                         <li class="cost"><p><i class="fa fa-credit-card"></i>Cost per entry: <span>$5.00</span></p></li>
-                        <li class="arrow"><i class="fa fa-angle-right"></i></li>
+                        <!-- <li class="arrow"><i class="fa fa-angle-right"></i></li> -->
                     </ul>
                 </div>
             </a>       
@@ -409,6 +410,12 @@
             <li class="flex-item">
             <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
             </li> 
+            <li class="flex-item">
+            <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
+            </li> 
+            <li class="flex-item">
+            <img src="img/LaserMtEden-1.png" alt="LaserMtEdenSwim">
+            </li> 
         </ul>
     </div>
 </section>
@@ -421,22 +428,37 @@
 
 <!-- Start of Squads -->
 <section>
-<div class="squads">
-        <div class="senior-squad">
-            <img src="img/Mobile_r2_c2.png" alt="senior-squad-icon">
-            <h3>Senior/Competition Squad</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">...Read more.</a></p>
+  <div class="squads">
+    <div class="senior-squad">
+      <img src="img/Senior-squad-icon.png" alt="senior-squad-icon">
+      <h3>Senior/Competition Squad</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">...Read more.</a></p>
+    </div>
+    <div class="junior-squad">
+      <img src="img/Junior-squad-icon.png" alt="junior-squad-icon">
+      <h3>Junior/Competition Squad</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">...Read more.</a></p>
+    </div>
+    <div class="mini-squad">
+      <img src="img/mini-squad-icon.png" alt="mini-squad-icon">
+      <h3>Mini Squad</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">...Read more.</a></p>
+    </div>
+    <div id="squad-slide-show">
+      <ul>
+        <li>
+        <div id="timetable">
+          <img src="" alt="" style="width: 90%; height: 16em; background-color: blue;">
         </div>
-        <div class="junior-squad">
-            <img src="img/Mobile_r3_c3.png" alt="junior-squad-icon">
-            <h3>Junior/Competition Squad</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">...Read more.</a></p>
+      </li>
+      <li>
+        <div id="text">
+          <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.</br></br>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
         </div>
-        <div class="mini-squad">
-            <img src="img/Mobile_r4_c4.png" alt="mini-squad-icon">
-            <h3>Mini Squad</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">...Read more.</a></p>
-        </div>
+      </li>
+    </ul>
+  </div>
+
 </div>
 </section>
 <div class="flex-content wrap">
@@ -448,15 +470,25 @@
 
 <!-- Start of Club Information -->
 <section>
-<div class="club-info"><!--  use owl carolsel to be responsive!!@!!http://owlgraphic.com/owlcarousel/demos/custom.html -->
-  <h3>club information</h3>
-<div class="banner">
-    <ul>
-        <li>Head Coach</br>Glenn Hamblyn</br><img src="img/Laser-Mt-Eden.png" style="width:32%; margin-left: -7.5em; margin-top: -3.5em;"alt="laser mt eden swim club"><i class="fa fa-phone" style="margin-left: 1.5em;"></i> 021 503477</li>
+<div class="club-info">
+  <ul class="flex-container wrap">
+            <li class="flex-item" style="background-color:#F1F1F1;"><h3>club information</h3></li>
+            <li class="flex-item">
+            <a href="#"><img src="img/Laser-Mt-Eden-BW.png" alt="LaserMtEdenSwim"></a>
+            </li>
+            <li class="flex-item">
+            <a href="#"><img src="img/DGSS-BW.png" alt="LaserMtEdenSwim"></a>
+            </li>
+            <li class="flex-item">
+            <a href="#"><img src="img/swimnz-logo-bw.png" alt="LaserMtEdenSwim"></a>
+            </li>
+            <li class="flex-item">
+            <a href="#"><img src="img/FINA-bw.png" alt="LaserMtEdenSwim"></a>
+            </li>
 
-        <li style="margin-left: 5em;">Dean Greenwood</br>Swim School</br><img src="img/DeanGreenWoodSwimSchool.fw.png" style="width:35%; padding-left: 5em; margin-left: -7em; margin-top: -3.5em;"alt="DGSS"><i class="fa fa-phone" style="margin-left: 2em;"></i> (09) 630 1123</li>
-    </ul>
-</div>
+             
+        </ul>
+
 </div>
 </section>
 <!-- End of Club information -->

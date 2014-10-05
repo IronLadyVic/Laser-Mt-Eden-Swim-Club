@@ -317,7 +317,7 @@ font-size: 0px;
   font-size: 1em;
   margin-top: -0.5em;
   margin-left: -1.5em;
-  padding-top: 0.5em;
+  padding-top: -0.5em;
   font-family: sans-serif;
 }
 
@@ -337,7 +337,7 @@ font-size: 0px;
   font-weight: 100;
   margin-left: -1.8em;
   font-size: 0.8em;
-  margin-top: -0.8em;
+  margin-top: -1em;
   word-wrap: break-word;
   font-family: sans-serif;
 }
@@ -393,70 +393,70 @@ svg #grey-polygon{
     width: 100%;
 
    }
-#meets-list{
-  position: relative;
-  margin-top: 23em;
-  font-size: 1em;
-  padding-top: 2em;
-  
+
+#meets{
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+#meets-list ul{
+  padding-top: -1em;
+  padding-bottom: 1em;
+}
+
+#month{
+  background-color: whitesmoke;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: -0.5em;
 }
 
 .meet-date{
   align-items: center;
   width: 97%;
   position: relative;
-  background-color: #CCCCCC;
+
   text-indent: 0.5em;
   height: 1.4em; 
   margin-left: -0.15em;
 }
-.meet-divider{
-  align-items: center;
-  width: 97%;
-  position: relative;
-  background-color: #CCCCCC;
-  text-indent: 0.5em;
-  height: 0.2em; 
-  margin-left: -0.15em;
-}
+
 .meet{
   position: relative;
-  margin-left: 1em;
-  height: 4.2em;
-  margin-bottom: 0.5em;
-  
+  height: 5em;
+  padding: 0.2em;
+  width: 25em;
+  background-color: #FFFFFF;
 }
 
-.meet-descriptionst ul li{
+.meet-descriptions li{
   float: left;
+
 }
 /*-----------------------Meet/Events Date-----------------*/
 
 .date-background{
-  width: 3.4em;
-  height: 3.4em;
+  width: 5em;
+  height: 5em;
   position: absolute;
   background-color: #333333;
   color: white;
-  margin-top: -0.8em;
+ 
   z-index: 300;
-  margin-left: -0.1em;
+
 }
 
 .date-background h3{
   position: relative;
   font-size: 2.35em;
   font-weight: 200;
-  margin-top: -0.15em;
-  margin-left: 0.15em;
+
   z-index: 305;
 }
 .date-background p{
   position: relative;
   font-size: 0.85em;
   font-weight: 100;
-  margin-top: -3.6em;
-  margin-left: 0.45em;
+
   letter-spacing: 0.1em;
   z-index: 305;
 }
@@ -466,11 +466,10 @@ svg #grey-polygon{
 .meet-descriptions{
   width: 97%;
   height: 3.4em;
-  position: absolute;
-  margin-top: -0.8em;
-  margin-bottom: 1em;
+  position: relative;
+
   background-color: #FFFFFF;
-  margin-left: -0.2em;
+
   color: #333333;
 }
 .title h3{
@@ -495,11 +494,6 @@ use this for mobile!!!!!!!*/
   margin-top: -3.3em;
   float: left;
 }
-/*.cost{
-  margin-top: -1.8em;
-  float: left;
-}
-*/
 
 
 .where{
@@ -515,7 +509,7 @@ use this for mobile!!!!!!!*/
 .arrow{
   float: right;
   font-size: 2em;
-  margin-left: 6.5em;
+  margin-right: -0.5em;
   margin-top: -1.9em;
   /*display: none;*/
  
@@ -543,6 +537,30 @@ use this for mobile!!!!!!!*/
   height: 0em;
   display: none;
 }
+#gallery li:nth-child(9){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+
+#gallery li:nth-child(10){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+
+#gallery li:nth-child(11){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+#gallery li:nth-child(12){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+
+
 /*-----------------------Squads------------------------*/
 .squads{
   background-color: #F1F1F1;
@@ -557,6 +575,14 @@ use this for mobile!!!!!!!*/
    flex-flow: row wrap;
    -webkit-align-content: flex-end;
    align-content: flex-end;
+}
+.squad-description{
+  margin-left: -3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.timetable{
+  margin-left: -3em;
 }
 .squads h3{
   text-align: center;
@@ -584,7 +610,7 @@ use this for mobile!!!!!!!*/
 .senior-squad{
   background-color: #FFFFFF;
   width: 23em;
-  height: 12.5em;
+  height: 12em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
 }
@@ -603,77 +629,31 @@ use this for mobile!!!!!!!*/
   border-bottom: 1px solid #CCCCCC;
 }
 .senior-squad img{
-  margin-left: 38%;
-  margin-top: 1em;
+  height: 45%;
+  width: 45%;
+  margin-left: 28%;
+  margin-top: 0.5em;
 }
 .junior-squad img{
-  margin-left: 38%;
-  margin-top: 2em;
+    height: 40%;
+  width: 40%;
+  margin-left: 32%;
+  margin-top: 0.5em;
 }
 .mini-squad img{
-  margin-left: 32%;
-  margin-top: 1.5em;
+    height: 45%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 0.5em;
 }
 
 /*-----------------------Information and links-----------------*/
 
-article .club-info{
+section .club-info{
   background-color: #F1F1F1;
-  height: 12em;
+  height: 100%;
   font-family: sans-serif;
   font-weight: 100;
-
-}
-.club-info{
-    margin-top: -1.5em;
-}
-
-.club-info h3{
-  color: #222;
-  text-align: center;
-  padding-top: 1em;
-
-
-}
-.club-info p{
-  color: white;
-  width: 8em;
-  font-size: 0.9em;
-  font-weight: 100;
-  text-align: center;
-}
-.phone{
-  margin-left: 2em;
-  margin-top: -2.5em;
-}
-.phone-image{
-    margin-left: -1em;
-  
-}
-
-.email{
-    margin-left: 12em;
-  margin-top: -5.2em;
-}
-.email-image{
-      margin-left: 9em;
-  margin-top: -6.3em;
-}
-.dgss{
-  margin-left: -2.5em;
-  margin-top: -0.5em;
-}
-.swimnz{
-  margin-left: 7em;
-  margin-top: -3em;
-}
-.link{
-    margin-left: 14.5em;
-  margin-top: -3.5em;
-}
-.fina{
-  margin-left: -4em;
-  margin-top: -0.2em;
 }
 /*-----------------------enquiry form-----------------*/
 legend{
@@ -683,7 +663,7 @@ legend{
 }
 .form{
   margin-left: -2em;
-  margin-top: -7em;
+  margin-top: 0em;
  
 }
 .form h3{
@@ -857,23 +837,23 @@ font-weight: 100;
 transition: height 1s ease;
 }
 #main-nav li.show:nth-child(4) {
-    cursor: pointer;
-    padding-top: 15px;
-padding-left: 5px;
-width: 100%;
-height: 100%;
-left: 0;
-top: 60px;
-display: block;
-clear: left;
-margin-top: 1em;
-margin-bottom: 2em;
-border-bottom: #d2d2d2 1px solid;
-margin: 0;
-background-color: white;
-color: black;
-font-weight: 100;
-transition: height 1s ease;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-left: 5px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 60px;
+  display: block;
+  clear: left;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-bottom: #d2d2d2 1px solid;
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-weight: 100;
+  transition: height 1s ease;
 }
 
 #main-nav li.show:nth-child(4).search-bar {
@@ -937,8 +917,7 @@ display: none;
 }
  
 .flex-container li{
-  background-color: white;
-  
+  /*background-color: white; */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow: hidden;
@@ -983,7 +962,6 @@ li.flex-item{
    FLEXING CONTENTS
    ========================================================================== */
 .flex-content{
-  
   display: -webkit-flex;
    display: flex;
    display: -ms -webkit-flex;
@@ -1258,34 +1236,42 @@ font-weight: 100;
   margin-left: 2.6em;
   margin-top: -2em;
 }
-/*/---------------------------------------------------------------------/*/
+/*/-----------------------------Drop down show and open toggleclass----------------------------------------/*/
 
 #dropdown{
   max-height: 0;
   position: relative;
   overflow: hidden;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: height 1s ease-in-out;
+  -moz-transition: height 1s ease-in-out;
+  -o-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out;
   display: none;
   z-index: 2000;
 }
-#dropdown.open{
-  max-height: 23.2em;
-  background-color: rgba(255,255,255,0.8);
+header #dropdown.open{
+  max-height: 120em;
+  max-width: 65em;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 2000;
+  position: absolute;
+  display: block;
+  margin-left: -80%;
+  margin-top: 0.8em;
+ 
 }
-#dropdown .athletes-content{
+
+
+#athletes-content.show{
   position: relative;
 background-color: rgba(255,255,255,0.8);
 border-bottom: 1px solid #d2d2d2;
-max-height: 23.2em;
+max-height: 80em;
 display: block;
 }
 
-.athletes-content.show{
-max-width: 1022px;
-max-width: 63.87rem;
+#athletes-content.show{
+max-width: 60em;
 _width: 1022px;
 padding-left: 21px;
 padding-left: 1.305rem;
@@ -1297,7 +1283,6 @@ z-index: 2000;
 }
 
 .colomn{
-
   width: 100%;
   float: left;
   margin-top: 2em;
@@ -1336,7 +1321,7 @@ font-size: 1.5em;
 
 #meets-list{
   position: relative;
-  margin-top: -2.7em;
+  margin-top: -1.5em;
   font-size: 1em;
   background-color: #F1F1F1;
   width: 100%;
@@ -1347,15 +1332,18 @@ font-size: 1.5em;
 #meets{
   font-size: 1.5em;
   margin-top: -0.5em;
+  padding-top: 1em;
 }
 #meets-list ul{
   padding-top: -1em;
   padding-bottom: 1em;
 }
+
 #month{
   background-color: whitesmoke;
   padding-top: 0.5em;
-  margin-bottom: -0.5em;
+  margin-bottom: 0.5em;
+  margin-top: -0.5em;
 }
 
 .meet-date{
@@ -1370,14 +1358,19 @@ font-size: 1.5em;
 
 .meet{
   position: relative;
-  height: 4em;
-  margin: 1em;
+  height: 5em;
+  padding: 0.2em;
   width: 25em;
-
+  background-color: #FFFFFF;
 }
+/*.meet-descriptions{
+  background-color: #FFFFFF;
+  margin: 0.5em;
+}*/
 
-.meet-descriptionst ul li{
+.meet-descriptions li{
   float: left;
+
 }
 /*-----------------------Meet/Events Date-----------------*/
 
@@ -1387,7 +1380,7 @@ font-size: 1.5em;
   position: absolute;
   background-color: #333333;
   color: white;
-  margin-top: -0.2em;
+ /* margin-top: -2em;*/
   z-index: 300;
   margin-left: -0.2em;
 
@@ -1396,7 +1389,7 @@ font-size: 1.5em;
 position: relative;
 font-size: 3.5em;
 margin-top: 0.3em;
-margin-left: 0.18em;
+margin-left: 0.15em;
 z-index: 305;
 }
 
@@ -1404,19 +1397,19 @@ z-index: 305;
 position: relative;
 font-size: 1.3em;
 font-weight: 200;
+margin-top: -2.3em;
 margin-left: 0.4em;
-padding-top: 1.2em;
 z-index: 305;
 }
 
 /*-----------------------Meet/Events Decriptions-----------------*/
 
 .meet-descriptions{
-  width: 98%;
+  width: 23em;
 height: 5em;
-margin-top: -2em;
+
 position: absolute;
-background-color: #FFFFFF;
+margin-top: -1em;
 margin-left: 1em;
 color: #333333;
 }
@@ -1426,16 +1419,18 @@ color: #333333;
 }
 
 li.title h3{
-  margin-top: 1em;
+  margin-top: 0.2em;
+  font-size: 0.9em;
+  color: #333333;
 }
 li.entry {
-/*  margin-top: -2em;*/
+  margin-top: -2em;
   font-size: 0.9em;
 /*  margin-left: 3em;*/
 }
 
 li .cost{
-/*  margin-left: 1em;*/
+
   font-size: 0.9em;
 }
 
@@ -1453,11 +1448,43 @@ li .where{
 /*/---------------------------------squads------------------------------------/*/
 .squads{
   margin-top: -1em;
-  padding-top: 0.5em;
+  padding-top: 5em;
+max-width: 63.87rem;
+_width: 1022px;
+padding-left: 1.5em;
+padding-left: 1.305rem;
+padding-right: 1.5em;
+padding-right: 1.305rem;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
 }
+/*/---------------------------------squads content when icon click on ------------------------------------/*/
+#squad-slide-show ul li{
+  float: left;
+  margin-top: 3em;
+  padding-bottom: 2em;
+}
+#timetable{
+  box-sizing: border-box;
+  margin-top: -2em;
+}
+#text{
+  padding-left: 2em;
+  margin-top: -2.5em;
+  
+}
+p.squad-description{
+  width: 22em;
+  text-align: left;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+/*/---------------------------------squad icons ------------------------------------/*/vvvvvvvvvvvvvvvvvv
 .senior-squad{
-  height: 12em;
+  height: 11.8em;
   margin-right: 0.2em;
+
 }
 .mini-squad{
   margin-left: 0.2em;
@@ -1466,7 +1493,7 @@ li .where{
   margin-top: 0.2em;
 }
 .senior-squad p{
-  margin-top: -1em;
+
 }
 
 .junior-squad h3{
@@ -1481,6 +1508,10 @@ li .where{
 .mini-squad p{
   margin-top: -1em;
 }
+.squad-description{
+  width: 20em;
+  text-align: left;
+}
 /*/----------------------------------squads-----------------------------------/*/
 
 #gallery{
@@ -1490,16 +1521,6 @@ li .where{
 #gallery .flex-item img{
   width: 13.5em;
   height: 13.5em;
-}
-#gallery li:nth-child(7){
-  width: 13.5em;
-  height: 13.5em;
-  display: block;
-}
-#gallery li:nth-child(8){
-width: 13.5em;
-  height: 13.5em;
-  display: block;
 }
 
 /*/--------------------------------------search container-------------------------------/*/
@@ -1555,23 +1576,25 @@ color: #0672B8;
   font-size: 0.9em;
 }
 
-
-.content{
+#content-one{
+    margin-top: -9.5em;
+}
+div.content{
   align-items: center;
   width: 100%;
-  height: 6.5em;
+  height: 10em;
   background-color: rgba(0,107,182,0.75);
   position: absolute;
   z-index: 1000;
-  margin-top: -9em;
-
-
+  margin-top: -12.9em;
 }
+
+
 .content h3{
   font-weight: 200;
   color:#99FFFF;
   font-size: 1.4em;
-  margin-top: -1.1em;
+  margin-top: -0.5em;
   margin-left: -1.3em;
   padding-top: 0.8em;
 
@@ -1586,14 +1609,16 @@ color: #0672B8;
   margin-right: 1em;
 }
 #news-contents{
-  width: 100%;
+  width: 50em;
   padding-right: 0.2em;
   color: white;
   font-weight: 100;
   margin-left: -1.8em;
   font-size: 1em;
-  margin-top: -0.8em;
+  margin-top: -1em;
   word-wrap: break-word;
+  text-overflow:ellipsis;
+  font-family: sans-serif;
 }
 
 .read-more{
@@ -1635,11 +1660,59 @@ box-sizing: border-box;
 }
 
 }
+@media only screen and (min-width: 65em) {
+  #gallery li:nth-child(7){
+  width: 13.5em;
+  height: 13.5em;
+  display: none;
+}
+#gallery li:nth-child(8){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
 
-@media only screen and (min-width: 80em) {
+#gallery li:nth-child(9){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+#gallery li:nth-child(10){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+#gallery li:nth-child(11){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+#gallery li:nth-child(12){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+}
 
-  #gallery li:nth-child(9){
-width:0;
+
+@media only screen and (min-width: 85em) {
+    #gallery li:nth-child(7){
+  width: 13.5em;
+  height: 13.5em;
+  display: none;
+}
+  #gallery li:nth-child(8){
+  width: 13.5em;
+  height: 13.5em;
+  display: none;
+}
+#gallery li:nth-child(9){
+  width: 13.5em;
+  height: 13.5em;
+  display: block;
+}
+#gallery li:nth-child(10){
+  width: 0;
   height: 0;
   display: none;
 }

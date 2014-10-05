@@ -1,7 +1,7 @@
-var maxlength = 75;
+var maxlength = 120;
 $('p#news-contents').text(function (_, text) {
 
-    return $.trim(text).substring(0, maxlength);
+    return $.trim(text).substring(0, maxlength) + ' ....read more';
 
 });
 
