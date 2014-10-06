@@ -517,7 +517,7 @@ svg #grey-polygon{
 
 #gallery{
   position: relative;
-
+   background-color: #F1F1F1;
 }
 
 #gallery .flex-item img{
@@ -560,7 +560,7 @@ svg #grey-polygon{
 
 /*-----------------------Squads------------------------*/
 .squads{
-  background-color: #F1F1F1;
+ /* background-color: #F1F1F1;*/
   margin-top: -0.5em;
   display: -webkit-flex;
    display: flex;
@@ -583,6 +583,7 @@ svg #grey-polygon{
   margin-left: -3em;
 }
 .squads h3{
+  font-size: 1.3em;
   text-align: center;
 }
 .squads p{
@@ -596,19 +597,10 @@ svg #grey-polygon{
 .squads a:hover{
   color: #99FFFF;
 }
-.senior-squad p{
-  margin-top: -0.8em;
-}
-.junior-squad p{
-  margin-top: -0.8em;
-}
-.mini-squad p{
-  margin-top: -0.8em;
-}
 .senior-squad{
   background-color: #FFFFFF;
   width: 98%;
-  height: 16em;
+  height: 14em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
   -moz-box-sizing: border-box;
@@ -633,24 +625,21 @@ svg #grey-polygon{
   box-sizing: border-box;
 }
 .senior-squad img{
-  height: 45%;
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 1.5em;
+  height: 50%;
+  margin-left: 23%;
+  margin-top: 2em;
   padding-bottom: 0.25em;
 }
 .junior-squad img{
     height: 40%;
-  width: 45%;
-  margin-left: 28%;
-  margin-top: 2em;
+  margin-left:28%;
+  margin-top: 3em;
   padding-bottom: 0.1em;
 }
 .mini-squad img{
     height: 45%;
-  width: 40%;
-  margin-left: 30%;
-  margin-top: 2em;
+  margin-left:30%;
+  margin-top: 3em;
    padding-bottom: 0.1em;
 }
 
@@ -662,6 +651,29 @@ section .club-info{
   font-family: sans-serif;
   font-weight: 100;
 }
+.club-info h3{
+  font-size: 1.3em;
+
+}
+#laser{
+  margin-top: 4em;
+  margin-left: -17em;
+}
+#dgss{
+  margin-top: 3em;
+  margin-left: 1em;
+}
+#swimnz{
+  margin-left: -2em;
+}
+#fina{
+  margin-left: 3em;
+}
+.club-info .flex-item h3{
+  margin-top: -2em;
+  margin-left: 6em;
+}
+
 /*-----------------------enquiry form-----------------*/
 legend{
   margin-top: 1em;
@@ -674,7 +686,7 @@ legend{
  
 }
 .form h3{
-  margin-left: 26%;
+  margin-left: 30%;
   font-size: 1.2em;
 }
 
@@ -709,13 +721,13 @@ input {
     color: white;
     margin-bottom: 1em;
     padding: 0 16px;
-    width: 100%;
+    width: 23em;
     height: 3.2em;
     box-sizing: border-box;
 }
 textarea{
   border-radius: 3px 3px 3px 3px;
-    width: 100%;
+    width: 26em;
     height: 5em;
     box-sizing: border-box;
 }
@@ -729,8 +741,8 @@ input[type="submit"] {
     color: #eee;
     font-weight: lighter;
     text-transform: uppercase;
-    width: 100%;
-    height: 5em;
+    width: 26em;
+    height: 3em;
      box-sizing: border-box;
 }
 
@@ -763,7 +775,7 @@ label.error{
 
 /*-----------------------records-----------------*/
 section #records-list{
-  height: 100%;
+  
   background-color:#F1F1F1;
     margin-left: auto;
   margin-right: auto;
@@ -809,11 +821,12 @@ z-index: 305;
 }
 #records{
   height: 2em;
+  padding-bottom: 1em;
   padding-top: 1em;
   margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 /*-----------------------footer-----------------*/
@@ -939,7 +952,7 @@ display: none;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
  /* overflow: hidden;*/
-  cursor: pointer;
+ cursor: default;
 }
 
  
@@ -956,15 +969,11 @@ display: none;
   width: 100%;
 
 }
-/*.flex-container img{
-  max-width: 100%;
-}
-*/
+
 li.flex-item{
   border: none;
-  position: relative;
-/*  -moz-box-sizing: border-box;
-  box-sizing: border-box;*/
+/*  float: left;*/
+
 }
 /* ==========================================================================
    BRAND & Transparent White background
@@ -1168,19 +1177,153 @@ font-weight: 100;
 
 
 
-/*@media only screen and (min-width: 5em){
-div .content{
-    margin-top: 0em;
-  }
 
-}   
-@media only screen and (min-width: 20em){
-div .content{
-    margin-top: -18em;
+@media only screen and (min-width: 40em){
+/* ==========================================================================
+    GALLERY
+========================================================================== */
+ #gallery .flex-item img{
+    height: 10em;
+    width: 10em;
+
   }
+  #gallery li:nth-child(6){
+  width: 0;
+  height: 0;
+  display: none;
+}
+/* ==========================================================================
+    SQUADS
+   ========================================================================== */
+.senior-squad img{
+  height: 50%;
+
+  margin-left: 22%;
+  margin-top: 1.5em;
+  padding-bottom: 0.25em;
+}
+.junior-squad img{
+    height: 40%;
+  margin-left:26%;
+  margin-top: 3em;
+  padding-bottom: 0.1em;
+}
+.mini-squad img{
+    height: 45%;
+
+  margin-left:25%;
+  margin-top: 2.4em;
+   padding-bottom: 0.1em;
+}
+.junior-squad h3{
+  margin-top: 0.9em;
+}
+.mini-squad h3{
+  margin-top: 0.95em;
+}
+
+
+.senior-squad{
+  background-color: #FFFFFF;
+  width: 19em;
+  height: 12em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
 
 }
-*/
+.junior-squad{
+  background-color: #FFFFFF;
+  width: 17em;
+  height: 12em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+
+}
+.mini-squad{
+  background-color: #FFFFFF;
+  width: 17em;
+  height: 12em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+
+}
+#timetable{
+  margin-left: 2em;
+}
+
+.squad-description{
+  width: 95%;
+  margin-left: 0em;
+  padding-left: 0em;
+}
+
+/*/------------------------------------sliders---------------------------------/*/
+
+.item img:nth-child(1){
+    display: none;
+    width: 0;
+    height: 0; 
+}
+.item img:nth-child(2){
+    display: block;
+    width: 100%;
+    height: auto; 
+}
+.item.content:nth-child(1){
+  margin-top: 5em;
+}
+
+
+#content-one {
+margin-top: -6em;
+}
+
+
+div.content {
+align-items: center;
+width: 100%;
+height: 6em;
+background-color: rgba(0,107,182,0.85);
+position: absolute;
+z-index: 1000;
+margin-top: -7.9em;
+}
+
+.content h3 {
+font-weight: 200;
+color: #99FFFF;
+font-size: 1.2em;
+margin-top: -0.2em;
+padding-left: 0.8em;
+}
+.item a p{
+  font-size: 1em;
+}
+#news-contents {
+width: 100%;
+padding-right: 1em;
+padding-left: 1em;
+color: white;
+font-weight: 100;
+margin-left: -1.8em;
+font-size: 0.95em;
+margin-top: -1em;
+word-wrap: break-word;
+font-family: sans-serif;
+}
+
+footer{
+  margin-top: 22em;
+}
+}
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 60em) {
     
@@ -1193,7 +1336,7 @@ h3{
 }
 header #main-header{
   width: 100%;
-  position: fixed;
+  position: relative;
   top: auto;
   background-color: rgba(255, 255, 255, 0.8); 
   border: none;
@@ -1207,6 +1350,7 @@ max-height: 45px;
 width: auto;
   float: right;
   display: block;
+
 }
 #main-nav{
   margin-top: 1em;
@@ -1227,7 +1371,7 @@ height: 35px;
 color: black;
 font-weight: 100;
  z-index: 3000;
-
+font-size: 1em;
 }
 #main-nav li{
   float: left;
@@ -1261,7 +1405,7 @@ font-weight: 100;
 .down-arrow{
   position: absolute;
   margin-left: 2.6em;
-  margin-top: -2em;
+  margin-top: -1.7em;
 }
 /*/-----------------------------Drop down show and open toggleclass----------------------------------------/*/
 
@@ -1352,6 +1496,7 @@ font-size: 1.5em;
   font-size: 1em;
   background-color: #F1F1F1;
   width: 100%;
+  border-bottom: 1px solid #CCCCCC;
 
 }
 
@@ -1366,7 +1511,7 @@ font-size: 1.5em;
 }
 #meets-list ul{
   padding-top: -1em;
-  padding-bottom: 1em;
+
 }
 
 #month{
@@ -1432,8 +1577,8 @@ z-index: 305;
 height: 5em;
 
 position: absolute;
-margin-top: -1em;
-margin-left: 1em;
+margin-top: -2em;
+margin-left: 0.5em;
 color: #333333;
 }
 
@@ -1488,62 +1633,48 @@ margin-right: auto;
 background-color: white;
 }
 /*/---------------------------------squads content when icon click on ------------------------------------/*/
+#squad-slide-show li{
+  width: 35em;
+}
 #squad-slide-show ul li{
   float: left;
   margin-top: 3em;
-  padding-bottom: 2em;
 }
 #timetable{
   box-sizing: border-box;
   margin-top: -2em;
+
 }
 #text{
-  padding-left: 2em;
+  padding-left: 1em;
   margin-top: -2.5em;
   
 }
 p.squad-description{
-  width: 22em;
+  width: 26em;
   text-align: left;
   font-weight: 100;
   font-size: 1.1em;
 }
-/*/---------------------------------squad icons ------------------------------------/*/vvvvvvvvvvvvvvvvvv
-.senior-squad{
-  height: 11.8em;
-  margin-right: 0.2em;
+/*/---------------------------------squad icons ------------------------------------/*/
 
-}
-.mini-squad{
-  margin-left: 0.2em;
-}
-.senior-squad h3{
-  margin-top: 0.2em;
-}
-.senior-squad p{
-
-}
 
 .junior-squad h3{
   margin-top: 0.4em;
 }
-.junior-squad p{
-  margin-top: -1em;
-}
+
 .mini-squad h3{
   margin-top: 1.1em;
 }
-.mini-squad p{
-  margin-top: -1em;
-}
+
 .squad-description{
   width: 20em;
   text-align: left;
 }
 /*-----------------------Squads------------------------*/
 .squads{
-  background-color: #F1F1F1;
-  margin-top: -0.5em;
+
+  margin-top: -5em;
   display: -webkit-flex;
    display: flex;
    -webkit-align-items: center;
@@ -1556,9 +1687,12 @@ p.squad-description{
    align-content: flex-end;
 }
 .squad-description{
-  margin-left: -3em;
+  
   padding-left: 1em;
   padding-right: 1em;
+}
+.squad-slide-show{
+  width: 200em;
 }
 .timetable{
   margin-left: -3em;
@@ -1566,67 +1700,53 @@ p.squad-description{
 .squads h3{
   text-align: center;
 }
-.squads p{
-  text-align: center;
-  padding-bottom: 0.5em;
+
+.junior-squad h3{
+  margin-top: 1em;
 }
-.squads a{
-  color: #3F3F3F;
-  transition: color 1s ease;
+.mini-squad h3{
+  margin-top: 1em;
 }
-.squads a:hover{
-  color: #99FFFF;
-}
-.senior-squad p{
-  margin-top: -0.8em;
-}
-.junior-squad p{
-  margin-top: -0.8em;
-}
-.mini-squad p{
-  margin-top: -0.8em;
-}
+
 .senior-squad{
   background-color: #FFFFFF;
-  width: 25em;
-  height: 16em;
+  width: 21.5em;
+  height: 14em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
-  margin-right:0.5em; 
+  margin-right: 0.2em;
 }
 .junior-squad{
   background-color: #FFFFFF;
-  width: 25em;
-  height: 16em;
+ width: 21.5em;
+  height: 14em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
+  margin-right: 0.3em;
 }
 .mini-squad{
   background-color: #FFFFFF;
-  width: 25em;
-  height: 16em;
+ width: 21.5em;
+  height: 14em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
 }
 .senior-squad img{
-  height: 45%;
-  width: 45%;
-  margin-left: 28%;
+  height: 50%;
+  margin-left: 15%;
   margin-top: 1.5em;
   padding-bottom: 0.25em;
 }
 .junior-squad img{
     height: 40%;
-  width: 40%;
-  margin-left: 32%;
-  margin-top: 2em;
+  margin-left: 25%;
+  margin-top: 3em;
   padding-bottom: 0.1em;
 }
 .mini-squad img{
-    height: 45%;
-  width: 40%;
-  margin-left: 30%;
-  margin-top: 2em;
+    height: 50%;
+  margin-left: 24%;
+  margin-top: 1.6em;
    padding-bottom: 0.1em;
 }
 
@@ -1634,6 +1754,7 @@ p.squad-description{
 
 #gallery{
   margin-top: -1em;
+  background-color: #F1F1F1;
 }
 
 #gallery .flex-item img{
@@ -1644,7 +1765,7 @@ p.squad-description{
 /*/--------------------------------------search container-------------------------------/*/
 .search-container {
 float: right;
-margin-right: 10em;
+margin-right: 11em;
 margin-left: 0;
 letter-spacing: 0px;
 font-size: 1.2em;
@@ -1654,7 +1775,7 @@ margin-top: -3.5em;
 
 #show-number{
   float: right;
-  margin-right: 1em;
+  margin-right: 2em;
 margin-left: 0;
 height: auto;
 width: auto;
@@ -1759,6 +1880,7 @@ svg #blue-polygon{
 /*/--------------------------------------records list-------------------------------/*/
 #records-list ul{
     margin-left: -1em;
+    margin-top: 2em;
 }
 
 .event p{
