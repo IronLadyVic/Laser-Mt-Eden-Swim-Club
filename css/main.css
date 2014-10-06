@@ -362,7 +362,7 @@ svg #blue-polygon{
 
 }
 svg #silver-polygon{
-  color: #F1F1F1;
+  color: #eaeaea;
   vertical-align: middle;
   z-index: 1000;
   margin-top: 0em;
@@ -370,7 +370,7 @@ svg #silver-polygon{
 
 }
 svg #gallery-polygon{
-  color: #F1F1F1;
+  color: #eaeaea;
   vertical-align: middle;
   z-index: 1000;
   margin-top: 0em;
@@ -388,23 +388,26 @@ svg #grey-polygon{
 /* ==========================================================================
    Meets
    ========================================================================== */
-   article #meets-list{
-    background-color: grey;
+/*   article #meets-list{
     width: 100%;
 
-   }
+   }*/
 
 #meets{
   font-size: 1.5em;
-  margin-top: 1em;
+  line-height:1em;
+  padding-top: 0.5em;
+  margin:auto;
 }
 
 
 #month{
-  background-color: whitesmoke;
+  margin:auto;
+  background-color: #F5F5F5 ;
   padding-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-top: -0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+  font-size: 1.1em;
 }
 
 .meet-date{
@@ -468,9 +471,21 @@ svg #grey-polygon{
   height: 5em;
   position: relative;
 /*outline: 1px red solid;*/
-  background-color: #FFFFFF;
+  background-color: #F5F5F5 ;
   padding: 0.5em;
   color: #333333;
+  
+}
+.record-descriptions{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 5em;
+  position: relative;
+/*outline: 1px red solid;*/
+  background-color: #F5F5F5;
+  padding: 0.5em;
+  color: #333333;
+  margin-left: 0.5em;
 }
 .title h3{
   font-size: 1em;
@@ -517,7 +532,9 @@ svg #grey-polygon{
 
 #gallery{
   position: relative;
-   background-color: #F1F1F1;
+   background-color: #eaeaea;
+   border-top: 1px solid #CCCCCC;
+   border-bottom: 1px solid #CCCCCC;
 }
 
 #gallery .flex-item img{
@@ -560,9 +577,10 @@ svg #grey-polygon{
 
 /*-----------------------Squads------------------------*/
 .squads{
- /* background-color: #F1F1F1;*/
+ /* background-color: #eaeaea;*/
   margin-top: -0.5em;
   display: -webkit-flex;
+  display: -ms-flexbox;
    display: flex;
    -webkit-align-items: center;
    align-items: center;
@@ -646,10 +664,12 @@ svg #grey-polygon{
 /*-----------------------Information and links-----------------*/
 
 section .club-info{
-  background-color: #F1F1F1;
+  background-color: #eaeaea;
   height: 100%;
   font-family: sans-serif;
   font-weight: 100;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
 }
 .club-info h3{
   font-size: 1.3em;
@@ -665,9 +685,11 @@ section .club-info{
 }
 #swimnz{
   margin-left: -2em;
+  padding-left: 3em;
+  padding-right: 0em;
 }
 #fina{
-  margin-left: 3em;
+  margin-left: 1em;
 }
 .club-info .flex-item h3{
   margin-top: -2em;
@@ -686,8 +708,8 @@ legend{
  
 }
 .form h3{
-  margin-left: 30%;
-  font-size: 1.2em;
+  
+  font-size: 1.3em;
 }
 
 input {
@@ -775,10 +797,12 @@ label.error{
 
 /*-----------------------records-----------------*/
 section #records-list{
-  
-  background-color:#F1F1F1;
+  border-top: 1px solid #CCCCCC;;
+  background-color:#eaeaea;
     margin-left: auto;
   margin-right: auto;
+padding-bottom: 1em;
+
 }
 #records-list ul{
 
@@ -800,11 +824,13 @@ section #records-list{
   margin-top: -1em;
 }
 .time{
+  padding-left: 0.5em;
   margin-top: -1em;
 }
 .record-where{
   margin-top: -3.5em;
   margin-left: 12em;
+  padding-left: 0.5em;
 }
 .record-date{
     margin-top: -2em;
@@ -820,13 +846,17 @@ z-index: 305;
 
 }
 #records{
-  height: 2em;
-  padding-bottom: 1em;
-  padding-top: 1em;
-  margin-bottom: 1em;
+
   margin-left: auto;
   margin-right: auto;
   font-size: 1.3em;
+}
+.record-descriptions span {
+color: #0872B8;
+
+}
+.record-descriptions i{
+  padding-right: 0.5em;
 }
 
 /*-----------------------footer-----------------*/
@@ -836,7 +866,7 @@ footer{
   font-size: 0.8em;
   font-weight: 100;
   height: 5em;
-  margin-top: 45em;
+  margin-top: -2em;
 }
 footer p{
   padding-top: 1em;
@@ -998,6 +1028,7 @@ li.flex-item{
    ========================================================================== */
 .flex-content{
   display: -webkit-flex;
+  display: -ms-flexbox;
    display: flex;
    display: -ms -webkit-flex;
    display: -ms flex;
@@ -1313,7 +1344,7 @@ font-family: sans-serif;
 }
 
 footer{
-  margin-top: 22em;
+  margin-top: -2em;
 }
 }
 
@@ -1328,7 +1359,7 @@ footer{
 @media only screen and (min-width: 60em) {
     
 h3{
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 .nav-handle{
   display: none;
@@ -1428,7 +1459,7 @@ header #dropdown.open{
   position: absolute;
   display: block;
   margin-left: -80%;
-  margin-top: 0.8em;
+  margin-top: 0.7em;
  
 }
 
@@ -1494,31 +1525,34 @@ font-size: 1.5em;
   position: relative;
   margin-top: -1.5em;
   font-size: 1em;
-  background-color: #F1F1F1;
+/*  background-color: #eaeaea;*/
   width: 100%;
   border-bottom: 1px solid #CCCCCC;
 
 }
 
+.meet {
+position: relative;
+height: 5em;
+padding: 0.2em;
+width: 25em;
+
+}
 
 #meets{
   font-size: 1.5em;
-  margin-top: 1.2em;
-  padding-top: 1.2em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
+  line-height:1em;
+  padding-top: 2em;
+  margin:auto;
 }
-#meets-list ul{
-  padding-top: -1em;
 
-}
 
 #month{
-  background-color: whitesmoke;
+  margin:auto;
+  background-color: #F5F5F5 ;
   padding-top: 0.5em;
-  margin-bottom: 2em;
-  margin-top: -1em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
 }
 
 .meet-date{
@@ -1531,10 +1565,6 @@ font-size: 1.5em;
   margin-left: -0.15em;
 }
 
-div.meet{
-  height: 5em;
-  width: 25em;
-}
 .meet-descriptions li{
   float: left;
 
@@ -1549,10 +1579,11 @@ div.meet{
   color: white;
  /* margin-top: -2em;*/
   z-index: 300;
-  margin-left: 1em;
-  margin-top: -1em;
+  margin-left: 0.6em;
+  margin-top: 0em;
 
 }
+
 .date-background h3 {
 position: relative;
 font-size: 3.5em;
@@ -1572,24 +1603,43 @@ z-index: 305;
 
 /*-----------------------Meet/Events Decriptions-----------------*/
 
-.meet-descriptions{
-  width: 25em;
-height: 5em;
 
-position: absolute;
-margin-top: -2em;
-margin-left: 0.5em;
-color: #333333;
+.meet-descriptions{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 5em;
+  position: relative;
+/*outline: 1px red solid;*/
+  background-color: #F5F5F5 ;
+  padding: 0.5em;
+  color: #333333;
+  /*margin-left: 1em;*/
 }
 
+.record-descriptions{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 5em;
+  position: relative;
+/*outline: 1px red solid;*/
+  background-color: #F5F5F5 ;
+  padding: 0.5em;
+  color: #333333;
+  margin-left: 1em;
+}
+.record-descriptions i{
+  padding-right: 0.5em;
+}
 .meet-descriptions span{
   color:#0872B8; 
 }
-
+.record-descriptions span{
+  color:#0872B8; 
+}
 li.title h3{
   margin-top: -1.2em;
   font-size: 1.1em;
-  margin-left: 2em;
+  margin-left: 2.4em;
   color: #333333;
 }
 li.entry {
@@ -1643,6 +1693,7 @@ background-color: white;
 #timetable{
   box-sizing: border-box;
   margin-top: -2em;
+  padding-bottom: 2em;
 
 }
 #text{
@@ -1676,6 +1727,7 @@ p.squad-description{
 
   margin-top: -5em;
   display: -webkit-flex;
+  display: -ms-flexbox;
    display: flex;
    -webkit-align-items: center;
    align-items: center;
@@ -1730,6 +1782,7 @@ p.squad-description{
   height: 14em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
+
 }
 .senior-squad img{
   height: 50%;
@@ -1754,12 +1807,13 @@ p.squad-description{
 
 #gallery{
   margin-top: -1em;
-  background-color: #F1F1F1;
+  background-color: #eaeaea;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 #gallery .flex-item img{
-  width: 13.5em;
-  height: 13.5em;
+  width: 15em;
+  height: 15em;
 }
 
 /*/--------------------------------------search container-------------------------------/*/
@@ -1874,17 +1928,23 @@ svg #blue-polygon{
   vertical-align: middle;
   z-index: 1000;
   color: #0872B8;
+
  /* margin-top: 10em;*/
 }
 
 /*/--------------------------------------records list-------------------------------/*/
-#records-list ul{
-    margin-left: -1em;
-    margin-top: 2em;
+
+section #records-list {
+background-color: #eaeaea;
+margin-left: auto;
+margin-right: auto;
+  padding-bottom: 1em;
+  border-top: 1px solid #CCCCCC;;
+/*margin-top: -2em;*/
 }
 
 .event p{
-  margin-left: -1.5em;
+  margin-left: -0.7em;
 }
 .time p{
     margin-left: -1.5em;
@@ -1938,11 +1998,12 @@ footer{
   font-size: 0.8em;
   font-weight: 100;
   height: 5em;
-  margin-top: 15em;
+  margin-top: 5em;
 }
 footer p{
+  margin-top: -5em;
   padding-top: 1em;
-  padding-left: 3.5em;
+  padding-left: 2.5em;
   padding-bottom: 1em;
 font-family: sans-serif;
 font-weight: 100;
