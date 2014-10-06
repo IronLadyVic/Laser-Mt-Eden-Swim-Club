@@ -389,7 +389,7 @@ svg #grey-polygon{
    Meets
    ========================================================================== */
    article #meets-list{
-    background-color: #F1F1F1;
+    background-color: grey;
     width: 100%;
 
    }
@@ -398,10 +398,7 @@ svg #grey-polygon{
   font-size: 1.5em;
   margin-top: 1em;
 }
-#meets-list ul{
-  padding-top: -1em;
-  padding-bottom: 1em;
-}
+
 
 #month{
   background-color: whitesmoke;
@@ -425,12 +422,12 @@ svg #grey-polygon{
   height: 5em;
   padding: 0.2em;
   width: 25em;
-  background-color: #FFFFFF;
+
 }
 
 .meet-descriptions li{
   float: left;
-
+  box-sizing: border-box;
 }
 /*-----------------------Meet/Events Date-----------------*/
 
@@ -447,16 +444,18 @@ svg #grey-polygon{
 
 .date-background h3{
   position: relative;
-  font-size: 2.35em;
+  font-size: 3.5em;
   font-weight: 200;
-
+  margin-left: 0.15em;
+  margin-top: 0.35em;
   z-index: 305;
 }
 .date-background p{
   position: relative;
-  font-size: 0.85em;
+  font-size: 1.1em;
   font-weight: 100;
-
+  margin-left: 0.7em;
+  margin-top: -2.8em;
   letter-spacing: 0.1em;
   z-index: 305;
 }
@@ -464,29 +463,32 @@ svg #grey-polygon{
 
 /*-----------------------Meet/Events Decriptions-----------------*/
 .meet-descriptions{
-  width: 97%;
-  height: 3.4em;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 5em;
   position: relative;
-
+/*outline: 1px red solid;*/
   background-color: #FFFFFF;
-
+  padding: 0.5em;
   color: #333333;
 }
 .title h3{
-  font-size: 0.9em;
-  color: #0872B8;
-  margin-left: 1.5em;
-  margin-top: -1em;
+  font-size: 1em;
+  color: #333333;
+  margin-left: 2em;
+  margin-top:-1em;
   font-weight: bold;
 }
-.meet-descriptions span{
-  color:#0872B8; 
-}
-.entry, .cost{
+
+.entry{
   margin-top: -1.2em;
   font-size: 0.7em;
   margin-left: 1.8em;
-
+}
+.cost{
+  margin-top: -1.2em;
+  font-size: 0.7em;
+  margin-left: 1.8em;
 }
 /*
 use this for mobile!!!!!!!*/
@@ -514,7 +516,9 @@ use this for mobile!!!!!!!*/
   /*display: none;*/
  
 }
-
+.meet-descriptions span{
+  color:#0872B8; 
+}
 
 /*-----------------------Gallery-----------------*/
 
@@ -609,42 +613,51 @@ use this for mobile!!!!!!!*/
 }
 .senior-squad{
   background-color: #FFFFFF;
-  width: 23em;
-  height: 12em;
+  width: 98%;
+  height: 16em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .junior-squad{
   background-color: #FFFFFF;
-  width: 23em;
-  height: 12em;
+  width: 98%;
+  height: 16em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .mini-squad{
   background-color: #FFFFFF;
-  width: 23em;
-  height: 12em;
+  width: 98%;
+  height: 16em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .senior-squad img{
   height: 45%;
   width: 45%;
   margin-left: 28%;
-  margin-top: 0.5em;
+  margin-top: 1.5em;
+  padding-bottom: 0.25em;
 }
 .junior-squad img{
     height: 40%;
   width: 40%;
   margin-left: 32%;
-  margin-top: 0.5em;
+  margin-top: 2em;
+  padding-bottom: 0.1em;
 }
 .mini-squad img{
     height: 45%;
   width: 40%;
   margin-left: 30%;
-  margin-top: 0.5em;
+  margin-top: 2em;
+   padding-bottom: 0.1em;
 }
 
 /*-----------------------Information and links-----------------*/
@@ -920,9 +933,10 @@ display: none;
   /*background-color: white; */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  overflow: hidden;
+ /* overflow: hidden;*/
   cursor: pointer;
 }
+
  
 .flex-container li a{
   display: block;
@@ -943,8 +957,8 @@ display: none;
 li.flex-item{
   border: none;
   position: relative;
-/*  width: 6em;*/
-/*  height: 6em;*/
+/*  -moz-box-sizing: border-box;
+  box-sizing: border-box;*/
 }
 /* ==========================================================================
    BRAND & Transparent White background
@@ -1356,18 +1370,10 @@ font-size: 1.5em;
   margin-left: -0.15em;
 }
 
-.meet{
-  position: relative;
+div.meet{
   height: 5em;
-  padding: 0.2em;
   width: 25em;
-  background-color: #FFFFFF;
 }
-/*.meet-descriptions{
-  background-color: #FFFFFF;
-  margin: 0.5em;
-}*/
-
 .meet-descriptions li{
   float: left;
 
@@ -1377,12 +1383,13 @@ font-size: 1.5em;
 .date-background{
   width: 5em;
   height: 5em;
-  position: absolute;
+  
   background-color: #333333;
   color: white;
  /* margin-top: -2em;*/
   z-index: 300;
-  margin-left: -0.2em;
+  margin-left: 1em;
+  margin-top: -1em;
 
 }
 .date-background h3 {
@@ -1405,7 +1412,7 @@ z-index: 305;
 /*-----------------------Meet/Events Decriptions-----------------*/
 
 .meet-descriptions{
-  width: 23em;
+  width: 25em;
 height: 5em;
 
 position: absolute;
@@ -1419,24 +1426,29 @@ color: #333333;
 }
 
 li.title h3{
-  margin-top: 0.2em;
-  font-size: 0.9em;
+  margin-top: -1.2em;
+  font-size: 1.1em;
+  margin-left: 2em;
   color: #333333;
 }
 li.entry {
   margin-top: -2em;
   font-size: 0.9em;
+  margin-left: 3em;
 /*  margin-left: 3em;*/
 }
 
 li .cost{
-
+  margin-left: 3em;
+  margin-top: -3.4em;
   font-size: 0.9em;
 }
 
 li .where{
-
+  float: left;
+  margin-left: 14.5em;
   font-size: 0.9em;
+
 }
 
 
@@ -1512,6 +1524,96 @@ p.squad-description{
   width: 20em;
   text-align: left;
 }
+/*-----------------------Squads------------------------*/
+.squads{
+  background-color: #F1F1F1;
+  margin-top: -0.5em;
+  display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+}
+.squad-description{
+  margin-left: -3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.timetable{
+  margin-left: -3em;
+}
+.squads h3{
+  text-align: center;
+}
+.squads p{
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+.squads a{
+  color: #3F3F3F;
+  transition: color 1s ease;
+}
+.squads a:hover{
+  color: #99FFFF;
+}
+.senior-squad p{
+  margin-top: -0.8em;
+}
+.junior-squad p{
+  margin-top: -0.8em;
+}
+.mini-squad p{
+  margin-top: -0.8em;
+}
+.senior-squad{
+  background-color: #FFFFFF;
+  width: 25em;
+  height: 16em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+  margin-right:0.5em; 
+}
+.junior-squad{
+  background-color: #FFFFFF;
+  width: 25em;
+  height: 16em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+}
+.mini-squad{
+  background-color: #FFFFFF;
+  width: 25em;
+  height: 16em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+}
+.senior-squad img{
+  height: 45%;
+  width: 45%;
+  margin-left: 28%;
+  margin-top: 1.5em;
+  padding-bottom: 0.25em;
+}
+.junior-squad img{
+    height: 40%;
+  width: 40%;
+  margin-left: 32%;
+  margin-top: 2em;
+  padding-bottom: 0.1em;
+}
+.mini-squad img{
+    height: 45%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 2em;
+   padding-bottom: 0.1em;
+}
+
 /*/----------------------------------squads-----------------------------------/*/
 
 #gallery{
