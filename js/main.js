@@ -53,3 +53,15 @@ function locateSquad(){
     }
 
 
+//Mobile drop down menu href link trasition between sections on web page.
+
+
+
+
+
+//Tabify function for Sqauds
+
+$(document).ready(function () {
+	$('#menu').tabify();
+	
+});

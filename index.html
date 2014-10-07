@@ -57,21 +57,21 @@
 <header>      
   <div id="main-header" class="widgets-colomn">
     <ul id="main-nav">
-      <li><div><a class="latest-news" data-url href="/news">
+      <li><div><a href="#latest-news" class="latest-news">
         <span>latest news</span>
         
       </a>
     </div>
   </li>
 
-  <li><a href="/meets"><span>upcoming meets</span></a></li>
-  <li><a href="/gallery"><span>gallery</span></a></li>
+  <li><a href="#meets-events"><span>upcoming meets</span></a></li>
+  <li><a href="#gallery"><span>gallery</span></a></li>
   <li> 
     <span class="locate-squad-touch">locate a squad</span> 
     <div id="select">
       <select id="select-squad">
         <option value="0">choose a location</option>
-        <option value="mteden-map.html">Mt Eden</option>
+        <option value="mteden.html">Mt Eden</option>
         <option value="2"><a href="#">New Windsor</a></option>
         <option value="3"><a href="#">Kelston</a></option>
         <option value="4"><a href="#">Glen Eden</a></option>
@@ -84,9 +84,9 @@
      <form action="search/SiteSearch" method="get"><input id="go "type="button" value="enter" onclick="locateSquad()" /></form>
    </div>
  </li>
- <li><a href="/contact"><span>contact</span></a></li>
- <li><a href="/links"><span>useful links</span></a></li>
- <li><a href="/records"><span>records</span></a></li>
+ <li><a href="#enquire"><span>enquiries</span></a></li>
+ <li><a href="#club-information"><span>club information</span></a></li>
+ <li><a href="#athlete-records"><span>athlete records</span></a></li>
  <li id="more"><a href="#"><span>more</span></a><span class="down-arrow"><i class="fa fa-sort-desc"></i></span>
   <div class="flex-content wrap">
     <div id="dropdown">
@@ -124,7 +124,7 @@
 <!-- End of Headers -->
 
 
-<section>
+<section id="latest-news">
 <!-- Background control -->
 
 <!-- Controls -->
@@ -153,7 +153,7 @@
                 <p class="date">01/09/14</p>
               </li>
               <li>
-                <p class="news-contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                <p class="news-contents" maxlength="120">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
               </li>
             </ul>
           </div>
@@ -179,7 +179,7 @@
                 <p class="date">01/10/14</p>
               </li>
               <li>
-                <p class="news-contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <p class="news-contents" maxlength="120">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
               </li>
             </ul>
           </div>
@@ -204,7 +204,7 @@
                 <p class="date">01/10/14</p>
               </li>
               <li>
-                <p class="news-contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <p class="news-contents" maxlength="120">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
               </li>
             </ul>
           </div>
@@ -233,7 +233,7 @@
 <!-- End of Sliders and Latest News -->
 
 <!-- Start of Meets and Events -->
-<section>
+<section id="meets-events">
     <div id="meets-list">
         <h3 class="flex-content wrap" id="meets">meets/events</h3>   
         <h3 class="flex-content wrap" id="month">October/November 2014</h3>
@@ -378,8 +378,8 @@
 <!-- End of Meets and Events -->
 
 <!-- Start of Gallery -->
-<section>
-  <h2 style="font-size:0em;">gallery</h2>
+<section id="gallery">
+ <!--  <h2 style="font-size:0em;">gallery</h2> -->
     <div id="gallery">
         <ul class="flex-container wrap">
             <li class="flex-item">
@@ -429,21 +429,32 @@
 <!-- End of Gallery -->
 
 <!-- Start of Squads -->
-<section>
+<section id="squads">
   <div class="squads">
-    <div class="senior-squad">
-      <img src="img/Senior-squad-icon.png" alt="senior-squad-icon">
-      <h3>Senior/Competition Squad</h3>
-    </div>
-    <div class="junior-squad">
-      <img src="img/Junior-squad-icon.png" alt="junior-squad-icon">
-      <h3>Junior/Competition Squad</h3>
-    </div>
-    <div class="mini-squad">
-      <img src="img/mini-squad-icon.png" alt="mini-squad-icon">
-      <h3>Mini Squad</h3>
-    </div>
-    <div id="squad-slide-show">
+    <ul id="menu" class="menu">
+      <li class="active">
+        <div class="senior-squad">
+          <a href=""><img src="img/Senior-squad-icon.png" alt="senior-squad-icon">
+          <h3>Senior/Competition Squad</h3></a>
+        </div>
+      </li>
+      <li>
+        <div class="junior-squad">
+          <a href=""></a><img src="img/Junior-squad-icon.png" alt="junior-squad-icon">
+          <h3>Junior/Competition Squad</h3></a>
+        </div>
+      </li>
+      <li>
+        <div class="mini-squad">
+          <a href=""></a><img src="img/mini-squad-icon.png" alt="mini-squad-icon">
+        <h3>Mini Squad</h3></a>
+        </div>
+      </li>
+    </ul>
+
+
+    <!-- Senior Squads Info -->
+    <div id="senior-squad-info">
       <ul>
         <li>
         <div id="timetable">
@@ -458,6 +469,12 @@
     </ul>
   </div>
 
+
+
+
+
+
+
 </div>
 </section>
 <!-- <div class="flex-content wrap">
@@ -468,22 +485,22 @@
 <!-- End of Squads -->
 
 <!-- Start of Club Information -->
-<section>
+<section id="club-information">
 <div class="club-info">
   <h3 class="flex-logos wrap">club information</h3>
   <ul class="flex-logos wrap">
             
             <li id="laser">
-            <a href="#"><img src="img/Laser-Mt-Eden-BW-small.png" alt="LaserMtEdenSwim"></a>
+            <a href="#"><img src="img/Laser-Mt-Eden-BW-small.png" alt="Laser Mt Eden Swim Club"></a>
             </li>
             <li id="dgss">
-            <a href="#"><img src="img/DGSS-BW-small.png" alt="LaserMtEdenSwim"></a>
+            <a href="http://www.dgss.co.nz/"><img src="img/DGSS-BW-small.png" alt="Dean Greenwood Swim School"></a>
             </li>
             <li id="swimnz">
-            <a href="#"><img src="img/swimnz-logo-bw-small.png" alt="LaserMtEdenSwim"></a>
+            <a href="http://www.swimming.org.nz/"><img src="img/swimnz-logo-bw-small.png" alt="Swimming NZ"></a>
             </li>
             <li id="fina">
-            <a href="#"><img src="img/FINA-bw-small.png" alt="LaserMtEdenSwim"></a>
+            <a href="http://www.manswim.org.nz/calculators/fina_point_calculator.html"><img src="img/FINA-bw-small.png" alt="Fina"></a>
             </li>
 
              
@@ -493,7 +510,7 @@
 </section>
 <!-- End of Club information -->
 <!-- Enquiry Form -->
-<section class="flex-container wrap">
+<section class="flex-container wrap" id="enquire">
   <div class="form">
     <form class="cmxform"  id="enquiry-form" method="get" action="#">
       <fieldset style="border: none;">
@@ -528,7 +545,7 @@
 
 <!-- End of Enquiry Form -->
 <!-- Start Records -->
-<section>
+<section id="athlete-records">
   <div id="records-list">
     <h3 class="flex-content wrap" id="records">athlete records</h3>
     <ul class="flex-content wrap">
@@ -536,15 +553,15 @@
       <li class="flex-item">
           <div class="meet">                         
             <div class="date-background">
-              <div class="record-year"><h3>2009</h3></div>
+              <div class="record-year"><h3>2012</h3></div>
             </div>
             <div class="record-descriptions">
               <ul>
                 <li class="swimmer"><h3>Swimmers Name</h3></li>
-                <li class="event"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
-                <li class="time"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
-                <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
-                <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                <li class="event"><p><i class="fa fa-bookmark" style="color:#0872B8;"></i>Event: <span>100IM</span></p></li>
+                <li class="time"><p><i class="fa fa-clock-o" style="color:#7EB847;"></i>Time: <span>1.00.00</span></p></li>
+                <li class="record-date"><p><i class="fa fa-calendar" style="color:#CD00CD;"></i>Date: <span>01/11/11</span></p></li>
+                <li class="record-where"><p><i class="fa fa-compass" style="color:red;"></i>Where: <span>Te Rapa</span></p></li>
                 
               </ul>
             </div>               
@@ -553,15 +570,32 @@
       <li class="flex-item">
           <div class="meet">                         
             <div class="date-background">
-              <div class="record-year"><h3>2009</h3></div>
+              <div class="record-year"><h3>2011</h3></div>
             </div>
             <div class="record-descriptions">
               <ul>
                 <li class="swimmer"><h3>Swimmers Name</h3></li>
-                <li class="event"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
-                <li class="time"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
-                <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
-                <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                <li class="event"><p><i class="fa fa-bookmark" style="color:#0872B8;"></i>Event: <span>100IM</span></p></li>
+                <li class="time"><p><i class="fa fa-clock-o" style="color:#7EB847;"></i>Time: <span>1.00.00</span></p></li>
+                <li class="record-date"><p><i class="fa fa-calendar" style="color:#CD00CD;"></i>Date: <span>01/11/11</span></p></li>
+                <li class="record-where"><p><i class="fa fa-compass" style="color:red;"></i>Where: <span>Te Rapa</span></p></li>
+                
+              </ul>
+            </div>               
+        </div>
+    </li>
+          <li class="flex-item">
+          <div class="meet">                         
+            <div class="date-background">
+              <div class="record-year"><h3>2010</h3></div>
+            </div>
+            <div class="record-descriptions">
+              <ul>
+                <li class="swimmer"><h3>Swimmers Name</h3></li>
+                <li class="event"><p><i class="fa fa-bookmark" style="color:#0872B8;"></i>Event: <span>100IM</span></p></li>
+                <li class="time"><p><i class="fa fa-clock-o" style="color:#7EB847;"></i>Time: <span>1.00.00</span></p></li>
+                <li class="record-date"><p><i class="fa fa-calendar" style="color:#CD00CD;"></i>Date: <span>01/11/11</span></p></li>
+                <li class="record-where"><p><i class="fa fa-compass" style="color:red;"></i>Where: <span>Te Rapa</span></p></li>
                 
               </ul>
             </div>               
@@ -575,10 +609,10 @@
             <div class="record-descriptions">
               <ul>
                 <li class="swimmer"><h3>Swimmers Name</h3></li>
-                <li class="event"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
-                <li class="time"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
-                <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
-                <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                <li class="event"><p><i class="fa fa-bookmark" style="color:#0872B8;"></i>Event: <span>100IM</span></p></li>
+                <li class="time"><p><i class="fa fa-clock-o" style="color:#7EB847;"></i>Time: <span>1.00.00</span></p></li>
+                <li class="record-date"><p><i class="fa fa-calendar" style="color:#CD00CD;"></i>Date: <span>01/11/11</span></p></li>
+                <li class="record-where"><p><i class="fa fa-compass" style="color:red;"></i>Where: <span>Te Rapa</span></p></li>
                 
               </ul>
             </div>               
@@ -587,15 +621,15 @@
           <li class="flex-item">
           <div class="meet">                         
             <div class="date-background">
-              <div class="record-year"><h3>2009</h3></div>
+              <div class="record-year"><h3>2008</h3></div>
             </div>
             <div class="record-descriptions">
               <ul>
                 <li class="swimmer"><h3>Swimmers Name</h3></li>
-                <li class="event"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
-                <li class="time"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
-                <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
-                <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                <li class="event"><p><i class="fa fa-bookmark" style="color:#0872B8;"></i>Event: <span>100IM</span></p></li>
+                <li class="time"><p><i class="fa fa-clock-o" style="color:#7EB847;"></i>Time: <span>1.00.00</span></p></li>
+                <li class="record-date"><p><i class="fa fa-calendar" style="color:#CD00CD;"></i>Date: <span>01/11/11</span></p></li>
+                <li class="record-where"><p><i class="fa fa-compass" style="color:red;"></i>Where: <span>Te Rapa</span></p></li>
                 
               </ul>
             </div>               
@@ -604,32 +638,15 @@
           <li class="flex-item">
           <div class="meet">                         
             <div class="date-background">
-              <div class="record-year"><h3>2009</h3></div>
+              <div class="record-year"><h3>2007</h3></div>
             </div>
             <div class="record-descriptions">
               <ul>
                 <li class="swimmer"><h3>Swimmers Name</h3></li>
-                <li class="event"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
-                <li class="time"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
-                <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
-                <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
-                
-              </ul>
-            </div>               
-        </div>
-    </li>
-          <li class="flex-item">
-          <div class="meet">                         
-            <div class="date-background">
-              <div class="record-year"><h3>2009</h3></div>
-            </div>
-            <div class="record-descriptions">
-              <ul>
-                <li class="swimmer"><h3>Swimmers Name</h3></li>
-                <li class="event"><p><i class="fa fa-bookmark"></i>Event: <span>100IM</span></p></li>
-                <li class="time"><p><i class="fa fa-clock-o"></i>Time: <span>1.00.00</span></p></li>
-                <li class="record-date"><p><i class="fa fa-calendar"></i>Date: <span>01/11/11</span></p></li>
-                <li class="record-where"><p><i class="fa fa-compass"></i>Where: <span>Te Rapa</span></p></li>
+                <li class="event"><p><i class="fa fa-bookmark" style="color:#0872B8;"></i>Event: <span>100IM</span></p></li>
+                <li class="time"><p><i class="fa fa-clock-o" style="color:#7EB847;"></i>Time: <span>1.00.00</span></p></li>
+                <li class="record-date"><p><i class="fa fa-calendar" style="color:#CD00CD;"></i>Date: <span>01/11/11</span></p></li>
+                <li class="record-where"><p><i class="fa fa-compass" style="color:red;"></i>Where: <span>Te Rapa</span></p></li>
                 
               </ul>
             </div>               
@@ -651,10 +668,12 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="//code.jquery.com/jquery-latest.min.js"></script>
         <script src="js/search.js"></script>
-        <script src="js/form-main.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/latest-news-textlimit.js"></script>
         <script src="js/unslider.js"></script>
+        <script src="js/latest-news-textlimit.js"></script>
+        <script src="tabify-js/jquery.tabify.js"></script>
+        <script src="tabify-js/jquery.tabify.source.js"></script>
+        <script src="tabify-js/jquery.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -343,7 +343,7 @@ font-size: 0px;
   font-weight: 100;
   margin-left: -1.8em;
   font-size: 0.8em;
-  margin-top: -1em;
+  margin-top: -1.2em;
   word-wrap: break-word;
   font-family: sans-serif;
 }
@@ -599,7 +599,7 @@ li.marker{
    background-color: #eaeaea;
    border-top: 1px solid #CCCCCC;
    border-bottom: 1px solid #CCCCCC;
-   margin-top: -2em;
+   /*margin-top: -1.5em;*/
 }
 
 #gallery .flex-item img{
@@ -643,7 +643,7 @@ li.marker{
 /*-----------------------Squads------------------------*/
 .squads{
  /* background-color: #eaeaea;*/
-  margin-top: -0.5em;
+  margin-top: 1em;
   display: -webkit-flex;
   display: -ms-flexbox;
    display: flex;
@@ -677,8 +677,9 @@ li.marker{
   color: #3F3F3F;
   transition: color 1s ease;
 }
-.squads a:hover{
-  color: #99FFFF;
+.senior-squad a:hover{
+  text-decoration: none;
+
 }
 .senior-squad{
   background-color: #FFFFFF;
@@ -1307,6 +1308,8 @@ font-weight: 100;
 
 
 @media only screen and (min-width: 40em){
+
+
 /* ==========================================================================
     GALLERY
 ========================================================================== */
@@ -1321,8 +1324,27 @@ font-weight: 100;
   display: none;
 }
 /* ==========================================================================
+    TABIFY SQAUDS
+   ========================================================================== */
+
+
+
+
+
+      .menu li { 
+        display: inline; 
+        float: left;
+      }
+
+
+
+
+
+/* ==========================================================================
     SQUADS
    ========================================================================== */
+
+
 .senior-squad img{
   height: 50%;
 
@@ -1365,7 +1387,7 @@ font-weight: 100;
   height: 12em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
-
+  
 }
 .mini-squad{
   background-color: #FFFFFF;
@@ -1373,10 +1395,9 @@ font-weight: 100;
   height: 12em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
-
-}
+ }
 #timetable{
-  margin-left: 2em;
+  /*margin-left: 2em;*/
 }
 
 .squad-description{
@@ -1397,17 +1418,17 @@ font-weight: 100;
 #dgss{
 
   margin-top: -1em;
-  margin-left: 2em;
+  margin-left: -1em;
 }
 #swimnz{
 
-  margin-left: 1em;
+  margin-left: -1em;
   padding-left: 1em;
   padding-right: 0em;
 }
 #fina{
 
-  margin-left: 4em;
+  margin-left: 2em;
 }
 
 /*/------------------------------------sliders---------------------------------/*/
@@ -1428,18 +1449,18 @@ font-weight: 100;
 
 
 #content-one {
-margin-top: -6em;
+margin-top: -7em;
 }
 
 
 div.content {
 align-items: center;
 width: 100%;
-height: 6em;
+height: 7em;
 background-color: rgba(0,107,182,0.85);
 position: absolute;
 z-index: 1000;
-margin-top: -7.9em;
+margin-top: -8.9em;
 }
 
 .content h3 {
@@ -1450,10 +1471,12 @@ margin-top: -0.2em;
 padding-left: 0.8em;
 }
 .item a p{
+
   font-size: 1em;
+
 }
 .news-contents {
-width: 100%;
+width: 50em;
 padding-right: 1em;
 padding-left: 1em;
 color: white;
@@ -1750,7 +1773,7 @@ li.marker{
   color: white;
  /* margin-top: -2em;*/
   z-index: 300;
-  margin-left: 0.6em;
+  margin-left: 0.1em;
   margin-top: 0em;
 
 }
@@ -1858,10 +1881,24 @@ margin-right: auto;
 background-color: white;
 }
 /*/---------------------------------squads content when icon click on ------------------------------------/*/
-#squad-slide-show li{
+#senior-squad-info li{
   width: 35em;
 }
-#squad-slide-show ul li{
+#senior-squad-info ul li{
+  float: left;
+  margin-top: 3em;
+}
+#junior-squad-info li{
+  width: 35em;
+}
+#junior-squad-info ul li{
+  float: left;
+  margin-top: 3em;
+}
+#mini-squad-info li{
+  width: 35em;
+}
+#mini-squad-info ul li{
   float: left;
   margin-top: 3em;
 }
@@ -1869,10 +1906,9 @@ background-color: white;
   box-sizing: border-box;
   margin-top: -2em;
   padding-bottom: 2em;
-
 }
 #text{
-  padding-left: 1em;
+  margin-left: -1em;
   margin-top: -2.5em;
   
 }
@@ -1900,7 +1936,7 @@ p.squad-description{
 /*-----------------------Squads------------------------*/
 .squads{
 
-  margin-top: -5em;
+  margin-top: -3em;
   display: -webkit-flex;
   display: -ms-flexbox;
    display: flex;
@@ -1918,7 +1954,7 @@ p.squad-description{
   padding-left: 1em;
   padding-right: 1em;
 }
-.squad-slide-show{
+.senior-squad-info{
   width: 200em;
 }
 .timetable{
@@ -1981,7 +2017,7 @@ p.squad-description{
 /*/----------------------------------squads-----------------------------------/*/
 
 #gallery{
-  margin-top: -1em;
+  margin-top: 0em;
   background-color: #eaeaea;
   border-bottom: 1px solid #CCCCCC;
 }
@@ -2039,9 +2075,22 @@ color: #0672B8;
 /*/--------------------------------------end of sliders-------------------------------/*/
 
 /*/--------------------------------------news content-------------------------------/*/
+
 .item a p{
-  color: white;
-  font-size: 0.9em;
+  font-size: 1em;
+  margin-top: -1em;
+}
+.news-contents {
+width: 50em;
+padding-right: 1em;
+padding-left: 1em;
+color: white;
+font-weight: 100;
+margin-left: -1.8em;
+font-size: 0.95em;
+margin-top: -2em;
+word-wrap: break-word;
+font-family: sans-serif;
 }
 
 #content-one{
@@ -2063,7 +2112,7 @@ div.content{
   color:#99FFFF;
   font-size: 1.4em;
   margin-top: -0.5em;
-  margin-left: -1.3em;
+  margin-left: -1.4em;
   padding-top: 0.8em;
 
 }
@@ -2130,19 +2179,30 @@ margin-right: auto;
 }
 
 
+/*/------------------------------------club info logos---------------------------------/*/
 
 
+#laser{
 
+  margin-top: 0em;
+  margin-left: -6em;
 
+}
+#dgss{
 
+  margin-top: -1em;
+  margin-left: 4em;
+}
+#swimnz{
 
+  margin-left: 3em;
+  padding-left: 1em;
+  padding-right: 0em;
+}
+#fina{
 
-
-
-
-
-
-
+  margin-left: 5em;
+}
 
 /*/--------------------------------------Form-------------------------------/*/
 
