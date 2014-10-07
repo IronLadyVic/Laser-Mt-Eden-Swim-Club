@@ -330,7 +330,7 @@ font-size: 0px;
   margin-right: 0.8em;
   font-family: sans-serif
 }
-#news-contents{
+.news-contents{
   width: 100%;
   padding-right: 0.2em;
   color: white;
@@ -432,6 +432,36 @@ svg #grey-polygon{
   float: left;
   box-sizing: border-box;
 }
+
+li.facebook{
+  margin-top: -2.5em;
+  margin-left: 6em;
+}
+
+.facebook p i{
+  font-size: 1.2em;
+  color:#0872B8;
+}
+
+li.info{
+  margin-top: -3.5em;
+  margin-left: 18.3em;
+}
+
+.info p i{
+  font-size: 1.2em;
+  color:#7EB847;
+}
+li.marker{
+  margin-top: -3.5em;
+  margin-left: 20em;
+}
+
+.marker p i{
+  font-size: 1.2em;
+  color:red;
+}
+
 /*-----------------------Meet/Events Date-----------------*/
 
 .date-background{
@@ -474,7 +504,7 @@ svg #grey-polygon{
   background-color: #F5F5F5 ;
   padding: 0.5em;
   color: #333333;
-  
+
 }
 .record-descriptions{
   -moz-box-sizing: border-box;
@@ -491,17 +521,19 @@ svg #grey-polygon{
   font-size: 1em;
   color: #333333;
   margin-left: 2em;
-  margin-top:-1.5em;
+  margin-top:-1.3em;
   font-weight: bold;
+  height: 1em;
+  width: 22em;
 }
 
 .entry{
-  margin-top: -0.8em;
+  margin-top: -1.5em;
   font-size: 0.8em;
-  margin-left: -11.5em;
+  margin-left: 2.8em;
 }
 .cost{
-  margin-top: -1.8em;
+  margin-top: -3.2em;
   font-size: 0.8em;
   margin-left: 2.7em;
 }
@@ -509,9 +541,12 @@ svg #grey-polygon{
 .where{
   float: left;
   font-size: 0.8em;
-  margin-top: -3.5em;
-  margin-left: 13.4em;
+  margin-top: -3.4em;
+  margin-left: 14.5em;
+  width: 12em;
+
 }
+
 .meet-descriptions i{
    font-size: 0.8em;
    padding-right: 0.5em;
@@ -535,6 +570,7 @@ svg #grey-polygon{
    background-color: #eaeaea;
    border-top: 1px solid #CCCCCC;
    border-bottom: 1px solid #CCCCCC;
+   margin-top: -2em;
 }
 
 #gallery .flex-item img{
@@ -673,23 +709,37 @@ section .club-info{
 }
 .club-info h3{
   font-size: 1.3em;
+  background-color: #F5F5F5;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
 
 }
+
+
+.flex-logos li{
+  padding: 1em;
+}
+
 #laser{
-  margin-top: 4em;
-  margin-left: -17em;
+
+  margin-top: 0em;
+  margin-left: -3.5em;
+
 }
 #dgss{
-  margin-top: 3em;
-  margin-left: 1em;
+
+  margin-top: -1em;
+  margin-left: -1em;
 }
 #swimnz{
-  margin-left: -2em;
+
+  margin-left: -6em;
   padding-left: 3em;
   padding-right: 0em;
 }
 #fina{
-  margin-left: 1em;
+
+  margin-left: 4em;
 }
 .club-info .flex-item h3{
   margin-top: -2em;
@@ -762,10 +812,10 @@ input[type="submit"] {
     background-color: #7EB847;
     color: #eee;
     font-weight: lighter;
-    text-transform: uppercase;
+   /* text-transform: lowercase;*/
     width: 26em;
     height: 3em;
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #enquiry form input[type="submit"]:hover {
@@ -836,20 +886,20 @@ padding-bottom: 1em;
     margin-top: -2em;
   margin-left: 4em;
 }
-#record-year{
-
-font-size: 2em;
+.record-year{
+font-size: 0.58em;
 font-weight: 200;
-margin-top: 0.8em;
-/*margin-left: 0.4em;*/
+margin-top: 2.9em;
 z-index: 305;
 
 }
 #records{
-
+  background-color: #F5F5F5;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 .record-descriptions span {
 color: #0872B8;
@@ -1042,7 +1092,25 @@ li.flex-item{
    flex-flow: row wrap;
    -webkit-align-content: flex-end;
    align-content: flex-end;
-   display: -ms-flexbox;  
+
+
+}
+.flex-logos{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+   display: flex;
+   display: -ms -webkit-flex;
+   display: -ms flex;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
 
 
 }
@@ -1288,6 +1356,31 @@ font-weight: 100;
   padding-left: 0em;
 }
 
+/*/------------------------------------club info logos---------------------------------/*/
+
+
+#laser{
+
+  margin-top: 0em;
+  margin-left: -5em;
+
+}
+#dgss{
+
+  margin-top: -1em;
+  margin-left: 2em;
+}
+#swimnz{
+
+  margin-left: 1em;
+  padding-left: 1em;
+  padding-right: 0em;
+}
+#fina{
+
+  margin-left: 4em;
+}
+
 /*/------------------------------------sliders---------------------------------/*/
 
 .item img:nth-child(1){
@@ -1330,7 +1423,7 @@ padding-left: 0.8em;
 .item a p{
   font-size: 1em;
 }
-#news-contents {
+.news-contents {
 width: 100%;
 padding-right: 1em;
 padding-left: 1em;
@@ -1343,9 +1436,27 @@ word-wrap: break-word;
 font-family: sans-serif;
 }
 
+/*/------------------------------------Form---------------------------------/*/
+#comment{
+  margin-top: 2em;
+}
+textarea{
+  margin-left: -11.5em;
+  margin-top: 1em;
+
+}
+
+
+
+
 footer{
   margin-top: -2em;
 }
+
+
+
+
+
 }
 
 
@@ -1453,7 +1564,7 @@ font-size: 1em;
 }
 header #dropdown.open{
   max-height: 120em;
-  max-width: 65em;
+  max-width: 60em;
   background-color: rgba(255,255,255,0.9);
   z-index: 2000;
   position: absolute;
@@ -1527,15 +1638,14 @@ font-size: 1.5em;
   font-size: 1em;
 /*  background-color: #eaeaea;*/
   width: 100%;
-  border-bottom: 1px solid #CCCCCC;
-
 }
 
 .meet {
 position: relative;
 height: 5em;
 padding: 0.2em;
-width: 25em;
+width: 28em;
+padding-left: 0.2em;
 
 }
 
@@ -1569,6 +1679,38 @@ width: 25em;
   float: left;
 
 }
+
+li.facebook{
+  margin-top: -3em;
+  margin-left: 19.5em;
+}
+
+.facebook p i{
+  font-size: 1.2em;
+  color:#0872B8;
+}
+
+li.info{
+  margin-top: -3.5em;
+  margin-left: 21.3em;
+}
+
+.info p i{
+  font-size: 1.2em;
+  color:#7EB847;
+}
+li.marker{
+  margin-top: -3.5em;
+  margin-left: 23.2em;
+}
+
+.marker p i{
+  font-size: 1.2em;
+  color:red;
+}
+
+
+
 /*-----------------------Meet/Events Date-----------------*/
 
 .date-background{
@@ -1608,11 +1750,13 @@ z-index: 305;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 5em;
+  width: 28em;
   position: relative;
 /*outline: 1px red solid;*/
   background-color: #F5F5F5 ;
   padding: 0.5em;
   color: #333333;
+
   /*margin-left: 1em;*/
 }
 
@@ -1640,6 +1784,8 @@ li.title h3{
   margin-top: -1.2em;
   font-size: 1.1em;
   margin-left: 2.4em;
+  height: 1.5em;
+  width: 28em;
   color: #333333;
 }
 li.entry {
@@ -1812,8 +1958,8 @@ p.squad-description{
 }
 
 #gallery .flex-item img{
-  width: 15em;
-  height: 15em;
+  width: 13.5em;
+  height: 13.5em;
 }
 
 /*/--------------------------------------search container-------------------------------/*/
@@ -1901,7 +2047,7 @@ div.content{
   margin-top: -2.2em;
   margin-right: 1em;
 }
-#news-contents{
+.news-contents{
   width: 50em;
   padding-right: 0.2em;
   color: white;
@@ -1928,8 +2074,6 @@ svg #blue-polygon{
   vertical-align: middle;
   z-index: 1000;
   color: #0872B8;
-
- /* margin-top: 10em;*/
 }
 
 /*/--------------------------------------records list-------------------------------/*/
@@ -1949,46 +2093,54 @@ margin-right: auto;
 .time p{
     margin-left: -1.5em;
 }
+/*/--------------------------------------club info-------------------------------/*/
+
+
+.flex-logos li{
+  padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*/--------------------------------------Form-------------------------------/*/
-/*/--------------------------------------news content-------------------------------/*/
-form ul{
-  width: 50em;
+
+form{
+  padding-bottom: 2em;
 }
 
-.flex-item textarea{
-  float: left;
-   width: 23em;
-  height: 10em;
+li#name.flex-item{
+  margin-left: 0em;
 }
 
-.flex-item input .submit{
-  height: 5em;
+
+li#phone.flex-item{
+  margin-left: 0em;
+}
+li#email.flex-item{
+  margin-left: 0em;
+}
+li#textcomment.flex-item{
+  margin-left: 28em;
+  margin-top: -17.5em;
 }
 
-.form form input[type="text"], input[type="password"], input[type="email"], textarea {
-    background-color: #3b4148;
-    border-radius: 0px 3px 3px 0px;
-    color: white;
-    margin-bottom: 1em;
-    padding: 0 16px;
-    width: 20em;
-    height: 3.2em;
-
-}
 
 
 input[type="submit"] {
-    border-radius: 0.1em;
-    -moz-border-radius: 0.1em;
-    -webkit-border-radius: 0.1em;
-    /*background-color: rgba(0,107,182,0.75);*/
-    background-color: #7EB847;
-    color: #eee;
-    font-weight: lighter;
-    text-transform: uppercase;
-    width: 20em;
-    height: 3em;
+  margin-left: 28em;
 
 }
 /*-----------------------footer-----------------*/
@@ -2024,8 +2176,8 @@ font-weight: 100;
   display: none;
 }
 #gallery li:nth-child(8){
-  width: 0em;
-  height: 0em;
+  width: 13.5em;
+  height: 13.5em;
   display: none;
 }
 
@@ -2056,12 +2208,12 @@ font-weight: 100;
     #gallery li:nth-child(7){
   width: 13.5em;
   height: 13.5em;
-  display: none;
+  display: block;
 }
   #gallery li:nth-child(8){
   width: 13.5em;
   height: 13.5em;
-  display: none;
+  display: block;
 }
 #gallery li:nth-child(9){
   width: 13.5em;
