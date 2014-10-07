@@ -260,13 +260,19 @@ font-size: 0px;
   border: 1px solid rgb(166, 166, 166);
   color: #222;
 }
+#go{
+  width: 5em;
+  height: 2em;
+  background-color: #7EB847;
+  color: #eee;
 
+}
 
 #select{
   width: 0;
   height: 0;
   display: none;
-  overflow: hidden;
+/*  overflow: hidden;*/
 }
 
 #select.show{
@@ -396,7 +402,7 @@ svg #grey-polygon{
 #meets{
   font-size: 1.5em;
   line-height:1em;
-  padding-top: 0.5em;
+  padding-top: 1em;
   margin:auto;
 }
 
@@ -708,7 +714,7 @@ section .club-info{
   border-top: 1px solid #CCCCCC;
 }
 .club-info h3{
-  font-size: 1.3em;
+  font-size: 1.5em;
   background-color: #F5F5F5;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
@@ -759,7 +765,7 @@ legend{
 }
 .form h3{
   
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 input {
@@ -897,7 +903,7 @@ z-index: 305;
   background-color: #F5F5F5;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }

@@ -39,7 +39,7 @@
           <div class="flex-content wrap">
             <ul>
               <li>
-                <a href="http://www.lasermtedenswimclub.co.nz" title="return to homepage">
+                <a href="index.html" title="return to homepage">
                   <img class="flex-brand" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club">
                 </a>
               </li>
@@ -59,9 +59,11 @@
     <ul id="main-nav">
       <li><div><a class="latest-news" data-url href="/news">
         <span>latest news</span>
+        
       </a>
     </div>
   </li>
+
   <li><a href="/meets"><span>upcoming meets</span></a></li>
   <li><a href="/gallery"><span>gallery</span></a></li>
   <li> 
@@ -69,7 +71,7 @@
     <div id="select">
       <select id="select-squad">
         <option value="0">choose a location</option>
-        <option value="1"><a href="#">Mt Eden</a></option>
+        <option value="mteden-map.html">Mt Eden</option>
         <option value="2"><a href="#">New Windsor</a></option>
         <option value="3"><a href="#">Kelston</a></option>
         <option value="4"><a href="#">Glen Eden</a></option>
@@ -79,6 +81,7 @@
       <form action="search/SiteSearch" method="get" id="search-squad">
        <i class="fa fa-search"></i><input type="search" placeholder="search" autocomplete="off">
      </form>
+     <form action="search/SiteSearch" method="get"><input id="go "type="button" value="enter" onclick="locateSquad()" /></form>
    </div>
  </li>
  <li><a href="/contact"><span>contact</span></a></li>
@@ -638,7 +641,7 @@
 </div>
 </section>
 <!-- End of Meets and Events -->
-<footer><p><i class="fa fa-copyright"></i>2014 Laser Mt Eden Swimming Club</p></footer>
+<footer><p>2014 Laser Mt Eden Swimming Club</p></footer>
 
 
 

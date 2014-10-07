@@ -44,16 +44,12 @@ $(function(){
 });
 
 
+//when clicking on drop down menu in mobile, for selecting locate a squad - this will link to the url selected.
+function locateSquad(){
+        var url = document.getElementById('select-squad').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
 
-
-// $(function(){
-
-// 	$("#more").on("click",function(){
-
-// 		$("#athletes-content").toggleClass("show");
-
-// 	});
-
-
-// });
 
