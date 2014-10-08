@@ -419,6 +419,8 @@ svg #grey-polygon{
   text-align: center;
 }
 
+
+
 /* ==========================================================================
    Meets
    ========================================================================== */
@@ -426,6 +428,7 @@ svg #grey-polygon{
     width: 100%;
 
    }*/
+
 
 #meets{
   font-size: 1.5em;
@@ -477,17 +480,17 @@ li.facebook{
   color:#0872B8;
 }
 
-li.info{
+li.iCal{
   margin-top: -3.45em;
   margin-left: 18.6em;
 }
 
-.info p i{
+.iCal p i{
   font-size: 1.2em;
   color:#7EB847;
 }
 li.marker{
-  margin-top: -3.45em;
+  margin-top: -4em;
   margin-left: 20.5em;
 }
 
@@ -495,6 +498,45 @@ li.marker{
   font-size: 1.2em;
   color:red;
 }
+#atedrop1{
+    margin-left: -2.5em;
+    margin-top: -0.75em;
+    border: none!important;
+}
+#atedrop2{
+    margin-left: -2.5em;
+    margin-top: -0.75em;
+    border: none!important;
+}
+#atedrop3{
+    margin-left: -2.5em;
+    margin-top: -0.75em;
+    border: none!important;
+}
+#atedrop4{
+    margin-left: -2.5em;
+    margin-top: -0.75em;
+    border: none!important;
+}
+#atedrop5{
+    margin-left: -2.5em;
+    margin-top: -0.75em;
+    border: none!important;
+}
+#atedrop6{
+    margin-left: -2.5em;
+    margin-top: -0.75em;
+    border: none!important;
+}
+.addthisevent-drop {
+color: #333!important;
+text-decoration: none!important;
+font-weight: 100;
+font-size: 0.5em;
+text-decoration: none;
+border: none;
+}
+.addthisevent {visibility:hidden;}
 
 /*-----------------------Meet/Events Date-----------------*/
 
@@ -744,6 +786,12 @@ p.squad-description{
   margin: auto;
 }
 #senior-squad-info{
+  margin-left: -1.5em;
+}
+#junior-squad-info{
+  margin-left: -1.5em;
+}
+#mini-squad-info{
   margin-left: -1.5em;
 }
 table#sqaud-times caption {
@@ -1359,6 +1407,7 @@ margin: auto;
 th{
   padding: 0.3em;
   font-weight: 100;
+
 }
 td{
   padding: 0.5em;
@@ -1581,17 +1630,31 @@ footer{
 @media only screen and (min-width: 60em) {
 
 /*/-----------*Time table*------------/*/
+th{
+  padding-right: 1em;
+
+}
+
 
 p.squad-description {
 margin-left: 4em;
 }
+
   #senior-squad-info{
     margin-bottom: 3em;
     margin-top: -2em;
   }
-  td{
-    padding: 1em;
+
+  #junior-squad-info{
+    margin-bottom: 3em;
+    margin-top: -2em;
   }
+
+  #mini-squad-info{
+    margin-bottom: 3em;
+    margin-top: -2em;
+  }
+
 
 /*/-----------*header nav*------------/*/
 
@@ -1818,12 +1881,12 @@ li.facebook{
   color:#0872B8;
 }
 
-li.info{
+li.iCal{
   margin-top: -3.5em;
   margin-left: 21.3em;
 }
 
-.info p i{
+.iCal p i{
   font-size: 1.2em;
   color:#7EB847;
 }
@@ -1964,6 +2027,10 @@ background-color: white;
   float: left;
   margin-top: 3em;
 }
+#squads a:hover{
+  color: #7EB847;
+  text-decoration: none;
+}
 #junior-squad-info li{
   width: 35em;
 }
@@ -2030,9 +2097,7 @@ p.squad-description{
   padding-left: 1em;
   padding-right: 1em;
 }
-.senior-squad-info{
-  width: 200em;
-}
+
 .timetable{
   margin-left: -3em;
 }
