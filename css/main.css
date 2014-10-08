@@ -720,6 +720,29 @@ margin: auto;
   margin-top: 3em;
    padding-bottom: 0.1em;
 }
+table#sqaud-times caption {
+font-size: 2rem; color: #444;
+margin: 1rem;
+background-image: url(miyazaki.png), url(miyazaki2.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center left, center right;
+}
+table#sqaud-times {
+border-collapse: collapse;
+font-family: Agenda-Light; font-weight: 100;
+background: #333; color: #fff;
+text-rendering: optimizeLegibility;
+border-radius: 5px;
+}
+table#sqaud-times thead th { font-weight: 600; }
+table#sqaud-times thead th, table#sqaud-times tbody td {
+padding: .8rem; font-size: 1.4rem;
+}
+table#sqaud-times tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #444; background: #eee;
+}
 
 /*-----------------------Information and links-----------------*/
 
@@ -1301,7 +1324,16 @@ font-weight: 100;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+@media screen and (max-width: 600px) {
+table#sqaud-times caption { background-image: none; }
+table#sqaud-times thead { display: none; }
+table#sqaud-times tbody td { display: block; padding: .6rem; }
+table#sqaud-times tbody tr td:first-child { background: #333; color: #fff; }
+table#sqaud-times tbody td:before {
+content: attr(data-th); font-weight: bold;
+display: inline-block; width: 6rem;
+}
+}
 
 
 
