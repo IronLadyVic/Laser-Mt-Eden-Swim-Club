@@ -19,7 +19,7 @@ function initialize(){
 	}]
 	
 	var mapOptions ={
-		zoom: 17,
+		zoom: 16,
 		center: mapLocation,
 		styles: mapStyles
 
@@ -30,28 +30,58 @@ function initialize(){
 
 //geo position
 
-var request = {address: "Mt Eden Swimming Club, Auckland"};
-var geocoder = new google.maps.Geocoder();
+// var request = {address: "Mt Eden Swimming Club, Auckland"};
+// var geocoder = new google.maps.Geocoder();
 
-geocoder.geocode(request,function(results,status){
+// geocoder.geocode(request,function(results,status){
 
-	console.log(results);
-	console.log(status);
+// 	// console.log(results);
+// 	// console.log(status);
 
-	if(status == 'OK'){
+// 	if(status == 'OK'){
 
-		var destination = results[0].geometry.location;
-		map.setCenter(destination);
+// 		var destination = results[0].geometry.location;
+// 		map.setCenter(destination);
 
-		//desitination marker
-		var destinationMarker = new google.maps.Marker({map:map});
-		destinationMarker.setPosition(destination);
+// 		// desitination marker
+// 		var destinationMarker = new google.maps.Marker({map:map});
+// 		destinationMarker.setPosition(destination);
 
-}
+// 		if(geo_position_js.init()){
+// 			geo_position_js.getCurrentPosition(function(position){
+// 				console.log(position);
 
+// 				var origin = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+// 				var originMarker = new google.maps.Marker({map:map});
+// 				originMarker.open(map,originMarker);
+// 				// direction 
+// 				var ds = new google.maps.DirectionServices();
+// 				var request ={
+// 					"origin":origin,
+// 					"destination":destination,
+// 					"travelMode": google.maps.TravelMode.Driving
+// 				};
+// 				ds.route(request,function(response,status){
+// 						if(status == "OK"){
+// 							var directionDisplay = new google.maps.DirectionsRenderer();
+// 							directionDisplay.setMap(map);
+// 							directionDisplay.setDirections(response);
+// 						}
 
-});
+// 					});
+// 			},
+// 				function(error){
+// 					console.log(error);
+				
 
+// 			});
+// 		}else{
+// 			console.log("functionality not working");
+// 			}
+
+// 		}
+// 	});
+// };
 
 
 	// var logoMarker = 'img/Laser-Mt-Eden.png';

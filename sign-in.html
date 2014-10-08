@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Laser Mt Eden Swim Club</title>
+        <meta name="description" content="Laser Mt Eden Swim Club">
+        <meta name="keywords" content="Laser Mt Eden Swim Club, Latest News, meets, events, gallery, Senior Squad, Junior Squad, Mini Squad, Club information, Dean Greenwood Swim School, Swimming New Zealand, Send an Enquiry, Laser Swim Records">
+        <meta name="author" content="Laser Mt Eden Swim Club">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- latest news slider -->
+        <link rel="stylesheet" href="css/gallery.css">
+        <!-- Form CSS -->
+        <link rel="stylesheet" href="css/form-main.css">
+        <link rel="stylesheet" href="css/form-normalize.css">
+        <!-- Club information banner -->
+        <link rel="stylesheet" href="css/club-info-banner.css">
+        <!-- Drop down menu -->
+        <link rel="stylesheet" href="css/nav-drop-down.css">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Header -->
+
+        <header class="header-inner">
+          <div class="flex-content wrap">
+            <ul>
+              <li>
+                <a href="index.html" title="return to homepage">
+                  <img class="flex-brand" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club">
+                </a>
+              </li>
+            </ul>   
+          </div>
+          <div id="show-number"><p>0800 SWIMNOW  | 0800 794 6669</p></div>
+          <div class="search-container">
+           <form id="searchForm" action="search/SiteSearch" method="get">
+             <i class="fa fa-search"></i>
+             <input type="search" id="txtsearch" class="search-bar" placeholder="search" size="50" maxlength="255" value="">
+           </form> 
+         </div>
+       </header>  
+<!-- Drop down menu header -->
+<header>      
+  <div id="main-header" class="widgets-colomn">
+    <ul id="main-nav">
+      <li><div><a href="index.html" class="latest-news">
+        <span>latest news</span>
+        
+      </a>
+    </div>
+  </li>
+
+  <li><a href="index.html #meets-events"><span>upcoming meets</span></a></li>
+  <li><a href="index.html #swimmers-gallery"><span>gallery</span></a></li>
+  <li> 
+    <span class="locate-squad-touch">locate a squad</span> 
+    <div id="select">
+      <select id="select-squad">
+        <option value="0">choose a location</option>
+        <option value="mteden.html">Mt Eden</option>
+        <option value="2">New Windsor</option>
+        <option value="kelston.html">Kelston</option>
+        <option value="4">Glen Eden</option>
+        <option value="5">Massey</option>
+      </select>
+      <p>or</p>
+      <form action="search/SiteSearch" method="get" id="search-squad">
+       <i class="fa fa-search"></i><input type="search" placeholder="search" autocomplete="off">
+     </form>
+     <form action="search/SiteSearch" method="get">
+     <input id="go" type="button" value="enter" onclick="locateSquad()"/>
+     </form>
+   </div>
+ </li>
+ <li><a href="index.html #enquire"><span>enquiries</span></a></li>
+ <li><a href="index.html #club-information"><span>club information</span></a></li>
+ <li><a href="index.html #athlete-records"><span>athlete records</span></a></li>
+ <li id="more"><a href="#"><span>more</span></a><span class="down-arrow"><i class="fa fa-sort-desc"></i></span>
+  <div class="flex-content wrap">
+    <div id="dropdown">
+      <div id="athletes-content">
+        <div class="colomn">
+          <h3>athletes</h3>
+          <ul class="athletes-info">
+            <li><a href="">training</a></li>
+            <li><a href="">registration/fees</a></li>
+            <li><a href="">uniforms</a></li>
+            <li><a href="">meet entry process</a></li>
+            <li><a href="">results</a></li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+  </div>
+</li>
+<li><a href="sign-in.html"><span>sign in</span></a></li>
+</ul>
+<div class="nav-handle">
+  <a href="#" class="js-nav-handle icon mini">
+    <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="20px" height="14px" viewBox="0 0 20 14" enable-background="new 0 0 20 14" xml:space="preserve">
+    <rect fill="#404040" width="20" height="2"></rect>
+    <rect y="6" fill="#404040" width="20" height="2"></rect>
+    <rect y="12" fill="#404040" width="20" height="2"></rect>
+  </svg>
+  <p class="menu-text">Menu</p>
+</a>
+</div>
+</div>
+</header> 
+<!-- End of Headers -->
+
+<!-- Sign Form -->
+<section class="flex-container wrap" id="signin">
+  <div class="form">
+    <form class="cmxform"  id="enquiry-form" method="get" action="#">
+      <fieldset style="border: none;">
+        <ul>
+          <li class="flex-content"><h3>sign in</h3></li>
+          <li><label for="username">Username</label></li>
+          <li class="flex-item" id="name">
+          <span><i class="fa fa-user"></i></span>
+            <input type="text" name="name" id="fullname" required>
+          </li>
+          <li><label for="password">Password</label></li>
+          <li class="flex-item" id="phone"><span><i  class="fa fa-lock"></i></span>
+            <input type="text" name="phone" id="password" required>
+          </li>
+          <li class="flex-item">
+            <input id="sign-button" class="submit" type="submit" value="sign in"/>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </div>
+</section>
+
+<!-- End of Sign In Form -->
+
+<!-- End of Meets and Events -->
+<!-- <footer><p>2014 Laser Mt Eden Swimming Club</p></footer> -->
+
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="//code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/unslider.js"></script>
+        <script src="js/latest-news-textlimit.js"></script>
+<!--         // <script src="tabify-js/jquery.tabify.js"></script>
+        // <script src="tabify-js/jquery.tabify.source.js"></script>
+        // <script src="tabify-js/jquery.js"></script> -->
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

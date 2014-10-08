@@ -414,6 +414,11 @@ svg #grey-polygon{
   
 }
 
+#location{
+  font-size: 1.5em;
+  text-align: center;
+}
+
 /* ==========================================================================
    Meets
    ========================================================================== */
@@ -473,8 +478,8 @@ li.facebook{
 }
 
 li.info{
-  margin-top: -3.5em;
-  margin-left: 18.3em;
+  margin-top: -3.45em;
+  margin-left: 18.6em;
 }
 
 .info p i{
@@ -482,8 +487,8 @@ li.info{
   color:#7EB847;
 }
 li.marker{
-  margin-top: -3.5em;
-  margin-left: 20em;
+  margin-top: -3.45em;
+  margin-left: 20.5em;
 }
 
 .marker p i{
@@ -643,19 +648,7 @@ li.marker{
 /*-----------------------Squads------------------------*/
 .squads{
  /* background-color: #eaeaea;*/
-  margin-top: 1em;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-   display: flex;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-
+margin: auto;
 }
 .squad-description{
   margin-left: -3em;
@@ -683,12 +676,13 @@ li.marker{
 }
 .senior-squad{
   background-color: #FFFFFF;
-  width: 98%;
+  width: 25em;
   height: 14em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin-left: -2em;
 }
 .junior-squad{
   background-color: #FFFFFF;
@@ -715,14 +709,14 @@ li.marker{
   padding-bottom: 0.25em;
 }
 .junior-squad img{
-    height: 40%;
+    height: 30%;
   margin-left:28%;
   margin-top: 3em;
   padding-bottom: 0.1em;
 }
 .mini-squad img{
     height: 45%;
-  margin-left:30%;
+  margin-left:25%;
   margin-top: 3em;
    padding-bottom: 0.1em;
 }
@@ -874,6 +868,10 @@ label.error{
     position: relative;
    color: #ea4c88;
 }
+
+
+
+
 
 /*-----------------------records-----------------*/
 section #records-list{
@@ -1331,9 +1329,10 @@ font-weight: 100;
 
 
 
-      .menu li { 
-        display: inline; 
+      .menu li{ 
+
         float: left;
+
       }
 
 
@@ -1601,6 +1600,7 @@ font-size: 1em;
   margin-left: 2.6em;
   margin-top: -1.7em;
 }
+
 /*/-----------------------------Drop down show and open toggleclass----------------------------------------/*/
 
 #dropdown{
@@ -2232,6 +2232,20 @@ input[type="submit"] {
   margin-left: 28em;
 
 }
+
+#signin h3{
+  margin-left: 0em;
+}
+
+#signin{
+  margin-left: 0em;
+}
+
+#sign-button{
+  margin-left: 0em;
+}
+
+
 /*-----------------------footer-----------------*/
 footer{
   background-color: #333333;

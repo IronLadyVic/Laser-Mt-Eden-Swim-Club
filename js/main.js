@@ -9,8 +9,6 @@ $(function(){
 		
 	});
 	
-	
-
 
 });
 
@@ -61,7 +59,24 @@ function locateSquad(){
 
 //Tabify function for Sqauds
 
-$(document).ready(function () {
-	$('#menu').tabify();
+// $(document).ready(function () {
+// 	$('#menu').tabify();
 	
+// });
+
+
+//Facebook share ref:http://stackoverflow.com/questions/9120539/facebook-share-link-no-javascript
+
+$(".share-popup").click(function(){
+    var window_size = "";
+    var url = this.href;
+    var domain = url.split("/")[2];
+    switch(domain) {
+        case "www.facebook.com":
+            window_size = "width=585,height=368";
+        default:
+            window_size = "width=585,height=511";
+    }
+    window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,' + window_size);
+    return false;
 });
