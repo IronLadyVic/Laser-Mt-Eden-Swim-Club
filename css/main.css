@@ -862,6 +862,12 @@ p.squad-description{
 #mini-squad-info{
   margin-left: -1.5em;
 }
+
+#senior-squad-info h3{
+  font-weight: 100;
+  font-size: 1.2em;
+
+}
 /*table#sqaud-times caption {
 font-size: 1.8em; color: #3F3F3F;
 padding-bottom: 0.5em;
