@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="css/club-info-banner.css">
         <!-- Drop down menu -->
         <link rel="stylesheet" href="css/nav-drop-down.css">
+        <!-- Squad styling CSS -->
         <link rel="stylesheet" href="css/table.css">
         <!-- Main CSS -->
         <link rel="stylesheet" href="css/main.css">
@@ -44,7 +45,7 @@
             <ul>
               <li>
                 <a href="index.html" title="return to homepage">
-                  <img class="flex-brand" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club">
+                  <img class="flexbrand" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club">
                 </a>
               </li>
             </ul>   
@@ -61,7 +62,7 @@
 <header>      
   <div id="main-header" class="widgets-colomn">
     <ul id="main-nav">
-      <li><div><a href="index.html" class="latest-news">
+      <li><div><a href="#latest-news" class="latest-news">
         <span>latest news</span>
         
       </a>
@@ -94,22 +95,86 @@
  <li><a href="#club-information"><span>club information</span></a></li>
  <li><a href="#athlete-records"><span>athlete records</span></a></li>
  <li id="more"><a href="#"><span>more</span></a><span class="down-arrow"><i class="fa fa-sort-desc"></i></span>
-  <div class="flex-content wrap">
+<!-- More drop down if at 60em or more -->
     <div id="dropdown">
       <div id="athletes-content">
+
         <div class="colomn">
-          <h3>athletes</h3>
-          <ul class="athletes-info">
-            <li><a href="">training</a></li>
-            <li><a href="">registration/fees</a></li>
-            <li><a href="">uniforms</a></li>
-            <li><a href="">meet entry process</a></li>
-            <li><a href="">results</a></li>
-          </ul>
+          <h3>ATHLETES INFORMATION</h3>
+          <div class="athletes-info">
+            <p><a href="#">Latest news</a></p>
+            <p><a href="#">Results</a></p>
+            <p><a href="#">Registration/fees</a></p>
+            <p><a href="#">Uniforms</a></p>
+            <p><a href="#">Meet entry process</a></p>
+          </div> 
         </div> 
+<!-- Colomn one -->
+        <div class="colomn">
+          <h3>squad locations</h3>
+          <div class="athletes-info">
+            <p><a href="mteden.html">Mt Eden</a></p>
+            <p><a href="windsor.html">New Windsor</a></p>
+            <p><a href="kelston.html">Kelston</a></p>
+            <p><a href="gleneden.html">Glen Eden</a></p>
+            <p><a href="massey.html">Massey</a></p>
+          </div> 
+        </div> 
+<!-- Colomn two  -->
+        <div class="colomn">
+          <h3>contact information</h3>
+          <div class="athletes-info">
+            <p><a href="#">Laser Mt Eden Swimming,<br>30 Bellevue Road,<br>PO Box 56-033,<br>Mt Eden,<br>Auckland</a></p>
+            <p><a href="#">Dean Greenwood,<br>Director of Coaching,<br>Glenn Hamblyn,<br>Head Coach,<br>021 503477</a></p>
+            <p><a href="#enquire">Make an enquiry</a></p>
+          </div> 
+        </div> 
+<!-- Colomn three  -->
+        <div class="colomn">
+          <div class="social-media">
+            <p>
+            <a href="http://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/lasermteden" target="_blank" class="share-popup">
+              
+              <!-- facebook svg -->
+              
+              <svg id="facebook-square" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 26px; width: 26px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(191, 191, 191);"></circle>
+                <path class="inner-shape" style="opacity: 0.76; fill: rgb(247, 247, 247);" transform="translate(21,21) scale(0.58)" d="M82.667,1H17.335C8.351,1,1,8.351,1,17.336v65.329c0,8.99,7.351,16.335,16.334,16.335h65.332 C91.652,99.001,99,91.655,99,82.665V17.337C99,8.353,91.652,1.001,82.667,1L82.667,1z M84.318,50H68.375v42.875H50V50h-8.855V35.973 H50v-9.11c0-12.378,5.339-19.739,19.894-19.739h16.772V22.3H72.967c-4.066-0.007-4.57,2.12-4.57,6.078l-0.023,7.594H86.75 l-2.431,14.027V50z"></path>
+              </svg>
+            </a>
+            <p><a href="#" title="instagram">
+              
+              <!-- instagram svg -->
+              
+              <svg id="instagram" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 26px; width: 26px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(191, 191, 191);"></circle>
+                <path class="inner-shape" style="opacity: 0.76; fill: rgb(247, 247, 247);" transform="translate(21,21) scale(0.58)" d="M88.2,1H11.8C5.85,1,1.026,5.827,1.026,11.781V88.22C1.026,94.174,5.85,99,11.8,99H88.2c5.95,0,10.774-4.826,10.774-10.78 V11.781C98.973,5.827,94.149,1,88.2,1z M49.946,31.184c10.356,0,18.752,8.4,18.752,18.762c0,10.361-8.396,18.761-18.752,18.761 s-18.752-8.4-18.752-18.761S39.589,31.184,49.946,31.184z M87.513,83.615c0,2.165-1.753,3.919-3.917,3.919H16.341 c-2.164,0-3.917-1.755-3.917-3.919v-41.06h8.508c-0.589,2.35-0.904,4.807-0.904,7.34c0,16.612,13.459,30.079,30.063,30.079 s30.063-13.466,30.063-30.079c0-2.533-0.315-4.99-0.904-7.34h8.263L87.513,83.615L87.513,83.615z M87.764,27.124 c0,2.165-1.754,3.919-3.918,3.919H72.723c-2.164,0-3.917-1.755-3.917-3.919v-11.13c0-2.165,1.754-3.919,3.917-3.919h11.123 c2.165,0,3.918,1.755,3.918,3.919V27.124z"></path>
+              </svg></a></p>
+            
+            <p><a href="#" title="youtube">
+              
+              <!-- youtube svg -->
+              
+              <svg id="youtube" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 26px; width: 26px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(191, 191, 191);"></circle>
+                <path class="inner-shape" style="opacity: 0.76; fill: rgb(247, 247, 247);" transform="translate(21,21) scale(0.58)" d="M97.284,26.359c-1-5.352-5.456-9.346-10.574-9.839c-12.221-0.784-24.488-1.42-36.731-1.428 c-12.244-0.007-24.464,0.616-36.687,1.388c-5.137,0.497-9.592,4.47-10.589,9.842C1.567,34.058,1,41.869,1,49.678 s0.568,15.619,1.703,23.355c0.996,5.372,5.451,9.822,10.589,10.314c12.226,0.773,24.439,1.561,36.687,1.561 c12.239,0,24.515-0.688,36.731-1.479c5.118-0.497,9.574-5.079,10.574-10.428C98.43,65.278,99,57.477,99,49.676 C99,41.88,98.428,34.083,97.284,26.359z M38.89,63.747V35.272l26.52,14.238L38.89,63.747z"></path>
+              </svg></a></p>
+              <p><a href="#" title="email">
+                <!-- email svg -->
+                
+                <svg id="mail" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 26px; width: 26px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(191, 191, 191);"></circle>
+                  <path class="inner-shape" style="opacity: 0.76; fill: rgb(247, 247, 247);" transform="translate(21,21) scale(0.58)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M25.5,25.5h49 c0.874,0,1.723,0.188,2.502,0.542L50,57.544L22.998,26.041C23.777,25.687,24.626,25.499,25.5,25.5L25.5,25.5z M19.375,68.375v-36.75 c0-0.128,0.005-0.256,0.014-0.383l17.96,20.953L19.587,69.958C19.448,69.447,19.376,68.916,19.375,68.375L19.375,68.375z M74.5,74.5 h-49c-0.541,0-1.072-0.073-1.583-0.212l17.429-17.429L50,66.956l8.653-10.096l17.429,17.429C75.572,74.427,75.041,74.5,74.5,74.5 L74.5,74.5z M80.625,68.375c0,0.541-0.073,1.072-0.211,1.583L62.652,52.195l17.96-20.953c0.008,0.127,0.014,0.255,0.014,0.383 L80.625,68.375L80.625,68.375z"></path>
+                </svg>
+              </a></p>
+          </div> 
+        </div> 
+        <div class="colomn">
+          <p>
+        <a href="#" class="close-menu">
+         <img src="img/cross.svg" alt="close menu"></a>
+        </p>
+      </div>
+
       </div>
     </div>
-  </div>
+
 </li>
 <li><a href="sign-in.html"><span>sign in</span></a></li>
 </ul>
@@ -334,11 +399,7 @@
     </div>
 
   </section>
-<!-- <div class="flex-content wrap">
-<svg id="silver-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
- <polygon fill="#F1F1F1" points="10,14 0,0 20,0 "></polygon>
-</svg>  
-</div>  -->
+
 <!-- End of Meets and Events -->
 
 <!-- Start of Gallery -->
@@ -385,11 +446,7 @@
         </ul>
     </div>
 </section>
-<!-- <div class="flex-content wrap">
-<svg id="gallery-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
- <polygon fill="#F1F1F1" points="10,14 0,0 20,0 "></polygon>
-</svg>
-</div>  -->
+
 <!-- End of Gallery -->
 
 <!-- Start of Squads -->
@@ -399,8 +456,8 @@
       <li class="active">
         <div class="senior-squad">
           <a href="" data-target="senior-squad-info">
-            <img src="img/Senior-squad-icon.png" alt="senior-squad-icon">
-            <!-- <img src="img/Senior-squad-icon-green.png" alt="senior-squad-icon"> -->
+            <img src="img/Senior-squad-icon.svg" alt="senior-squad-icon">
+            
             <h3>Senior/Competition Squad</h3>
           </a>
         </div>
@@ -408,8 +465,8 @@
       <li>
         <div class="junior-squad">
           <a href="" data-target="junior-squad-info">
-            <img src="img/Junior-squad-icon.png" alt="junior-squad-icon">
-            <!-- <img src="img/Junior-squad-icon-green.png" alt="junior-squad-icon"> -->
+            <img src="img/Junior-squad-icon.svg" alt="junior-squad-icon">
+            
             <h3>Junior/Competition Squad</h3>
           </a>
         </div>
@@ -417,8 +474,8 @@
       <li>
         <div class="mini-squad">
           <a href="" data-target="mini-squad-info">
-            <img src="img/mini-squad-icon.png" alt="mini-squad-icon">
-            <!-- <img src="img/mini-squad-icon-green.png" alt="mini-squad-icon"> -->
+            <img src="img/Mini-squad-icon.svg" alt="mini-squad-icon">
+            
             <h3>Mini Squad</h3>
           </a>
         </div>
@@ -428,7 +485,7 @@
     <div id="senior-squad-info" class="show">
       <ul>
         <li>
-          <h1>Senior Squad timetable</h1>
+          
           <table class="responsive-table">
             <tr>
               <th></th>
@@ -458,8 +515,9 @@
 
     </li>
     <li>
-      <div>
-        <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.<br/><br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
+      <div class="h2">
+        <h2 style="font-size:1.3em; font-weight: 100;">Senior Sqaud Timetable</h2>
+        <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.br/>br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
       </div>
     </li>
   </ul>
@@ -470,7 +528,7 @@
 <div id="junior-squad-info">
   <ul>
     <li>
-    <h1>Junior Squad timetable</h1>
+    
       <table class="responsive-table">
         <tr>
           <th></th>
@@ -499,8 +557,9 @@
   </table>
 </li>
 <li>
-  <div>
-    <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.<br/><br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
+  <div class="h2">
+    <h2 style="font-size:1.3em; font-weight: 100;">Junior Squad timetable</h2>
+    <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.br/>br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
   </div>
 </li>
 </ul>
@@ -510,7 +569,7 @@
 <div id="mini-squad-info">
   <ul>
     <li>
-      <h1>Mini Squad timetable</h1>
+      
       <table class="responsive-table">
         <tr>
           <th></th>
@@ -544,19 +603,16 @@
   </table>
 </li>
 <li>
-  <div>
-    <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.<br/><br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
+  <div class="h2">
+    <h2 style="font-size:1.3em; font-weight: 100;">Mini Squad timetable</h2>
+    <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.br/>br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
   </div>
 </li>
 </ul>
 </div>
 </div>      
 </section>
-<!-- <div class="flex-content wrap">
-<svg id="grey-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">
- <polygon fill="white" points="10,14 0,0 20,0 "></polygon>
-</svg>
-</div> -->
+
 <!-- End of Squads -->
 
 <!-- Start of Club Information -->

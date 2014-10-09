@@ -769,6 +769,8 @@ margin: auto;
   margin-left: -3em;
 }
 .squads h3{
+  color:#606468;
+  margin-top: -0.5em;
   font-size: 1.3em;
   text-align: center;
 }
@@ -776,18 +778,11 @@ margin: auto;
   text-align: center;
   padding-bottom: 0.5em;
 }
-.squads a{
-  color: #3F3F3F;
-  transition: color 1s ease;
-}
-.senior-squad a:hover{
-  text-decoration: none;
 
-}
 .senior-squad{
-  background-color: #FFFFFF;
+  
   width: 25em;
-  height: 14em;
+  height: 16em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
   -moz-box-sizing: border-box;
@@ -795,7 +790,7 @@ margin: auto;
   margin-left: -2em;
 }
 .junior-squad{
-  background-color: #FFFFFF;
+ 
   width: 98%;
   height: 16em;
   margin-bottom: 0.5em;
@@ -805,7 +800,7 @@ margin: auto;
   margin-left: -1em;
 }
 .mini-squad{
-  background-color: #FFFFFF;
+  
   width: 98%;
   height: 16em;
   margin-bottom: 0.5em;
@@ -815,22 +810,22 @@ margin: auto;
   margin-left: -1em;
 }
 .senior-squad img{
-  height: 50%;
-  margin-left: 23%;
-  margin-top: 2em;
-  padding-bottom: 0.25em;
+  height: 70%;
+  margin-left: 12%;
+  margin-top: 0em;
+  
 }
 .junior-squad img{
-    height: 30%;
-  margin-left:30%;
-  margin-top: 3em;
-  padding-bottom: 0.1em;
+    height: 60%;
+  margin-left:17%;
+  margin-top: 1em;
+  
 }
 .mini-squad img{
-    height: 45%;
-  margin-left:25%;
-  margin-top: 3em;
-   padding-bottom: 0.1em;
+    height: 60%;
+  margin-left:17%;
+  margin-top: 1em;
+  
 }
 #sqaud-times{
   width: 20em;
@@ -846,8 +841,11 @@ div#timetable{
   margin-top: -2.5em;
   
 }
+.h2{
+  text-align: center;
+}
 p.squad-description{
-  padding-top: 4em;
+  padding-top: 1em;
   text-align: center;
   font-weight: 100;
   font-size: 1.1em;
@@ -856,6 +854,7 @@ p.squad-description{
 #senior-squad-info{
   margin-left: -1.5em;
 }
+
 #junior-squad-info{
   margin-left: -1.5em;
 }
@@ -1477,30 +1476,25 @@ font-weight: 100;
 
 @media only screen and (min-width: 40em){
 
-/*table#sqaud-times caption {
-font-size: 1.5em; color: #3F3F3F;
-padding-bottom: 0.5em;
-padding-top: 1.5em;
 
-}
-#sqaud-times {
-width: 20em;
-font-size: 1em;
-margin: auto;
-}
-th{
-  padding: 0.3em;
-  font-weight: 100;
 
+.h2{
+  text-align: center;
 }
-td{
-  padding: 0.5em;
-  font-weight: 100;
-}
-*/
 p.squad-description{
-  width: 35em;
+  padding-top: 1em;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.1em;
+  margin: auto;
 }
+.menu li{ 
+
+  float: left;
+
+    }
+
+
 /* ==========================================================================
     GALLERY
 ========================================================================== */
@@ -1514,20 +1508,6 @@ p.squad-description{
   height: 0;
   display: none;
 }
-/* ==========================================================================
-    TABIFY SQAUDS
-   ========================================================================== */
-
-
-
-
-
-      .menu li{ 
-
-        float: left;
-
-      }
-
 
 
 
@@ -1535,62 +1515,54 @@ p.squad-description{
 /* ==========================================================================
     SQUADS
    ========================================================================== */
-
-
-.senior-squad img{
-  height: 50%;
-
-  margin-left: 22%;
-  margin-top: 1.5em;
-  padding-bottom: 0.25em;
-}
-.junior-squad img{
-    height: 40%;
-  margin-left:26%;
-  margin-top: 3em;
-  padding-bottom: 0.1em;
-}
-.mini-squad img{
-    height: 45%;
-
-  margin-left:25%;
-  margin-top: 2.4em;
-   padding-bottom: 0.1em;
-}
-.junior-squad h3{
-  margin-top: 0.9em;
-}
-.mini-squad h3{
-  margin-top: 0.95em;
-}
-
-
+   table.responsive-table{
+    padding-top: 2em;
+    margin-left: 4em;
+   }
+   .squads a{
+    text-decoration: none;
+   }
 .senior-squad{
-  background-color: #FFFFFF;
-  width: 19em;
-  height: 12em;
-  margin-bottom: 0.5em;
-  border-bottom: 1px solid #CCCCCC;
-
+  margin-left: -5em;
+  width: 20em;
+height: 16em;
 }
 .junior-squad{
-  background-color: #FFFFFF;
-  width: 17em;
-  height: 12em;
-  margin-bottom: 0.5em;
-  border-bottom: 1px solid #CCCCCC;
-  
+
+  margin-left: 0em;
+  width: 18em;
+height: 16em;
 }
 .mini-squad{
-  background-color: #FFFFFF;
-  width: 17em;
-  height: 12em;
-  margin-bottom: 0.5em;
-  border-bottom: 1px solid #CCCCCC;
- }
-#timetable{
-  /*margin-left: 2em;*/
+  
+  width: 18em;
+height: 16em;
 }
+.senior-squad{
+  margin-left: -2em;
+}
+.senior-squad img{
+  height: 65%;
+  margin-left: 1em;
+
+}
+.junior-squad img{
+  height: 65%;
+  margin-top:-0.1em;
+  margin-left: 0.8em;
+
+}
+.mini-squad img{
+    height: 65%;
+  margin-top:-0.1em;
+  margin-left: 1.1em;
+
+
+}
+.h2{
+  text-align: center;
+}
+
 
 .squad-description{
   width: 95%;
@@ -1865,46 +1837,34 @@ header #dropdown.open{
   z-index: 2000;
   position: absolute;
   display: block;
-  margin-left: -80%;
+  margin-left: -75%;
   margin-top: 0.7em;
  
 }
 
 
-#athletes-content.show{
-  position: relative;
-background-color: rgba(255,255,255,0.8);
-border-bottom: 1px solid #d2d2d2;
-max-height: 80em;
-display: block;
-}
-
-#athletes-content.show{
-max-width: 60em;
-_width: 1022px;
-padding-left: 21px;
-padding-left: 1.305rem;
-padding-right: 21px;
-padding-right: 1.305rem;
-margin-left: auto;
-margin-right: auto;
-z-index: 2000;
-}
 
 .colomn{
-  width: 100%;
+  margin-left: 5em;
   float: left;
   margin-top: 2em;
-  /*outline: 1px red solid;*/
   z-index: 1000;
-  margin-left: 140em;
-  height: 15em;
   transition: height 2s ease;
 }
+
+.colomn:nth-child(3){
+  padding-right: 5em;
+}
 .colomn h3{
-  font-size: 1.5em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #989898;
+  
 }
 .colomn ul .athletes-info{
+  float: left;
+}
+.colomn ul .social-media{
   float: left;
 }
 .athletes-info li a{
@@ -1915,14 +1875,28 @@ top: 3.5em;
 display: block;
 clear: left;
 margin: 0;
-margin-top: 1em;
 margin-bottom: 1em;
 color: black;
 font-weight: 100;
-font-size: 1.5em;
+}
+.social-media{
+  margin-left: 3em;
+  margin-top: 5.5em;
+  float: left;
+}
+.social-media p a{
+float: left;
+font-weight: 100;
 
 }
+.colomn:nth-child(4){
+  margin-top: -1em;
+}
 
+.close-menu{
+  margin-top: -17em;
+  margin-left: 1.5em;
+}
 /* ==========================================================================
    Meets
    ========================================================================== */
@@ -2125,6 +2099,19 @@ margin-right: auto;
 background-color: white;
 }
 /*/---------------------------------squads content when icon click on ------------------------------------/*/
+   table.responsive-table{
+    margin-top: -2em;
+    margin-left: -4em;
+   }
+   .squads a{
+    text-decoration: none;
+   }
+
+.h2{
+  text-align: left;
+  margin-left: 10em;
+  margin-top: -2.5em;
+}
 #senior-squad-info li{
   width: 35em;
 }
@@ -2165,6 +2152,8 @@ p.squad-description{
   text-align: left;
   font-weight: 100;
   font-size: 1.1em;
+  margin-left: -1em;
+  margin-top: -1em;
 }
 /*/---------------------------------squad icons ------------------------------------/*/
 
@@ -2211,10 +2200,10 @@ p.squad-description{
 }
 
 .junior-squad h3{
-  margin-top: 1em;
+  margin-top: -0.7em;
 }
 .mini-squad h3{
-  margin-top: 1em;
+  margin-top: -0.2em;
 }
 
 .senior-squad{
@@ -2243,22 +2232,22 @@ p.squad-description{
 }
 
 .senior-squad img{
-  height: 50%;
-  margin-left: 18%;
-  margin-top: 1.5em;
+  height: 80%;
+  margin-left: 1.2em;
+  margin-top: -1.5em;
   padding-bottom: 0.25em;
 }
 .junior-squad img{
-    height: 40%;
-  margin-left: 25%;
-  margin-top: 3em;
-  padding-bottom: 0.1em;
+    height: 75%;
+  margin-left: 2.2em;
+  margin-top: -0.2em;
+  
 }
 .mini-squad img{
-    height: 50%;
-  margin-left: 24%;
-  margin-top: 1.6em;
-   padding-bottom: 0.1em;
+    height: 75%;
+  margin-left: 2.2em;
+  margin-top: -0.8em;
+ 
 }
 
 /*/----------------------------------squads-----------------------------------/*/

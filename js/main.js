@@ -44,10 +44,15 @@ $(function(){
 //Drop down menu - for "more" @media only screen and (min-width: 60em)
 $(function(){
 
+	var dropdown = document.getElementById("#dropdown");
+
 	$("#more").on("click",function(){
 
 		$("#dropdown").toggleClass("open");
-		$(".athletes-content").toggleClass("show");
+		
+		if(dropdown == true){
+			$(".close-menu").removeClass("#dropdown.open");
+		}
 
 	});
 
