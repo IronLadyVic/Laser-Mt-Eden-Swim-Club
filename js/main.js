@@ -8,7 +8,20 @@ $(function(){
 		$("#main-nav li").toggleClass("show");
 		
 	});
+
+//show squads - Senior, Junior and Mini
+
+	$("#menu a").on("click",function(e){
+		e.preventDefault();
+		var targetID = "#"+$(this).data("target");
+
+		console.log(targetID);
+		$("#squads .show").removeClass("show");
+		$(targetID).addClass("show");
+	});
 	
+
+
 
 });
 
@@ -80,3 +93,8 @@ $(".share-popup").click(function(){
     window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,' + window_size);
     return false;
 });
+
+
+
+
+

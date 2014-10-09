@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="css/club-info-banner.css">
         <!-- Drop down menu -->
         <link rel="stylesheet" href="css/nav-drop-down.css">
+        <!-- Squad styling CSS -->
+        <link rel="stylesheet" href="css/table.css">
         <!-- Main CSS -->
         <link rel="stylesheet" href="css/main.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -497,144 +499,154 @@
     <ul id="menu" class="menu">
       <li class="active">
         <div class="senior-squad">
-          <a href=""><img src="img/Senior-squad-icon.png" alt="senior-squad-icon">
-            <h3>Senior/Competition Squad</h3></a>
-          </div>
-        </li>
+          <a href="" data-target="senior-squad-info">
+            <img src="img/Senior-squad-icon.png" alt="senior-squad-icon">
+            <!-- <img src="img/Senior-squad-icon-green.png" alt="senior-squad-icon"> -->
+            <h3>Senior/Competition Squad</h3>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="junior-squad">
+          <a href="" data-target="junior-squad-info">
+            <img src="img/Junior-squad-icon.png" alt="junior-squad-icon">
+            <!-- <img src="img/Junior-squad-icon-green.png" alt="junior-squad-icon"> -->
+            <h3>Junior/Competition Squad</h3>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="mini-squad">
+          <a href="" data-target="mini-squad-info">
+            <img src="img/mini-squad-icon.png" alt="mini-squad-icon">
+            <!-- <img src="img/mini-squad-icon-green.png" alt="mini-squad-icon"> -->
+            <h3>Mini Squad</h3>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <!-- Senior Squads Info -->
+    <div id="senior-squad-info" class="show">
+      <ul>
         <li>
-          <div class="junior-squad">
-            <a href=""><img src="img/Junior-squad-icon.png" alt="junior-squad-icon">
-              <h3>Junior/Competition Squad</h3></a>
-            </div>
-          </li>
-          <li>
-            <div class="mini-squad">
-              <a href=""><img src="img/mini-squad-icon.png" alt="mini-squad-icon">
-                <h3>Mini Squad</h3></a>
-              </div>
-            </li>
-          </ul>
-  <!-- Senior Squads Info -->
-<div id="senior-squad-info">
-<ul>
-  <li>
-    <div id="timetable">
-      <table id="sqaud-times">
-      <caption>Senior Squad Timetable</caption>
-      <thead>
-      <tr><th><th>Monday<th>Tuesday<th>Wednesday<th>Thursday<th>Friday<th>Saturday<th>Sunday
-      <tbody>
-      <tr>
-      <td data-th="">AM
-      <td data-th="Monday">5.30 - 7.00
-      <td data-th="Tuesday">Gym 6.00 - 7.00
-      <td data-th="Wednesday">5.30 - 7.00
-         <td data-th="Thursday">Gym 6.00 - 7.00
-           <td data-th="Friday">5.30 - 7.00
-                <td data-th="Saturday">6.00 - 8.00
-                    <td data-th="Sunday">off
-                      <tr>
-                          <td data-th="">PM
-                          <td>5.30 - 7.00
-                          <td>5.30 - 7.00
-                          <td>5.30 - 7.00
-                           <td>5.30 - 7.00
-                           <td>5.30 - 7.00
-                           <td>off
-                          <td>off
-                         <tr>          
-                       </table>
-                     </div>
-                </li>
-                <li>
-                      <div id="text">
-                      <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.<br/><br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
-                  </div>
-               </li>
-            </ul>
-        </div>
-     </div>
+          <h1>Senior Squad timetable</h1>
+          <table class="responsive-table">
+            <tr>
+              <th></th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+            </tr>
 
-  <!-- Junior Squads Info -->
+            <tr>
+              <td data-th="">AM</td>
+              <td data-th="Monday">5.30 -7.00</td>
+              <td data-th="Tuesday">Gym 6.00-7.00<td data-th="Wednesday">5.30 -7.00<td data-th="Thursday">Gym 6.00-7.00<td data-th="Friday">5.30 -7.00<td data-th="Saturday">6.00-8.00<td data-th="Sunday">off</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-th="">PM</td>
+            <td data-th="Monday">5.30 -7.00</td>
+            <td data-th="Tuesday">5.30 -7.00<td data-th="Wednesday">5.30 -7.00<td data-th="Thursday">5.30 -7.00<td data-th="Friday">5.30 -7.00<td data-th="Saturday">off<td data-th="Sunday">off</td>
+          </td>
+
+        </tr>
+      </table>
+
+    </li>
+    <li>
+      <div id="text">
+        <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.<br/><br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<!-- Junior Squads Info -->
 <div id="junior-squad-info">
-<ul>
-  <li>
-    <div id="timetable">
-      <table id="sqaud-times">
-      <caption>Junior Squad Timetable</caption>
-      <thead>
-      <tr><th><th>Monday<th>Tuesday<th>Wednesday<th>Thursday<th>Friday<th>Saturday<th>Sunday
-      <tbody>
+  <ul>
+    <li>
+    <h1>Junior Squad timetable</h1>
+      <table class="responsive-table">
+        <tr>
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+
+        <tr>
+          <td data-th="">AM</td>
+          <td data-th="Monday">7.00-8.00</td>
+          <td data-th="Tuesday">7.00-8.00<td data-th="Wednesday">7.00-8.00<td data-th="Thursday">7.00-8.00<td data-th="Friday">7.00-8.00<td data-th="Saturday">off<td data-th="Sunday">off</td>
+        </td>
+      </tr>
       <tr>
-      <td data-th="">AM
-      <td data-th="Monday">7.00 - 8.00
-      <td data-th="Tuesday">7.00 - 8.00
-      <td data-th="Wednesday">7.00 - 8.00
-         <td data-th="Thursday">7.00 - 8.00
-           <td data-th="Friday">7.00 - 8.00
-                <td data-th="Saturday">off
-                    <td data-th="Sunday">off
-                      <tr>
-                          <td data-th="">PM
-                          <td>4.14 - 5.30
-                          <td>4.14 - 5.30
-                          <td>4.14 - 5.30
-                           <td>4.14 - 5.30
-                           <td>4.14 - 5.30
-                           <td>off
-                          <td>off
-                         <tr>          
-                       </table>
-                     </div>
-                </li>
-                <li>
-                      <div id="text">
-                      <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.<br/><br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
-                  </div>
-               </li>
-            </ul>
-        </div>
-     </div>
+        <td data-th="">PM</td>
+        <td data-th="Monday">4.15-5.30</td>
+        <td data-th="Tuesday">4.15-5.30<td data-th="Wednesday">4.15-5.30<td data-th="Thursday">4.15-5.30<td data-th="Friday">4.15-5.30<td data-th="Saturday">off<td data-th="Sunday">off</td>
+      </td>
+
+    </tr>
+  </table>
+</li>
+<li>
+  <div id="text">
+    <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.<br/><br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
+  </div>
+</li>
+</ul>
+</div>
+
 <!-- Mini Squads Info -->
 <div id="mini-squad-info">
-<ul>
-  <li>
-    <div id="timetable">
-      <table id="sqaud-times">
-      <caption>Mini Squad Timetable</caption>
-      <thead>
-      <tr><th><th>Monday<th>Tuesday<th>Wednesday<th>Thursday<th>Friday<th>Saturday<th>Sunday
-      <tbody>
+  <ul>
+    <li>
+      <h1>Mini Squad timetable</h1>
+      <table class="responsive-table">
+        <tr>
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+
+        <tr>
+          <td data-th="">AM</td>
+          <td data-th="Monday"></td>
+          <td data-th="Tuesday"<td data-th="Wednesday"><td data-th="Thursday"><td data-th="Friday"><td data-th="Saturday"><td data-th="Sunday"></td>
+        </td>
+      </tr>
       <tr>
-      <td data-th="">AM
-      <td data-th="Monday">-
-      <td data-th="Tuesday">-
-      <td data-th="Wednesday">-
-         <td data-th="Thursday">-
-           <td data-th="Friday">-
-                <td data-th="Saturday">off
-                    <td data-th="Sunday">off
-                      <tr>
-                          <td data-th="">PM
-                          <td>3.30 - 4.15
-                          <td>3.30 - 4.15
-                          <td>3.30 - 4.15
-                           <td>3.30 - 4.15
-                           <td>3.30 - 4.15
-                           <td>off
-                          <td>off
-                         <tr>          
-                       </table>
-                     </div>
-                </li>
-                <li>
-                      <div id="text">
-                      <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.<br/><br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
-                  </div>
-               </li>
-            </ul>
-        </div>
-     </div>      
+        <td data-th="">PM</td>
+        <td data-th="Monday">3.30-4.15</td>
+        <td data-th="Tuesday">3.30-4.15<td data-th="Wednesday">3.30-4.15<td data-th="Thursday">3.30-4.15<td data-th="Friday">3.30-4.15<td data-th="Saturday">off<td data-th="Sunday">off</td>
+      </td>
+
+    </tr>
+  </table>
+</li>
+<li>
+  <div id="text">
+    <p class="squad-description">Squad training is available to all swimmers involved in aquatic sports, whether it is competitive swimming, triathlon, surf lifesaving or waterpolo.<br/><br/>Our comprehensive programme allows the flexibility for all disciplines to work together and fit swimming training into busy schedules</p>
+  </div>
+</li>
+</ul>
+</div>
+</div>      
 </section>
 <!-- <div class="flex-content wrap">
 <svg id="grey-polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="14px" xml:space="preserve">

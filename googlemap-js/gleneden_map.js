@@ -30,7 +30,7 @@ function initialize(){
 
 //geo position
 
-var request = {address: "Laser Mt Eden Swimming, Kelston Squad"};
+var request = {address: "Laser Mt Eden Swimming, Gleneden Squad"};
 var geocoder = new google.maps.Geocoder();
 
 geocoder.geocode(request,function(results,status){

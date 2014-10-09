@@ -420,6 +420,19 @@ svg #grey-polygon{
 }
 
 
+/* ==========================================================================
+   TABLE
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   End of
+   ========================================================================== */
+
+
 
 /* ==========================================================================
    Meets
@@ -473,6 +486,7 @@ svg #grey-polygon{
 li.facebook{
   margin-top: -2.5em;
   margin-left: 6em;
+
 }
 
 .facebook p i{
@@ -490,43 +504,57 @@ li.iCal{
   color:#7EB847;
 }
 li.marker{
-  margin-top: -4em;
+  margin-top: -3.5em;
   margin-left: 20.5em;
+  z-index: 4000;
 }
 
 .marker p i{
   font-size: 1.2em;
   color:red;
+
 }
 #atedrop1{
     margin-left: -2.5em;
     margin-top: -0.75em;
     border: none!important;
+    width: 1em;
+    height: 1em;
 }
 #atedrop2{
     margin-left: -2.5em;
     margin-top: -0.75em;
     border: none!important;
+    width: 1em;
+    height: 1em;
 }
 #atedrop3{
     margin-left: -2.5em;
     margin-top: -0.75em;
     border: none!important;
+    width: 1em;
+    height: 1em;
 }
 #atedrop4{
     margin-left: -2.5em;
     margin-top: -0.75em;
     border: none!important;
+    width: 1em;
+    height: 1em;
 }
 #atedrop5{
     margin-left: -2.5em;
     margin-top: -0.75em;
     border: none!important;
+    width: 1em;
+    height: 1em;
 }
 #atedrop6{
     margin-left: -2.5em;
     margin-top: -0.75em;
     border: none!important;
+    width: 1em;
+    height: 1em;
 }
 .addthisevent-drop {
 color: #333!important;
@@ -688,6 +716,43 @@ border: none;
 
 
 /*-----------------------Squads------------------------*/
+
+  #senior-squad-info{
+    margin-bottom: 3em;
+    display: none;
+  }
+
+
+  #junior-squad-info{
+    margin-bottom: 3em;
+
+    display: none;
+  }
+
+  #mini-squad-info{
+    margin-bottom: 3em;
+    display: none;
+  }
+
+    #senior-squad-info.show{
+
+    display: block;
+  }
+
+  #junior-squad-info.show{
+ 
+    display: block;
+  }
+
+  #mini-squad-info.show{
+
+    display: block;
+  }
+
+
+
+
+
 .squads{
  /* background-color: #eaeaea;*/
 margin: auto;
@@ -724,7 +789,7 @@ margin: auto;
   border-bottom: 1px solid #CCCCCC;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-left: -1em;
+  margin-left: -2em;
 }
 .junior-squad{
   background-color: #FFFFFF;
@@ -760,7 +825,7 @@ margin: auto;
 }
 .mini-squad img{
     height: 45%;
-  margin-left:27%;
+  margin-left:25%;
   margin-top: 3em;
    padding-bottom: 0.1em;
 }
@@ -794,20 +859,25 @@ p.squad-description{
 #mini-squad-info{
   margin-left: -1.5em;
 }
-table#sqaud-times caption {
-font-size: 1.5em; color: #3F3F3F;
+/*table#sqaud-times caption {
+font-size: 1.8em; color: #3F3F3F;
 padding-bottom: 0.5em;
+font-weight: bold;
 
 }
 th{
+  font-weight: bold;
   
-  font-weight: 100;
 }
 td{
   padding: 0.5em;
   font-weight: 100;
+  font-size: 1em;
 }
-
+tr{
+  font-size: 1em;
+  padding-bottom: 1em;
+}*/
 /*-----------------------Information and links-----------------*/
 
 section .club-info{
@@ -1061,7 +1131,9 @@ margin-bottom: 1em;
 color: black;
 font-weight: 100;
 transition: height 1s ease;
+line-height: 0px;
 }
+
 #main-nav li.show:nth-child(4) {
   cursor: pointer;
   padding-top: 15px;
@@ -1393,7 +1465,7 @@ font-weight: 100;
 
 @media only screen and (min-width: 40em){
 
-table#sqaud-times caption {
+/*table#sqaud-times caption {
 font-size: 1.5em; color: #3F3F3F;
 padding-bottom: 0.5em;
 padding-top: 1.5em;
@@ -1413,7 +1485,7 @@ td{
   padding: 0.5em;
   font-weight: 100;
 }
-
+*/
 p.squad-description{
   width: 35em;
 }
@@ -1643,17 +1715,38 @@ margin-left: 4em;
   #senior-squad-info{
     margin-bottom: 3em;
     margin-top: -2em;
+    display: none;
   }
 
   #junior-squad-info{
     margin-bottom: 3em;
     margin-top: -2em;
+
+    display: none;
   }
 
   #mini-squad-info{
     margin-bottom: 3em;
     margin-top: -2em;
+
+    display: none;
   }
+
+    #senior-squad-info.show{
+
+    display: block;
+  }
+
+  #junior-squad-info.show{
+ 
+    display: block;
+  }
+
+  #mini-squad-info.show{
+
+    display: block;
+  }
+
 
 
 /*/-----------*header nav*------------/*/
@@ -1872,7 +1965,7 @@ padding-left: 0.2em;
 }
 
 li.facebook{
-  margin-top: -3em;
+  margin-top: -3.2em;
   margin-left: 19.5em;
 }
 
@@ -1891,7 +1984,7 @@ li.iCal{
   color:#7EB847;
 }
 li.marker{
-  margin-top: -3.5em;
+  margin-top: -3.9em;
   margin-left: 23.2em;
 }
 
@@ -2136,9 +2229,10 @@ p.squad-description{
   border-bottom: 1px solid #CCCCCC;
 
 }
+
 .senior-squad img{
   height: 50%;
-  margin-left: 15%;
+  margin-left: 18%;
   margin-top: 1.5em;
   padding-bottom: 0.25em;
 }

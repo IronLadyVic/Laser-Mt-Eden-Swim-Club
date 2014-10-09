@@ -1,0 +1,91 @@
+.responsive-table {
+  margin: 1em 0;
+  width: 25em;
+}
+@media (min-width: 540px) {
+  .responsive-table .responsive-table-input-matrix {
+    width: auto;
+  }
+}
+.responsive-table tr {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.responsive-table tr td {
+  text-align: left;
+}
+@media (min-width: 540px) {
+  .responsive-table tr td {
+    text-align: center;
+  }
+}
+.responsive-table tr td:first-of-type {
+  text-align: left;
+}
+.responsive-table th {
+  display: none;
+}
+.responsive-table td {
+  display: block;
+}
+.responsive-table td:first-child {
+  padding-top: .5em;
+}
+.responsive-table td:last-child {
+  padding-bottom: .5em;
+}
+.responsive-table td:before {
+  content: attr(data-th) "";
+  font-weight: bold;
+  width: 9em;
+  display: inline-block;
+}
+@media (min-width: 540px) {
+  .responsive-table td:before {
+    display: none;
+  }
+}
+.responsive-table th:first-of-type {
+  text-align: left;
+}
+.responsive-table th, .responsive-table td {
+  text-align: center;
+}
+@media (min-width: 540px) {
+  .responsive-table th, .responsive-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .responsive-table th:first-child, .responsive-table td:first-child {
+    padding-left: 0;
+  }
+  .responsive-table th:last-child, .responsive-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+
+
+.responsive-table {
+  background: #CCC;
+  color: #3b4148;
+  border-radius: .4em;
+  overflow: hidden;
+  width: 25em;
+}
+.responsive-table tr {
+  border-color: white;
+}
+.responsive-table th, .responsive-table td {
+
+  margin: .5em 1em;
+}
+@media (min-width: 540px) {
+  .responsive-table th, .responsive-table td {
+    padding: 1em !important;
+  }
+}
+.responsive-table th, .responsive-table td:before {
+  color: #3b4148;
+  
+}
