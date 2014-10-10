@@ -456,7 +456,6 @@ svg #grey-polygon{
 
 #month{
   margin:auto;
-  background-color: #F5F5F5 ;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-top: 1em;
@@ -477,7 +476,8 @@ svg #grey-polygon{
   position: relative;
   height: 5em;
   padding: 0.2em;
-  width: 25em;
+  width: 21em;
+  margin-left: -0.2em;
 
 }
 
@@ -487,8 +487,8 @@ svg #grey-polygon{
 }
 
 li.facebook{
-  margin-top: -2.5em;
-  margin-left: 6em;
+  margin-top: -5.7em;
+  margin-left: 11.5em;
 
 }
 
@@ -507,8 +507,8 @@ li.iCal{
   color:#7EB847;
 }
 li.marker{
-  margin-top: -3.5em;
-  margin-left: 20.5em;
+  margin-top: -5.7em;
+  margin-left: 16em;
   z-index: 4000;
 }
 
@@ -518,43 +518,43 @@ li.marker{
 
 }
 #atedrop1{
-    margin-left: -2.5em;
-    margin-top: -0.75em;
+    margin-left: -7.5em;
+    margin-top: -2.85em;
     border: none!important;
     width: 1em;
     height: 1em;
 }
 #atedrop2{
-    margin-left: -2.5em;
-    margin-top: -0.75em;
+margin-left: -7.5em;
+    margin-top: -2.85em;
     border: none!important;
     width: 1em;
     height: 1em;
 }
 #atedrop3{
-    margin-left: -2.5em;
-    margin-top: -0.75em;
+margin-left: -7.5em;
+    margin-top: -2.85em;
     border: none!important;
     width: 1em;
     height: 1em;
 }
 #atedrop4{
-    margin-left: -2.5em;
-    margin-top: -0.75em;
+margin-left: -7.5em;
+    margin-top: -2.85em;
     border: none!important;
     width: 1em;
     height: 1em;
 }
 #atedrop5{
-    margin-left: -2.5em;
-    margin-top: -0.75em;
+margin-left: -7.5em;
+    margin-top: -2.85em;
     border: none!important;
     width: 1em;
     height: 1em;
 }
 #atedrop6{
-    margin-left: -2.5em;
-    margin-top: -0.75em;
+margin-left: -7.5em;
+    margin-top: -2.85em;
     border: none!important;
     width: 1em;
     height: 1em;
@@ -572,7 +572,7 @@ border: none;
 /*-----------------------Meet/Events Date-----------------*/
 
 .date-background{
-  width: 5em;
+  width: 4.5em;
   height: 5em;
   position: absolute;
   background-color: #333333;
@@ -584,9 +584,9 @@ border: none;
 
 .date-background h3{
   position: relative;
-  font-size: 3.5em;
+  font-size: 3.2em;
   font-weight: 200;
-  margin-left: 0.15em;
+  margin-left: 0.1em;
   margin-top: 0.35em;
   z-index: 305;
 }
@@ -594,8 +594,8 @@ border: none;
   position: relative;
   font-size: 1.1em;
   font-weight: 100;
-  margin-left: 0.7em;
-  margin-top: -2.8em;
+  margin-left: 0.5em;
+  margin-top: -2.5em;
   letter-spacing: 0.1em;
   z-index: 305;
 }
@@ -616,9 +616,9 @@ border: none;
 .record-descriptions{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 5em;
+  height: 5.6em;
   position: relative;
-/*outline: 1px red solid;*/
+  font-size: 0.9em;
   background-color: #F5F5F5;
   padding: 0.5em;
   color: #333333;
@@ -627,7 +627,7 @@ border: none;
 .title h3{
   font-size: 1em;
   color: #333333;
-  margin-left: 2em;
+  margin-left: 1.5em;
   margin-top:-1.3em;
   font-weight: bold;
   height: 1em;
@@ -637,21 +637,24 @@ border: none;
 .entry{
   margin-top: -1.5em;
   font-size: 0.8em;
-  margin-left: 2.8em;
+  margin-left: 2em;
 }
 .cost{
-  margin-top: -3.2em;
+  margin-top: -3.4em;
   font-size: 0.8em;
-  margin-left: 2.7em;
+  margin-left: 2em;
 }
 
 .where{
   float: left;
   font-size: 0.8em;
   margin-top: -3.4em;
-  margin-left: 14.5em;
-  width: 12em;
+  margin-left: 13.5em;
+  width: 8.5em;
 
+}
+.where span{
+  line-height: 18px;
 }
 
 .meet-descriptions i{
@@ -677,12 +680,14 @@ border: none;
    background-color: #eaeaea;
    border-top: 1px solid #CCCCCC;
    border-bottom: 1px solid #CCCCCC;
-   /*margin-top: -1.5em;*/
+   width: 22em;
+   margin-top: -2em;
 }
 
 #gallery .flex-item img{
-  width: 8.5em;
-  height: 8.5em;
+  width: 6.5em;
+  height: 6.5em;
+
 }
 #gallery li:nth-child(7){
   width: 0em;
@@ -757,7 +762,6 @@ border: none;
 
 
 .squads{
- /* background-color: #eaeaea;*/
 margin: auto;
 }
 .squad-description{
@@ -787,7 +791,7 @@ margin: auto;
   border-bottom: 1px solid #CCCCCC;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-left: -2em;
+  margin-left: -4em;
 }
 .junior-squad{
  
@@ -817,13 +821,13 @@ margin: auto;
 }
 .junior-squad img{
     height: 60%;
-  margin-left:17%;
+  margin-left:12%;
   margin-top: 1em;
   
 }
 .mini-squad img{
     height: 60%;
-  margin-left:17%;
+  margin-left:12%;
   margin-top: 1em;
   
 }
@@ -867,25 +871,7 @@ p.squad-description{
   font-size: 1.2em;
 
 }
-/*table#sqaud-times caption {
-font-size: 1.8em; color: #3F3F3F;
-padding-bottom: 0.5em;
-font-weight: bold;
 
-}
-th{
-  font-weight: bold;
-  
-}
-td{
-  padding: 0.5em;
-  font-weight: 100;
-  font-size: 1em;
-}
-tr{
-  font-size: 1em;
-  padding-bottom: 1em;
-}*/
 /*-----------------------Information and links-----------------*/
 
 section .club-info{
@@ -898,7 +884,7 @@ section .club-info{
 }
 .club-info h3{
   font-size: 1.5em;
-  background-color: #F5F5F5;
+
   padding-bottom: 0.5em;
   padding-top: 0.5em;
 
@@ -907,9 +893,10 @@ section .club-info{
 
 .flex-logos li{
   padding: 1em;
+  margin-left: -2em;
 }
 
-#laser{
+/*#laser{
 
   margin-top: 0em;
   margin-left: -3.5em;
@@ -919,17 +906,14 @@ section .club-info{
 
   margin-top: -1em;
   margin-left: -1em;
-}
+}*/
 #swimnz{
-
-  margin-left: -6em;
-  padding-left: 3em;
-  padding-right: 0em;
-}
-#fina{
+  padding: 2em;
+  margin-left:-2em;}
+/*#fina{
 
   margin-left: 4em;
-}
+}*/
 .club-info .flex-item h3{
   margin-top: -2em;
   margin-left: 6em;
@@ -982,13 +966,13 @@ input {
     color: white;
     margin-bottom: 1em;
     padding: 0 16px;
-    width: 23em;
+    width: 18em;
     height: 3.2em;
     box-sizing: border-box;
 }
 textarea{
   border-radius: 3px 3px 3px 3px;
-    width: 26em;
+    width: 21em;
     height: 5em;
     box-sizing: border-box;
 }
@@ -1002,7 +986,7 @@ input[type="submit"] {
     color: #eee;
     font-weight: lighter;
    /* text-transform: lowercase;*/
-    width: 26em;
+    width: 21em;
     height: 3em;
     box-sizing: border-box;
 }
@@ -1049,9 +1033,10 @@ padding-bottom: 1em;
 }
 #records-list ul{
 
-    margin-left: -2em;
+    margin-left: -2.8em;
 }
 #records-list ul li{
+  padding-top: 0.2em;
   float: left;
 }
 .swimmer{
@@ -1067,8 +1052,8 @@ padding-bottom: 1em;
   margin-top: -1em;
 }
 .time{
-  padding-left: 0.5em;
-  margin-top: -1em;
+  margin-left: 12em;
+  margin-top: -3.5em;
 }
 .record-where{
   margin-top: -3.5em;
@@ -1087,12 +1072,12 @@ z-index: 305;
 
 }
 #records{
-  background-color: #F5F5F5;
+
   margin-left: auto;
   margin-right: auto;
   font-size: 1.5em;
   padding-top: 0.5em;
-  padding-bottom: 0.5em;
+
 }
 .record-descriptions span {
 color: #0872B8;
@@ -1498,6 +1483,9 @@ p.squad-description{
 /* ==========================================================================
     GALLERY
 ========================================================================== */
+#gallery{
+  width: 100%;
+}
  #gallery .flex-item img{
     height: 10em;
     width: 10em;
@@ -1563,13 +1551,30 @@ height: 16em;
   text-align: center;
 }
 
-
-.squad-description{
-  width: 95%;
-  margin-left: 0em;
-  padding-left: 0em;
+table.responsive-table {
+margin-top: -1em!important;
+margin-left: -11em!important;
 }
+.squad-description{
+  width: 19em!important;
+}
+div.h2{
+  width: 20em;
+}
+  #senior-squad-info li:nth-child(2){
+    margin-left: -8em;
+    width: 20em!important;
+  }
 
+  #junior-squad-info li:nth-child(2){
+    margin-left: -8em;
+    width: 20em!important;
+  }
+
+  #mini-squad-info li:nth-child(2){
+    margin-left: -8em;
+    width: 20em!important;
+  }
 /*/------------------------------------club info logos---------------------------------/*/
 
 
@@ -1653,6 +1658,8 @@ font-family: sans-serif;
 }
 
 /*/------------------------------------Form---------------------------------/*/
+
+
 #comment{
   margin-top: 2em;
 }
@@ -1661,6 +1668,46 @@ textarea{
   margin-top: 1em;
 
 }
+.form form input[type="text"], input[type="password"], input[type="email"], textarea {
+    background-color: #3b4148;
+    border-radius: 0px 3px 3px 0px;
+    color: white;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 22em;
+    height: 3.2em;
+    box-sizing: border-box;
+}
+textarea{
+  border-radius: 3px 3px 3px 3px;
+    width: 24em;
+    height: 5em;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    border-radius: 0.1em;
+    -moz-border-radius: 0.1em;
+    -webkit-border-radius: 0.1em;
+    /*background-color: rgba(0,107,182,0.75);*/
+    background-color: #7EB847;
+    color: #eee;
+    font-weight: lighter;
+   /* text-transform: lowercase;*/
+    width: 24em;
+    height: 3em;
+    box-sizing: border-box;
+}
+
+/*-----------------------records-----------------*/
+
+.time{
+  margin-left: 14em;
+  margin-top: -3.5em;
+}
+
+
+
 
 
 
@@ -1929,7 +1976,6 @@ padding-left: 0.2em;
 
 #month{
   margin:auto;
-  background-color: #F5F5F5 ;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-top: 1em;
@@ -1950,10 +1996,6 @@ padding-left: 0.2em;
 
 }
 
-li.facebook{
-  margin-top: -3.2em;
-  margin-left: 19.5em;
-}
 
 .facebook p i{
   font-size: 1.2em;
@@ -1979,7 +2021,58 @@ li.marker{
   color:red;
 }
 
+li.facebook{
+  margin-top: -6.15em;
+  margin-left: 19em;
 
+}
+li.marker{
+  margin-top: -6.2em;
+  margin-left: 23em;
+  z-index: 4000;
+}
+#atedrop1{
+    margin-left: -2.85em;
+    margin-top: -3.3em;
+    border: none!important;
+    width: 1em;
+    height: 1em;
+}
+#atedrop2{
+margin-left: -2.85em;
+    margin-top: -3.3em;
+    border: none!important;
+    width: 1em;
+    height: 1em;
+}
+#atedrop3{
+margin-left: -2.85em;
+    margin-top: -3.3em;
+    border: none!important;
+    width: 1em;
+    height: 1em;
+}
+#atedrop4{
+margin-left: -2.85em;
+    margin-top: -3.3em;
+    border: none!important;
+    width: 1em;
+    height: 1em;
+}
+#atedrop5{
+margin-left: -2.85em;
+    margin-top: -3.3em;
+    border: none!important;
+    width: 1em;
+    height: 1em;
+}
+#atedrop6{
+margin-left: -2.85em;
+    margin-top: -3.3em;
+    border: none!important;
+    width: 1em;
+    height: 1em;
+}
 
 /*-----------------------Meet/Events Date-----------------*/
 
