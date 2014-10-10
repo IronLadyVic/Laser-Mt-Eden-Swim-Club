@@ -419,7 +419,14 @@ svg #grey-polygon{
 
 #location{
   font-size: 1.5em;
+}
+#location a{
+  text-decoration: none;
+}
+#location p{
+  font-size: 1.5em;
   text-align: center;
+  margin: auto;
 }
 
 
@@ -1875,13 +1882,13 @@ font-size: 1em;
   -o-transition: height 1s ease-in-out;
   transition: height 1s ease-in-out;
   display: none;
-  z-index: 2000;
+  z-index: 4000;
 }
 header #dropdown.open{
   max-height: 120em;
   max-width: 60em;
   background-color: rgba(255,255,255,0.9);
-  z-index: 2000;
+  z-index: 4000;
   position: absolute;
   display: block;
   margin-left: -75%;
@@ -1894,7 +1901,7 @@ header #dropdown.open{
 .colomn{
   margin-left: 5em;
   float: left;
-  margin-top: 2em;
+  margin-top: 1em;
   z-index: 1000;
   transition: height 2s ease;
 }
@@ -1929,10 +1936,10 @@ font-weight: 100;
 .social-media{
   margin-left: 1.5em;
   margin-top: 5.5em;
-  float: left;
+float: right;
 }
 .social-media p a{
-float: left;
+float: right;
 font-weight: 100;
 
 }
@@ -1941,8 +1948,8 @@ font-weight: 100;
 }
 
 .close-menu{
+  float: right;
   margin-top: -16em;
-
 }
 /* ==========================================================================
    Meets
@@ -2126,7 +2133,7 @@ z-index: 305;
 .record-descriptions{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 5em;
+  height: 5.6em;
   position: relative;
 /*outline: 1px red solid;*/
   background-color: #F5F5F5 ;
@@ -2572,8 +2579,43 @@ input[type="submit"] {
 
 #sign-button{
   margin-left: 0em;
+  width: 25em;
 }
 
+/*-----------------------Records-----------------*/
+
+#records-list ul{
+
+    margin-left: -2.2em;
+}
+
+.swimmer{
+  margin-left: 4em;
+  font-size: 1.1em;
+
+}
+.swimmer h3{
+    font-weight: bold;
+}
+.event{
+  margin-left: -8em;
+  font-size: 1.1em;
+}
+.time{
+  margin-left: 14em;
+  font-size: 1.1em;
+  margin-top: -3.7em;
+}
+.record-where{
+ font-size: 1.1em;
+  margin-left: 12em;
+ margin-top: -3.6em;
+}
+.record-date{
+    font-size: 1.1em;
+  margin-left: 4em;
+  margin-top: -2.3em;
+}
 
 /*-----------------------footer-----------------*/
 footer{
