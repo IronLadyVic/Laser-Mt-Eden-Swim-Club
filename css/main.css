@@ -892,9 +892,6 @@ section .club-info{
 .club-info h3{
   font-size: 1.5em;
 
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
-
 }
 
 
@@ -1083,7 +1080,7 @@ z-index: 305;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.5em;
-  padding-top: 0.5em;
+
 
 }
 .record-descriptions span {
@@ -1347,7 +1344,121 @@ font-weight: 100;
 
 
 
+/*-----------------------IE Target-----------------*/
+html[data-useragent*='MSIE 10.0'] #searchForm{
 
+  margin-left: 0em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #search-squad{
+
+  margin-left: 0em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #go{
+
+  margin-left: -13em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #meets-events{
+
+  margin-left: 5.5em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #meets{
+
+  margin-left: 11em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #month{
+
+  margin-left: 13em;
+  
+}
+
+
+html[data-useragent*='MSIE 10.0'] #gallery{
+
+  margin-top: -1em;
+  
+}
+
+html[data-useragent*='MSIE 10.0'] #gallery ul{
+
+  margin-left: 2em;
+  
+}
+
+/*/-----------IE10------------/*/
+
+
+
+
+html[data-useragent*='MSIE 10.0'] .flex-content {
+margin-left: 5%;
+
+}
+html[data-useragent*='MSIE 10.0'] .content h3{
+  margin-left: -15%;
+
+}
+html[data-useragent*='MSIE 10.0'] .news-contents{
+margin-left: -15%;
+  width:25em;
+}
+ html[data-useragent*='MSIE 10.0'] .date{
+  margin-top: -3em;
+  
+  width: 6em;
+}
+
+html[data-useragent*='MSIE 10.0'] .h2 h2{
+  margin-left: 0em;
+
+}
+html[data-useragent*='MSIE 10.0'] .squads{
+  margin-left: -1.5em;
+
+}
+html[data-useragent*='MSIE 10.0'] .club-info h3{
+  margin-left: 15em;
+
+}
+html[data-useragent*='MSIE 10.0'] .club-info ul{
+  margin-left: 4em;
+
+}
+html[data-useragent*='MSIE 10.0'] #laser{
+  margin-top: 2em;
+
+}
+html[data-useragent*='MSIE 10.0'] #dgss{
+  margin-top: 2em;
+  margin-left: 1em;
+
+}
+html[data-useragent*='MSIE 10.0'] #swimnz{
+  margin-left: 1em;
+
+}
+html[data-useragent*='MSIE 10.0'] form{
+  margin-left: 13em;
+
+}
+html[data-useragent*='MSIE 10.0'] form h3{
+  margin-left: -1em;
+
+}
+html[data-useragent*='MSIE 10.0'] #records-list li.flex-item{
+  margin-left: 3em;
+  
+
+}
+html[data-useragent*='MSIE 10.0'] #records{
+  margin-left: 15em;
+  
+
+}
 
 
 
@@ -1469,11 +1580,19 @@ font-weight: 100;
  padding-right: 0.3em;
  width: 22em;
 
-}div.date-background{
+}
+div.date-background{
   width: 5em;
   margin-left: -1em;
 }
-/**/
+.date-background h3 {
+margin-left: 0.2em;
+}
+.date-background p {
+
+margin-left: 0.7em;
+
+}
 .h2{
   text-align: center;
 }
@@ -1713,15 +1832,348 @@ input[type="submit"] {
 /*-----------------------records-----------------*/
 
 .time{
-  margin-left: 14em;
+  margin-left: 12.5em;
   margin-top: -3.5em;
   width: 8em;
 }
+.record-where{
+  margin-top: -3.6em;
+}
+
+/*-----------------------IE Target-----------------*/
+html[data-useragent*='MSIE 10.0'] #searchForm{
+
+  margin-left: 1em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #search-squad{
+
+  margin-left: 0em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #go{
+
+  margin-left: -13em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #meets-events{
+
+  margin-left: 5.5em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #meets{
+
+  margin-left: 11em;
+  
+}
+html[data-useragent*='MSIE 10.0'] #month{
+
+  margin-left: 13em;
+  
+}
+
+
+html[data-useragent*='MSIE 10.0'] #gallery{
+
+  margin-top: -1em;
+  
+}
+
+html[data-useragent*='MSIE 10.0'] #gallery ul{
+
+  margin-left: 2em;
+  
+}
+
+/*/-----------IE10------------/*/
 
 
 
 
+html[data-useragent*='MSIE 10.0'] .flex-content {
+margin-left: 32%;
 
+}
+html[data-useragent*='MSIE 10.0'] .content h3{
+  margin-left: -48%;
+
+}
+html[data-useragent*='MSIE 10.0'] .news-contents{
+  margin-left: -48%;
+  width:32em;
+}
+ html[data-useragent*='MSIE 10.0'] .date{
+  margin-left: -48%;
+  width:10em;
+}
+
+html[data-useragent*='MSIE 10.0'] .h2 h2{
+  margin-left: 0em;
+
+}
+html[data-useragent*='MSIE 10.0'] .squads{
+  margin-left: -1.5em;
+
+}
+html[data-useragent*='MSIE 10.0'] .club-info h3{
+  margin-left: 15em;
+
+}
+html[data-useragent*='MSIE 10.0'] .club-info ul{
+  margin-left: 4em;
+
+}
+html[data-useragent*='MSIE 10.0'] #laser{
+  margin-top: 2em;
+
+}
+html[data-useragent*='MSIE 10.0'] #dgss{
+  margin-top: 2em;
+  margin-left: 1em;
+
+}
+html[data-useragent*='MSIE 10.0'] #swimnz{
+  margin-left: 1em;
+
+}
+html[data-useragent*='MSIE 10.0'] form{
+  margin-left: 13em;
+
+}
+html[data-useragent*='MSIE 10.0'] form h3{
+  margin-left: -1em;
+
+}
+html[data-useragent*='MSIE 10.0'] #records-list li.flex-item{
+  margin-left: 3em;
+  
+
+}
+html[data-useragent*='MSIE 10.0'] #records{
+  margin-left: 15em;
+  
+
+}
+/*/-----------IE9------------/*/
+html[data-useragent*='MSIE 9.0'] #searchForm{
+
+  margin-left: 1em;
+  
+}
+html[data-useragent*='MSIE 9.0'] #search-squad{
+
+  margin-left: 0em;
+  
+}
+html[data-useragent*='MSIE 9.0'] #go{
+
+  margin-left: -13em;
+  
+}
+html[data-useragent*='MSIE 9.0'] #meets-events{
+
+  margin-left: 5.5em;
+  
+}
+html[data-useragent*='MSIE 9.0'] #meets{
+
+  margin-left: 11em;
+  
+}
+html[data-useragent*='MSIE 9.0'] #month{
+
+  margin-left: 13em;
+  
+}
+
+
+html[data-useragent*='MSIE 9.0'] #gallery{
+
+  margin-top: -1em;
+  
+}
+
+html[data-useragent*='MSIE 9.0'] #gallery ul{
+
+  margin-left: 2em;
+  
+}
+
+
+html[data-useragent*='MSIE 9.0'] .flex-content {
+margin-left: 32%;
+
+}
+html[data-useragent*='MSIE 9.0'] .content h3{
+  margin-left: -48%;
+
+}
+html[data-useragent*='MSIE 9.0'] .news-contents{
+  margin-left: -48%;
+  width:32em;
+}
+ html[data-useragent*='MSIE 9.0'] .date{
+  margin-left: -48%;
+  width:10em;
+}
+
+html[data-useragent*='MSIE 9.0'] .h2 h2{
+  margin-left: 0em;
+
+}
+html[data-useragent*='MSIE 9.0'] .squads{
+  margin-left: -1.5em;
+
+}
+html[data-useragent*='MSIE 9.0'] .club-info h3{
+  margin-left: 15em;
+
+}
+html[data-useragent*='MSIE 9.0'] .club-info ul{
+  margin-left: 4em;
+
+}
+html[data-useragent*='MSIE 9.0'] #laser{
+  margin-top: 2em;
+
+}
+html[data-useragent*='MSIE 9.0'] #dgss{
+  margin-top: 2em;
+  margin-left: 1em;
+
+}
+html[data-useragent*='MSIE 9.0'] #swimnz{
+  margin-left: 1em;
+
+}
+html[data-useragent*='MSIE 9.0'] form{
+  margin-left: 13em;
+
+}
+html[data-useragent*='MSIE 9.0'] form h3{
+  margin-left: -1em;
+
+}
+html[data-useragent*='MSIE 9.0'] #records-list li.flex-item{
+  margin-left: 3em;
+  
+
+}
+html[data-useragent*='MSIE 9.0'] #records{
+  margin-left: 15em;
+  
+
+}
+/*/-----------IE8------------/*/
+html[data-useragent*='MSIE 8.0'] #searchForm{
+
+  margin-left: 1em;
+  
+}
+html[data-useragent*='MSIE 8.0'] #search-squad{
+
+  margin-left: 0em;
+  
+}
+html[data-useragent*='MSIE 8.0'] #go{
+
+  margin-left: -13em;
+  
+}
+html[data-useragent*='MSIE 8.0'] #meets-events{
+
+  margin-left: 5.5em;
+  
+}
+html[data-useragent*='MSIE 8.0'] #meets{
+
+  margin-left: 11em;
+  
+}
+html[data-useragent*='MSIE 8.0'] #month{
+
+  margin-left: 13em;
+  
+}
+
+
+html[data-useragent*='MSIE 8.0'] #gallery{
+
+  margin-top: -1em;
+  
+}
+
+html[data-useragent*='MSIE 8.0'] #gallery ul{
+
+  margin-left: 2em;
+  
+}
+
+
+html[data-useragent*='MSIE 8.0'] .flex-content {
+margin-left: 32%;
+
+}
+html[data-useragent*='MSIE 8.0'] .content h3{
+  margin-left: -48%;
+
+}
+html[data-useragent*='MSIE 8.0'] .news-contents{
+  margin-left: -48%;
+  width:32em;
+}
+ html[data-useragent*='MSIE 8.0'] .date{
+  margin-left: -48%;
+  width:10em;
+}
+
+html[data-useragent*='MSIE 8.0'] .h2 h2{
+  margin-left: 0em;
+
+}
+html[data-useragent*='MSIE 8.0'] .squads{
+  margin-left: -1.5em;
+
+}
+html[data-useragent*='MSIE 8.0'] .club-info h3{
+  margin-left: 15em;
+
+}
+html[data-useragent*='MSIE 8.0'] .club-info ul{
+  margin-left: 4em;
+
+}
+html[data-useragent*='MSIE 8.0'] #laser{
+  margin-top: 2em;
+
+}
+html[data-useragent*='MSIE 8.0'] #dgss{
+  margin-top: 2em;
+  margin-left: 1em;
+
+}
+html[data-useragent*='MSIE 8.0'] #swimnz{
+  margin-left: 1em;
+
+}
+html[data-useragent*='MSIE 8.0'] form{
+  margin-left: 13em;
+
+}
+html[data-useragent*='MSIE 8.0'] form h3{
+  margin-left: -1em;
+
+}
+html[data-useragent*='MSIE 8.0'] #records-list li.flex-item{
+  margin-left: 3em;
+  
+
+}
+html[data-useragent*='MSIE 8.0'] #records{
+  margin-left: 15em;
+  
+
+}
 
 
 footer{
@@ -1809,6 +2261,13 @@ html[data-useragent*='MSIE 10.0'] .close-menu{
   margin-top: -23em;
   
 }
+html[data-useragent*='MSIE 10.0'] #meets-events{
+
+  margin-left: 7em;
+  
+}
+
+
 
 
 html[data-useragent*='MSIE 10.0'] .flex-content {
@@ -1816,20 +2275,26 @@ margin-left: 38%;
 
 }
 html[data-useragent*='MSIE 10.0'] .content h3{
-  margin-left: -35%;
-
+  margin-left: -45%;
+  width:25em;
 }
 html[data-useragent*='MSIE 10.0'] .news-contents{
-  margin-left: -35%;
-  width:32em;
+  margin-left: -45%;
+  width:35em;
 }
-html[data-useragent*='MSIE 10.0'] p.date{
+html[data-useragent*='MSIE 10.0'] .date{
   margin-left: -50em;
-  
+  width: 10em;
 }  
 
-html[data-useragent*='MSIE 10.0'].responsive-table{
- margin-left: -50%;
+html[data-useragent*='MSIE 10.0']table.responsive-table{
+
+
+
+
+
+
+
   
 }  
 /*/-----------IE9------------/*/
@@ -2206,14 +2671,14 @@ z-index: 305;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 5em;
-  width: 28em;
+  width: 27.8em;
   position: relative;
 /*outline: 1px red solid;*/
   background-color: #F5F5F5 ;
   padding: 0.5em;
   color: #333333;
 
-  /*margin-left: 1em;*/
+  margin-left: -1em;
 }
 
 .record-descriptions{
@@ -2223,9 +2688,10 @@ z-index: 305;
   position: relative;
 /*outline: 1px red solid;*/
   background-color: #F5F5F5 ;
+  width: 30em;
   padding: 0.5em;
   color: #333333;
-  margin-left: 1em;
+  margin-left: -0.5em;
 }
 .record-descriptions i{
   padding-right: 0.5em;
