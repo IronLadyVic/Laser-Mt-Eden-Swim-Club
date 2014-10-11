@@ -584,7 +584,7 @@ border: none;
   position: absolute;
   background-color: #333333;
   color: white;
- 
+  
   z-index: 300;
 
 }
@@ -1465,8 +1465,15 @@ font-weight: 100;
 
 @media only screen and (min-width: 40em){
 
+.meet{
+ padding-right: 0.3em;
+ width: 22em;
 
-
+}div.date-background{
+  width: 5em;
+  margin-left: -1em;
+}
+/**/
 .h2{
   text-align: center;
 }
@@ -1507,47 +1514,44 @@ p.squad-description{
 /* ==========================================================================
     SQUADS
    ========================================================================== */
-   table.responsive-table{
-    padding-top: 2em;
-    margin-left: 4em;
-   }
+
    .squads a{
     text-decoration: none;
    }
 .senior-squad{
-  margin-left: -5em;
-  width: 20em;
-height: 16em;
-}
-.junior-squad{
-
+  margin-top: 1em;
   margin-left: 0em;
   width: 18em;
-height: 16em;
+height: 12em;
+}
+.junior-squad{
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 16em;
+height: 12em;
 }
 .mini-squad{
-  
-  width: 18em;
-height: 16em;
-}
-.senior-squad{
-  margin-left: -2em;
-}
-.senior-squad img{
-  height: 65%;
+  margin-top: 1em;
   margin-left: 1em;
+  width: 14em;
+height: 12em;
+}
 
+.senior-squad img{
+  height: 70%;
+  margin-left: 2em;
+  margin-top: -0.7em;
 }
 .junior-squad img{
   height: 65%;
   margin-top:-0.1em;
-  margin-left: 0.8em;
+  margin-left: 1.5em;
 
 }
 .mini-squad img{
     height: 65%;
   margin-top:-0.1em;
-  margin-left: 1.1em;
+  margin-left: 1em;
 
 
 }
@@ -1556,14 +1560,17 @@ height: 16em;
 }
 
 table.responsive-table {
+padding-top: 2em!important;
 margin-top: -1em!important;
-margin-left: -11em!important;
+margin-left: 3em!important;
 }
 .squad-description{
-  width: 19em!important;
+  margin-left: -2em!important;
+  width: 30em!important;
 }
 div.h2{
-  width: 20em;
+  margin-left: 20em!important;
+  width: 30em;
 }
   #senior-squad-info li:nth-child(2){
     margin-left: -8em;
@@ -1684,7 +1691,7 @@ textarea{
 }
 textarea{
   border-radius: 3px 3px 3px 3px;
-    width: 24em;
+    width: 25em;
     height: 5em;
     box-sizing: border-box;
 }
@@ -1698,7 +1705,7 @@ input[type="submit"] {
     color: #eee;
     font-weight: lighter;
    /* text-transform: lowercase;*/
-    width: 24em;
+    width: 25em;
     height: 3em;
     box-sizing: border-box;
 }
@@ -1708,6 +1715,7 @@ input[type="submit"] {
 .time{
   margin-left: 14em;
   margin-top: -3.5em;
+  width: 8em;
 }
 
 
@@ -2277,19 +2285,23 @@ margin-right: auto;
 background-color: white;
 }
 /*/---------------------------------squads content when icon click on ------------------------------------/*/
-   table.responsive-table{
-    margin-top: -2em;
-    margin-left: -4em;
-   }
+table.responsive-table {
+padding-top: 2em!important;
+margin-top: -1em!important;
+margin-left: -14em!important;
+}
    .squads a{
     text-decoration: none;
    }
-
-.h2{
+.h2 h2{
+  margin-left: -32em!important;
+  margin-top: 0em!important;
+}
+/*.h2{
   text-align: left;
   margin-left: 10em;
   margin-top: -2.5em;
-}
+}*/
 #senior-squad-info li{
   width: 35em;
 }
@@ -2326,11 +2338,11 @@ background-color: white;
   
 }
 p.squad-description{
-  width: 26em;
+  width: 24em!important;
   text-align: left;
   font-weight: 100;
   font-size: 1.1em;
-  margin-left: -1em;
+  margin-left: -12.5em!important;
   margin-top: -1em;
 }
 /*/---------------------------------squad icons ------------------------------------/*/
@@ -2768,9 +2780,9 @@ font-weight: 100;
   display: block;
 }
 #gallery li:nth-child(9){
-  width: 13.5em;
-  height: 13.5em;
-  display: block;
+  width: 0;
+  height: 0;
+  display: none;
 }
 #gallery li:nth-child(10){
   width: 0;
